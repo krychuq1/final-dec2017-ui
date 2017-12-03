@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-
 @import "styles/colors";
+@import "styles/buttons";
+@import 'styles/custome-theme-material.scss';
+
 body{
+  font-family: 'Lato', sans-serif;
   padding: 0;
   margin: 0;
 }
