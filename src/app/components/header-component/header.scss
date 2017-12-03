@@ -1,0 +1,14 @@
+@import "../../../styles.scss";
+.header{
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  background: $primary;
+  height: 80px;
+  .actions{
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+  }
+
+}
