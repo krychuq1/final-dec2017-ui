@@ -12,6 +12,7 @@ import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {UserService} from "./services/user.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {UserService} from "./services/user.service";
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [FormBuilder, UserService],
