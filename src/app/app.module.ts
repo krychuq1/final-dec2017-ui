@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {UserService} from "./services/user.service";
 import {HttpClientModule} from "@angular/common/http";
+import {UserLoginComponent} from "./components/user-login/user-login.component";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {HttpClientModule} from "@angular/common/http";
     HeaderComponent,
     UserComponent,
     HomeComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
