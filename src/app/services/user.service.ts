@@ -5,13 +5,14 @@ import {HttpClient} from '@angular/common/http';
 @Injectable()
 export class UserService {
 
-  url = 'https://translation.dev.insightapi.io/api/brand/';
+  url = 'http://localhost:7777/users/';
 
   constructor(private http: HttpClient ) {
 
   }
 
-  checkIfUserExists(): any {
-    return this.http.get(this.url);
+  checkIfUserExists(email): any {
+    const url = this.url + 'checkEmail/' + encodeURIComponent(email);
+    return this.http.get(url);
   }
 }
