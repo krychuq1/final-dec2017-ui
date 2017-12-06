@@ -1,4 +1,4 @@
-<div class="userPage">
+<div class="userPage" *ngIf="!processing">
   <h1>Let's get started</h1>
   <p>Enter your email to sign up or log in.</p>
 
@@ -14,5 +14,6 @@
 
   </form>
 </div>
+
 <router-outlet></router-outlet>
 

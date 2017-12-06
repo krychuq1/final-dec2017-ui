@@ -13,6 +13,7 @@ export class UserComponent {
   emailForm: FormGroup;
   emailControler;
   EMAIL_PATTERN = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
+  processing: boolean;
 
   constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router) {
     this.buildForm();
@@ -26,6 +27,7 @@ export class UserComponent {
   }
 
   public onSubmitForm() {
+    this.processing = true;
     // make a call to api to check if email exits
     this.userService.checkIfUserExists(this.emailControler.value).subscribe(res => {
       this.router.navigateByUrl('/user/login');

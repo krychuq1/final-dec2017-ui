@@ -9,7 +9,7 @@ import 'rxjs/add/observable/of';
 
 @Injectable()
 export class UserService {
-    userUpdates:EventEmitter = new EventEmitter();
+    userUpdates: EventEmitter<UserModel> = new EventEmitter();
     user: UserModel;
     url = 'http://localhost:7777/users/';
    /* myBool$: Observable<boolean>;
@@ -37,7 +37,7 @@ export class UserService {
         // return the res from api call
         return this.http.get(url, {headers: headers});
     }
-    setUser(obj){
+    setUser(obj) {
         this.user = new UserModel(obj.firstName, obj.lastName, obj.email, obj.isAdmin);
         /*this.myBool$ = Observable.of(true);
         console.log('inside set user! ', this.myBool$);

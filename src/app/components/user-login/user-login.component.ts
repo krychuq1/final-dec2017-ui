@@ -38,14 +38,14 @@ export class UserLoginComponent {
         this.userService.getToken(user).subscribe(res => {
             console.log('token: ', res);
             const localUserData = {
-                token: res.token,
+                token: res['token'],
                 email: user.email
             }
             // save token in localstorage
             localStorage.setItem('user', JSON.stringify(localUserData));
             this.userValidation = false;
             this.appComponent.checkLocalStorage();
-            this.router.navigateByUrl('?1');
+            this.router.navigateByUrl('');
         }, (err: HttpErrorResponse) => {
             if (err.error instanceof Error) {
                 this.userValidation = true;

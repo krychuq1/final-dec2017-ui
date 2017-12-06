@@ -1,4 +1,6 @@
-<h1>loginff</h1>
+<div class="userLogin">
+
+<h1>Welcome back</h1>
 
 <form class="user-form"  [formGroup]="loginForm" (ngSubmit)="login()" >
     <mat-form-field class="example-full-width">
@@ -15,3 +17,4 @@
 </form>
 
 <p *ngIf="userValidation">Username or password is incorrect!</p>
+</div>
