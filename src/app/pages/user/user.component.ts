@@ -44,5 +44,9 @@ export class UserComponent {
         console.log(`Backend returned code ${err.status}, body was: ${err.error}`);
       }
     });
+
+  }
+  public getEmail(): string {
+      return this.emailControler.value;
   }
 }

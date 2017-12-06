@@ -14,26 +14,30 @@ import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {UserService} from "./services/user.service";
 import {HttpClientModule} from "@angular/common/http";
 import {UserLoginComponent} from "./components/user-login/user-login.component";
+import {EventComponent} from "./pages/event/event.component";
+import {CreateEventComponent} from "./components/create-event/create-event.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    UserComponent,
-    HomeComponent,
-    UserLoginComponent
-  ],
-  imports: [
-    BrowserModule,
-    MatButtonModule,
-    MatInputModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    RouterModule.forRoot(routes)
-  ],
-  providers: [FormBuilder, UserService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        UserComponent,
+        HomeComponent,
+        UserLoginComponent,
+        EventComponent,
+        CreateEventComponent
+    ],
+    imports: [
+        BrowserModule,
+        MatButtonModule,
+        MatInputModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        RouterModule.forRoot(routes)
+    ],
+    providers: [FormBuilder, UserService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
