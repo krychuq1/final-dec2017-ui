@@ -1,0 +1,45 @@
+<div class="userFormRegister">
+  <img src="../../../assets/images/userProfile.svg">
+  <h1>Welcome</h1>
+  <h3>Create an account</h3>
+  <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+    <mat-form-field class="example-full-width block">
+     <input matInput placeholder="email" formControlName="email" >
+      <div *ngIf="emailController.errors && emailController.touched">
+        <mat-error *ngIf="emailController.errors.required">Email is required</mat-error>
+        <mat-error *ngIf="emailController.errors.pattern">Please enter valid email</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="first name" formControlName="firstName" >
+      <div *ngIf="firstNameController.errors && firstNameController.touched">
+        <mat-error *ngIf="firstNameController.errors.required">First name is required</mat-error>
+        <mat-error *ngIf="firstNameController.errors.minlength">First name should be at least 2 char long</mat-error>
+        <mat-error *ngIf="firstNameController.errors.pattern">Please enter valid name a-z A-Z</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="last name" formControlName="lastName" >
+      <div *ngIf="lastNameController.errors && lastNameController.touched">
+        <mat-error *ngIf="lastNameController.errors.required">First name is required</mat-error>
+        <mat-error *ngIf="lastNameController.errors.minlength">First name should be at least 2 char long</mat-error>
+        <mat-error *ngIf="lastNameController.errors.pattern">Please enter valid name a-z A-Z</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width block">
+      <input type = "password" matInput placeholder="Password" formControlName="password" >
+      <div *ngIf="passwordController.errors && passwordController.touched">
+        <mat-error *ngIf="passwordController.errors.required">Password is required</mat-error>
+        <mat-error *ngIf="passwordController.errors.minlength">Password should be min 2 characters</mat-error>
+        <mat-error *ngIf="passwordController.errors.maxlength">Password should be max 20 characters</mat-error>
+      </div>
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="!registerForm.valid">Register</button>
+
+  </form>
+
+</div>
+

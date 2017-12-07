@@ -1,0 +1,20 @@
+<div class="userForm">
+
+<h1>Welcome back</h1>
+
+<form class="user-form"  [formGroup]="loginForm" (ngSubmit)="login()" >
+    <mat-form-field class="example-full-width">
+        <input type = "password" matInput placeholder="Password" formControlName="password" >
+        <div *ngIf="passwordController.errors && passwordController.touched">
+            <mat-error *ngIf="passwordController.errors.required">Password is required</mat-error>
+            <mat-error *ngIf="passwordController.errors.minlength">Password should be min 2 characters</mat-error>
+            <mat-error *ngIf="passwordController.errors.maxlength">Password should be max 20 characters</mat-error>
+        </div>
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="!loginForm.valid">Login</button>
+    <!--{{passwordController.errors | json}}-->
+
+</form>
+
+<p *ngIf="userValidation">Username or password is incorrect!</p>
+</div>

@@ -1,4 +1,4 @@
-<div class="userPage">
+<div class="userPage" *ngIf="!processing">
   <h1>Let's get started</h1>
   <p>Enter your email to sign up or log in.</p>
 
@@ -13,8 +13,7 @@
     <button mat-raised-button color="primary" [disabled]="!emailForm.valid">Get Started</button>
 
   </form>
-
-
-
 </div>
+
+<router-outlet></router-outlet>
 
