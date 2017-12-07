@@ -16,6 +16,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {UserLoginComponent} from "./components/user-login/user-login.component";
 import {EventComponent} from "./pages/event/event.component";
 import {CreateEventComponent} from "./components/create-event/create-event.component";
+import {UserRegisterComponent} from './components/user-register/user-register.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import {CreateEventComponent} from "./components/create-event/create-event.compo
         HomeComponent,
         UserLoginComponent,
         EventComponent,
-        CreateEventComponent
+        CreateEventComponent,
+        UserRegisterComponent
     ],
     imports: [
         BrowserModule,

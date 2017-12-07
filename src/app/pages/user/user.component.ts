@@ -12,7 +12,7 @@ import {Router} from "@angular/router";
 export class UserComponent {
   emailForm: FormGroup;
   emailControler;
-  EMAIL_PATTERN = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
+  EMAIL_PATTERN = /^[a-z]+[a-z0-9._]+@[a-z]+[a-z0-9._]+\.[a-z.]{2,5}$/;
   processing: boolean;
 
   constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router) {
@@ -37,6 +37,7 @@ export class UserComponent {
         // A client-side or network error occurred. Handle it accordingly.
         console.log('An error occurred:', err.error.message);
       } else {
+        this.router.navigateByUrl('/user/register');
         console.log('should go to register');
 
         // The backend returned an unsuccessful response code.
