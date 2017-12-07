@@ -19,6 +19,10 @@ import {CreateEventComponent} from "./components/create-event/create-event.compo
 import {UserRegisterComponent} from './components/user-register/user-register.component';
 import {EventService} from "./services/event.service";
 import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
+import { ImageUploadModule } from 'angular2-image-upload';
+
 
 @NgModule({
     declarations: [
@@ -40,7 +44,10 @@ import {MatCardModule} from '@angular/material/card';
         ReactiveFormsModule,
         HttpClientModule,
         MatCardModule,
-        RouterModule.forRoot(routes)
+      MatDatepickerModule,
+      MatNativeDateModule,
+      ImageUploadModule.forRoot(),
+      RouterModule.forRoot(routes)
     ],
     providers: [FormBuilder, UserService, EventService],
     bootstrap: [AppComponent]

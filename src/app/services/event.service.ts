@@ -15,4 +15,10 @@ export class EventService {
         const url = this.url + 'event';
         return this.http.get(url, {headers: header});
     }
+    saveImage(img) {
+      const url = this.url + 'image';
+
+      console.log("gonna send ", {src: img.src});
+      return this.http.post(url, {src: img.src});
+    }
 }

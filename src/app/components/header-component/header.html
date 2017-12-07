@@ -2,13 +2,12 @@
     <div class="actions" *ngIf="!user">
         <img src="../../../assets/images/lock.svg">
         <button mat-raised-button class="general-btn" routerLink="user">Login</button>
-        <button mat-raised-button class="general-btn" routerLink="event/create">Create Event</button>
-
-
     </div>
     <div class="actions" *ngIf="user">
         <p>Welcome {{user.firstName}} {{user.lastName}}</p>
         <button mat-raised-button class="general-btn" (click)="logOut()">LogOut</button>
+        <button mat-raised-button class="general-btn" routerLink="event/create">Create Event</button>
+
     </div>
 </div>
 <router-outlet></router-outlet>

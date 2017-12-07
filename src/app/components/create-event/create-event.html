@@ -1,1 +1,36 @@
-<p>Create Event Here!!! this is create-event.html</p>
+<p>Event Details</p>
+<form [formGroup]="eventForm" (ngSubmit)="createEvent()">
+  <mat-form-field class="example-full-width block">
+    <input matInput placeholder="event title" formControlName="title" >
+    <div *ngIf="titleController.errors && titleController.touched">
+      <mat-error *ngIf="titleController.errors.required">event title is required</mat-error>
+      <mat-error *ngIf="titleController.errors.minlength">Title should be at least 5 char long</mat-error>
+    </div>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width block">
+    <input matInput placeholder="location" formControlName="location" >
+    <div *ngIf="locationController.errors && locationController.touched">
+      <mat-error *ngIf="locationController.errors.required">event location is required</mat-error>
+      <mat-error *ngIf="locationController.errors.minlength">Title should be at least 5 char long</mat-error>
+    </div>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="startDate" placeholder="start  date">
+    <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+    <mat-datepicker #startDate></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="endDate" placeholder="end date">
+    <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+    <mat-datepicker #endDate></mat-datepicker>
+  </mat-form-field>
+
+  <image-upload   [max]="1"
+                  (uploadFinished)="onUploadFinished($event)"
+                  (removed)="onRemoved($event)"></image-upload>
+
+
+</form>
