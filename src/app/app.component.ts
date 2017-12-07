@@ -21,6 +21,7 @@ export class AppComponent {
         const obj = JSON.parse(localStorage.getItem('user'));
          if (obj) {
            this.userService.getUser(obj).subscribe(res => {
+                res['token'] = obj.token;
                 this.userService.setUser(res);
                 console.log(this.userService.getLocalUser());
            }, (err: HttpErrorResponse) => {

@@ -42,7 +42,7 @@ export class UserService {
       return this.http.post(url, user);
     }
     setUser(obj) {
-        this.user = new UserModel(obj.firstName, obj.lastName, obj.email, obj.isAdmin);
+        this.user = new UserModel(obj.firstName, obj.lastName, obj.email, obj.isAdmin, obj.token);
         /*this.myBool$ = Observable.of(true);
         console.log('inside set user! ', this.myBool$);
         this.boolSubject.next(true);*/

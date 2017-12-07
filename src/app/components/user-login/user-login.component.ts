@@ -40,7 +40,7 @@ export class UserLoginComponent {
             const localUserData = {
                 token: res['token'],
                 email: user.email
-            }
+            };
             // save token in localstorage
             localStorage.setItem('user', JSON.stringify(localUserData));
             this.userValidation = false;

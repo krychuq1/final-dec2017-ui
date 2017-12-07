@@ -9,10 +9,9 @@ export class EventService {
 
     constructor(private http: HttpClient) {}
 
-    getEvents(obj) {
+    getEvents(token) {
         console.log('AT GET EVENTS! IN EVENT.SERVICE:');
-        const header = new HttpHeaders().set('x-access-token', obj.token); // create header object
-        console.log('Im the token: ', obj.token);
+        const header = new HttpHeaders().set('x-access-token', token); // create header object
         const url = this.url + 'event';
         return this.http.get(url, {headers: header});
     }

@@ -1,3 +1,6 @@
+<h1 *ngIf="user">Display events:</h1>
+<div class="event-holder" *ngFor="let event of events">
+  <mat-card>  {{event.title}}</mat-card>
+</div>
 
-<h1>Hello Event! This is event.html</h1>
 <router-outlet></router-outlet>

@@ -18,6 +18,7 @@ import {EventComponent} from "./pages/event/event.component";
 import {CreateEventComponent} from "./components/create-event/create-event.component";
 import {UserRegisterComponent} from './components/user-register/user-register.component';
 import {EventService} from "./services/event.service";
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
     declarations: [
@@ -38,6 +39,7 @@ import {EventService} from "./services/event.service";
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
+        MatCardModule,
         RouterModule.forRoot(routes)
     ],
     providers: [FormBuilder, UserService, EventService],
