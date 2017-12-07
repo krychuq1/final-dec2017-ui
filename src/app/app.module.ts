@@ -17,6 +17,7 @@ import {UserLoginComponent} from "./components/user-login/user-login.component";
 import {EventComponent} from "./pages/event/event.component";
 import {CreateEventComponent} from "./components/create-event/create-event.component";
 import {UserRegisterComponent} from './components/user-register/user-register.component';
+import {EventService} from "./services/event.service";
 
 @NgModule({
     declarations: [
@@ -39,7 +40,7 @@ import {UserRegisterComponent} from './components/user-register/user-register.co
         HttpClientModule,
         RouterModule.forRoot(routes)
     ],
-    providers: [FormBuilder, UserService],
+    providers: [FormBuilder, UserService, EventService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

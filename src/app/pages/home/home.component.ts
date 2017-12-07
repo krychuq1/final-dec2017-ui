@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { EventComponent} from "../event/event.component";
 
 @Component({
   selector: 'home',
