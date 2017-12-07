@@ -16,6 +16,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {UserLoginComponent} from "./components/user-login/user-login.component";
 import {EventComponent} from "./pages/event/event.component";
 import {CreateEventComponent} from "./components/create-event/create-event.component";
+import {EventService} from "./services/event.service";
 
 @NgModule({
     declarations: [
@@ -37,7 +38,7 @@ import {CreateEventComponent} from "./components/create-event/create-event.compo
         HttpClientModule,
         RouterModule.forRoot(routes)
     ],
-    providers: [FormBuilder, UserService],
+    providers: [FormBuilder, UserService, EventService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
