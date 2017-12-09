@@ -13,7 +13,6 @@ export class AppComponent {
     constructor(private router: Router, private userService: UserService, private routeActive:ActivatedRoute,
                 private eventService: EventService ) {
         routeActive.params.subscribe(val => {
-            console.log('Im here');
             this.checkLocalStorage();
         });
     }

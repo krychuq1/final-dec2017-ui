@@ -2,9 +2,16 @@
 .header{
   padding: 0 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-content: center;
   background: $primary;
   height: 80px;
+  .logo{
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
+  }
   .actions{
     display: flex;
     align-items: center;

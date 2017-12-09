@@ -28,10 +28,7 @@
         display: flex;
         flex-direction: column;
         cursor: pointer;
-        .material-icons{
-          text-decoration-line: none;
-          color: $primary;
-        }
+
       }
       .event-card-details-container{
         flex-direction: column;

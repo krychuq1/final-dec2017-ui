@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .material-icons{
+    position: absolute;
+    left: 25px;
+    top: 90px;
+    font-size: 50px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
   .block{
     display: block;
   }

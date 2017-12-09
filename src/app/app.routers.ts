@@ -11,7 +11,7 @@ export const routes: Route[] = [
     { path: '', component: HomeComponent,  pathMatch: 'full'  },
     { path: 'user', component: UserComponent,
         children: [
-            {path: 'login', component: UserLoginComponent},
+            {path: 'login', component: UserLoginComponent, pathMatch: 'full'},
             {path: 'register', component: UserRegisterComponent}
         ]
     },

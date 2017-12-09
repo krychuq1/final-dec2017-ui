@@ -4,6 +4,7 @@ import {AppComponent} from "../../app.component";
 import {UserService} from '../../services/user.service';
 import {UserModel} from '../../models/user.model';
 import {EventModel} from '../../models/event.model';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'event',
@@ -11,23 +12,31 @@ import {EventModel} from '../../models/event.model';
     styleUrls: ['./event.scss']
 })
 export class EventComponent {
-    test: string
+    test: string;
     user: UserModel;
     events;
-    constructor(private eventService: EventService, private appComponent: AppComponent, private userService: UserService) {
-        this.test = 'hello';
-        this.userService.userUpdates.subscribe(
-            (user) => {
-                if (user) {
-                    this.getEvents(user.token);
-                    // get events
-                }else {
-                    // event to null
-                    this.events = null;
-                }
-                this.user = user;
-            }
-        );
+    showEvents;
+    constructor(private eventService: EventService, private appComponent: AppComponent, private userService: UserService,
+                private router: Router) {
+      this.test = 'hello';
+      this.showEvents = true;
+      this.user = this.userService.getLocalUser();
+      this.getEvents(this.user.token);
+      this.router.events.subscribe(event => {
+        const url = event['url'];
+        if (url && url.indexOf('create') > -1) {
+          console.log(event['url']);
+          this.showEvents = false;
+
+        }
+      });
+
+    }
+    public deleteEvent(id) {
+      console.log('we are gonna delete ', id);
+      this.eventService.deleteEvent(this.user.token, id).subscribe(res => {
+        this.getEvents(this.user.token);
+      });
     }
     private getEvents(token) {
         this.eventService.getEvents(token).subscribe(res => {

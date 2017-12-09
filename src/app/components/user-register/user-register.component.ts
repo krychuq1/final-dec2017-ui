@@ -60,5 +60,10 @@ export class UserRegisterComponent {
     this.lastNameController = this.registerForm.get('lastName');
 
   }
+  public goBack() {
+    this.userComponent.processing = false;
+    this.router.navigateByUrl('/user');
 
+
+  }
 }

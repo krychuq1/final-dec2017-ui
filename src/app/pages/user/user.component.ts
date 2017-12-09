@@ -17,6 +17,11 @@ export class UserComponent {
 
   constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router) {
     this.buildForm();
+    if (this.router.url.indexOf('/register') > -1) {
+      this.processing = true;
+    }else {
+      this.processing = false;
+    }
   }
 
   private buildForm() {
