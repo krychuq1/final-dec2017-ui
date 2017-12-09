@@ -33,6 +33,16 @@
       <mat-datepicker #startDate></mat-datepicker>
       <div *ngIf="startDateController.errors && startDateController.touched">
         <mat-error *ngIf="startDateController.errors.required">date is required</mat-error>
+
+      </div>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="start Time  (HH:MM)" formControlName="startTime" >
+      <div *ngIf="startTimeController.errors && startTimeController.touched">
+        <mat-error *ngIf="startTimeController.errors.required">time is required</mat-error>
+        <mat-error *ngIf="startTimeController.errors.pattern">time format HH:MM</mat-error>
+
       </div>
     </mat-form-field>
 
@@ -44,10 +54,28 @@
         <mat-error *ngIf="endDateController.errors.required">date is required</mat-error>
       </div>
     </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="end Time  (HH:MM)" formControlName="endTime" >
+      <div *ngIf="endTimeController.errors && endTimeController.touched">
+        <mat-error *ngIf="endTimeController.errors.required">time is required</mat-error>
+        <mat-error *ngIf="endTimeController.errors.pattern">time format HH:MM</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="block">
+      <input matInput placeholder="category" formControlName="category" >
+      <div *ngIf="categoryController.errors && categoryController.touched">
+        <mat-error *ngIf="categoryController.errors.required">category is required</mat-error>
+        <mat-error *ngIf="categoryController.errors.minLength">category should be at least to char long</mat-error>
+      </div>
+    </mat-form-field>
+
     <image-upload   [max]="1"
                     (uploadFinished)="onUploadFinished($event)"
                     (removed)="onRemoved($event)">
     </image-upload>
+    <mat-error *ngIf="imgError">{{imgError}}</mat-error>
 
     <mat-form-field class="example-full-width block">
       <textarea matInput placeholder="description" formControlName="description" ></textarea>

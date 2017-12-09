@@ -11,8 +11,6 @@
             <mat-error *ngIf="passwordController.errors.maxlength">Password should be max 20 characters</mat-error>
         </div>
     </mat-form-field>
-  {{passwordController.errors | json }} <2
-
   <button mat-raised-button color="primary" [disabled]="!loginForm.valid">Login</button>
     <!--{{passwordController.errors | json}}-->
 
