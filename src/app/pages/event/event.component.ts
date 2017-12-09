@@ -24,7 +24,8 @@ export class EventComponent {
       this.getEvents(this.user.token);
       this.router.events.subscribe(event => {
         const url = event['url'];
-        if (url && url.indexOf('create') > -1) {
+        if (url && url.indexOf('create') > -1 || url && url.indexOf('one') > -1
+        || url && url.indexOf('tickets') > -1) {
           console.log(event['url']);
           this.showEvents = false;
 

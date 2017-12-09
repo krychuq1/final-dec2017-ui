@@ -26,6 +26,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatListModule} from "@angular/material";
 import {EventDetailComponent} from './components/event-detail/eventDetail.component';
+import {TicketComponent} from './components/ticket-component/ticket.component';
 
 @NgModule({
     declarations: [
@@ -37,7 +38,8 @@ import {EventDetailComponent} from './components/event-detail/eventDetail.compon
         EventComponent,
         EventDetailComponent,
         CreateEventComponent,
-        UserRegisterComponent
+        UserRegisterComponent,
+        TicketComponent
     ],
     imports: [
         BrowserModule,

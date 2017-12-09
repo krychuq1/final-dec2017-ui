@@ -30,6 +30,9 @@
             Available seats:
             {{event.number_of_places}}
           </mat-card-subtitle>
+          <mat-card-subtitle class="normal-text">
+            <button mat-raised-button class="general-btn"  color="primary" [routerLink]="['/event/tickets/', event.id]">tickets</button>
+          </mat-card-subtitle>
         </div>
       </div>
 

@@ -6,6 +6,7 @@ import {EventComponent} from "./pages/event/event.component";
 import {CreateEventComponent} from "./components/create-event/create-event.component";
 import {UserRegisterComponent} from './components/user-register/user-register.component';
 import {EventDetailComponent} from "./components/event-detail/eventDetail.component";
+import {TicketComponent} from './components/ticket-component/ticket.component';
 
 export const routes: Route[] = [
     { path: '', component: HomeComponent,  pathMatch: 'full'  },
@@ -19,7 +20,8 @@ export const routes: Route[] = [
     {path: 'event', component: EventComponent,
         children: [
             {path: 'create', component: CreateEventComponent},
-          {path: 'one/:id', component: EventDetailComponent}
+          {path: 'one/:id', component: EventDetailComponent},
+          {path: 'tickets/:id', component: TicketComponent}
         ]
     }
 ];
