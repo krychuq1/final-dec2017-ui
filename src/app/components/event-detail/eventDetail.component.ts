@@ -18,13 +18,14 @@ import {UserModel} from "../../models/user.model";
 export class EventDetailComponent implements OnInit{
     event: EventModel;
     bookings;
-    userIds = [];
-    attendees = [];
+    userIds_purchase = [];
+    userIds_booked = [];
+    attendeesPurchased = [];
+    attendeesBooked = [];
     constructor (private eventService: EventService, private userService: UserService,
                  private route: ActivatedRoute) {
     }
     ngOnInit() {
-        console.log('nginit active +++!');
         const user = JSON.parse(localStorage.getItem('user'));
         if (user) {
             this.viewEvent(user.token, this.route.snapshot.params.id );
@@ -40,26 +41,41 @@ export class EventDetailComponent implements OnInit{
     }
     public viewListOfAttendees(token, id) {
         this.eventService.getListOfBookingsForEvent(token, id).subscribe(res => {
-            // returns the data displayed in user_event table specific for this eventId in json object form, no index
             this.bookings = res;
-            for (var index in this.bookings) {
-                this.userIds.push(this.bookings[index].userId);
-            }
-            const length = this.userIds.length;
-            for (var i = 0; i < length; i++) {
-                for (var k = 1; k < length; k++) {
-                    if (this.userIds[i] === this.userIds[k]) {
-                        this.userIds.splice(i, 1);
-                    }
+            for (var b = 0; b < this.bookings.length; b++) {
+                if (this.bookings[b].transactionStatus === 'purchased') {
+                    this.userIds_purchase.push(this.bookings[b].userId);
+                }
+                if (this.bookings[b].transactionStatus === 'booked') {
+                    this.userIds_booked.push(this.bookings[b].userId);
                 }
             }
-            console.log('The user ids who attend event: ', this.userIds);
-            for (var i = 0; i < this.userIds.length; i++){
-                this.userService.getUserById(token, this.userIds[i]).subscribe(res => {
-                    this.attendees.push(res);
-                });
-            }
-            console.log('Things that are stuck in attendees: ', this.attendees);
+            this.attendeesThatPurchasedTicket(this.spliceArray(this.userIds_purchase), token);
+            this.attendeesThatBookedTicket(this.spliceArray(this.userIds_booked), token)
         });
+    }
+    public spliceArray(userIds_purchase){
+        for (var i = 0; i < userIds_purchase.length; i++) {
+            for (var k = 1; k < userIds_purchase.length; k++) {
+                if (userIds_purchase[i] === userIds_purchase[k]) {
+                    userIds_purchase.splice(k, 1);
+                }
+            }
+        }
+        return userIds_purchase;
+    }
+    public attendeesThatPurchasedTicket (arrayUsersPurchased, token) {
+        for (var i = 0; i < arrayUsersPurchased.length; i++) {
+            this.userService.getUserById(token, arrayUsersPurchased[i]).subscribe(res => {
+                this.attendeesPurchased.push(res);
+            });
+        }
+    }
+    public attendeesThatBookedTicket (arrayUsersBooked, token) {
+        for (var i = 0; i < arrayUsersBooked.length; i++){
+            this.userService.getUserById(token, arrayUsersBooked[i]).subscribe(res => {
+                this.attendeesBooked.push(res);
+            });
+        }
     }
 }

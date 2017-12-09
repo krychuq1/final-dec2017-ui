@@ -32,7 +32,6 @@ export class UserService {
         const headers = new HttpHeaders().set('x-access-token', token); // create header object
         const url = this.url + 'getById/' + encodeURIComponent(userId);
         return this.http.get(url, {headers: headers});
-
     }
     registerUser(user) {
         const url = this.url + 'user';

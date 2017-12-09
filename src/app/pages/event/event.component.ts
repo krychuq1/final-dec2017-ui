@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EventService } from "../../services/event.service";
-import {AppComponent} from "../../app.component";
+import { EventService } from '../../services/event.service';
+import {AppComponent} from '../../app.component';
 import {UserService} from '../../services/user.service';
 import {UserModel} from '../../models/user.model';
 import {EventModel} from '../../models/event.model';
