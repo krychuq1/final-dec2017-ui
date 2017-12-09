@@ -1,0 +1,54 @@
+@import "../../../styles.scss";
+.event-holder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  min-width: 350px;
+  max-width: 800px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  .mat-card{
+    box-shadow: 0 3px 1px -2px $primary, 0 2px 2px 0 rgba(0, 0, 0, 0.51), 0 1px 5px 0 rgba(0, 0, 0, 0.38);
+    width: -webkit-fill-available;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    .mat-card-title{
+      padding-top:10px;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    .event-sub-container{
+      padding-left: 20px;
+      display: inline-flex;
+      .event-card-icons-container{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        .material-icons{
+          text-decoration-line: none;
+          color: $primary;
+        }
+      }
+      .event-card-details-container{
+        flex-direction: column;
+        padding-left: 20px;
+        .mat-card-title{
+          font-size: 20px;
+        }
+      }
+      .event-card-content{
+        align-self: center;
+        padding-left: 20px;
+        .normal-text{
+          color: black;
+          margin-top: 0px;
+          padding-top: 0%;
+        }
+      }
+    }
+  }
+}

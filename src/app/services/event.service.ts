@@ -5,26 +5,41 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class EventService {
-    url = 'http://localhost:7777/events/';
+    urlEvent = 'http://localhost:7777/events/';
+    urlBooking = 'http://localhost:7777/bookings/';
 
     constructor(private http: HttpClient) {}
 
     getEvents(token) {
-        console.log('AT GET EVENTS! IN EVENT.SERVICE:');
+        // get all events by making call to api and returning response
         const header = new HttpHeaders().set('x-access-token', token); // create header object
-        const url = this.url + 'event';
+        const url = this.urlEvent + 'event';
+        return this.http.get(url, {headers: header});
+    }
+    getEventById(token, id) {
+        // create header with token
+        const header = new HttpHeaders().set('x-access-token', token); // create header object
+        // get url api call
+        const url = this.urlEvent + 'event/' + encodeURIComponent(id);
+        // return the res from api call
+        return this.http.get(url, {headers: header});
+    }
+    getListOfAttendees(token, id){
+        // create header with token
+        const header = new HttpHeaders().set('x-access-token', token); // create header object
+        // get url api call
+        const url = this.urlBooking + 'users/' + encodeURIComponent(id);
+        // return the res from api call
         return this.http.get(url, {headers: header});
     }
     createEvent(token, event) {
-      const url = this.url + 'event';
+      const url = this.urlEvent + 'event';
       const header = new HttpHeaders().set('x-access-token', token); // create header object
       return this.http.post(url, event, {headers: header});
 
     }
     saveImage(img) {
-      const url = this.url + 'image';
-
-      console.log("gonna send ", {src: img.src});
+      const url = this.urlEvent + 'image';
       return this.http.post(url, {src: img.src});
     }
 }

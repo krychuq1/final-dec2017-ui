@@ -1,0 +1,14 @@
+@import "../../../styles.scss";
+
+.mat-tab-group{
+  .event-details-container{
+    margin: 1em;
+    display: inline-flex;
+    .label-list{
+
+    }
+    .info-list{
+      padding-left: 50px;
+    }
+  }
+}

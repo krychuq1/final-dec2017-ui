@@ -7,10 +7,11 @@ export class EventModel{
     end_date: string;
     image: string;
     description: string;
+    category: string;
     organizer_name: string;
     number_of_places: number;
     constructor(title: string, address: string, city: string, online_event: boolean, start_date: string,
-    end_date: string, image: string, description: string, organizer_name: string, number_of_places: number) {
+    end_date: string, image: string, description: string, category: string, organizer_name: string, number_of_places: number) {
         this.title = title;
         this.address = address;
         this.city = city;
@@ -19,6 +20,7 @@ export class EventModel{
         this.end_date = end_date;
         this.image = image;
         this.description = description;
+        this.category = category;
         this.organizer_name = organizer_name;
         this.number_of_places = number_of_places;
     }
