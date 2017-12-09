@@ -19,6 +19,13 @@ import {CreateEventComponent} from "./components/create-event/create-event.compo
 import {UserRegisterComponent} from './components/user-register/user-register.component';
 import {EventService} from "./services/event.service";
 import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
+import { ImageUploadModule } from 'angular2-image-upload';
+import {MatIconModule} from '@angular/material/icon';
+import {EventDetailComponent} from "./pages/event/eventDetail.component";
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatListModule} from "@angular/material";
 
 @NgModule({
     declarations: [
@@ -28,6 +35,7 @@ import {MatCardModule} from '@angular/material/card';
         HomeComponent,
         UserLoginComponent,
         EventComponent,
+        EventDetailComponent,
         CreateEventComponent,
         UserRegisterComponent
     ],
@@ -35,12 +43,19 @@ import {MatCardModule} from '@angular/material/card';
         BrowserModule,
         MatButtonModule,
         MatInputModule,
+        MatTabsModule,
         BrowserAnimationsModule,
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
         MatCardModule,
-        RouterModule.forRoot(routes)
+      MatDatepickerModule,
+      MatNativeDateModule,
+      MatIconModule,
+      MatListModule,
+      ImageUploadModule.forRoot(),
+      RouterModule.forRoot(routes)
+
     ],
     providers: [FormBuilder, UserService, EventService],
     bootstrap: [AppComponent]
