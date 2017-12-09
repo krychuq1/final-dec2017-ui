@@ -28,9 +28,15 @@ export class UserService {
         // return the res from api call
         return this.http.get(url, {headers: headers});
     }
+    getUserById(token, userId) {
+        const headers = new HttpHeaders().set('x-access-token', token); // create header object
+        const url = this.url + 'getById/' + encodeURIComponent(userId);
+        return this.http.get(url, {headers: headers});
+
+    }
     registerUser(user) {
-      const url = this.url + 'user';
-      return this.http.post(url, user);
+        const url = this.url + 'user';
+        return this.http.post(url, user);
     }
     setUser(obj) {
         this.user = new UserModel(obj.firstName, obj.lastName, obj.email, obj.isAdmin, obj.token);

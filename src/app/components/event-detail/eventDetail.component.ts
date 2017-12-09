@@ -4,6 +4,9 @@ import {UserService} from '../../services/user.service';
 import {ActivatedRoute} from "@angular/router";
 import 'rxjs/add/operator/switchMap';
 import {EventModel} from "../../models/event.model";
+import {forEach} from "@angular/router/src/utils/collection";
+import {attachEmbeddedView} from "@angular/core/src/view";
+import {UserModel} from "../../models/user.model";
 
 
 @Component({
@@ -15,6 +18,8 @@ import {EventModel} from "../../models/event.model";
 export class EventDetailComponent implements OnInit{
     event: EventModel;
     bookings;
+    userIds = [];
+    attendees = [];
     constructor (private eventService: EventService, private userService: UserService,
                  private route: ActivatedRoute) {
     }
@@ -29,13 +34,32 @@ export class EventDetailComponent implements OnInit{
     public viewEvent(token, id) {
         this.eventService.getEventById(token, id).subscribe(res => {
             this.event = new EventModel(res['title'], res['address'], res['city'],
-            res['online_event'], res['start_date'], res['end_date'], res['image'],
-            res['description'], res['category'], res['organizer_name'], res['number_of_places']);
+                res['online_event'], res['start_date'], res['end_date'], res['image'],
+                res['description'], res['category'], res['organizer_name'], res['number_of_places']);
         });
     }
     public viewListOfAttendees(token, id) {
-        this.eventService.getListOfAttendees(token, id).subscribe(res => {
+        this.eventService.getListOfBookingsForEvent(token, id).subscribe(res => {
+            // returns the data displayed in user_event table specific for this eventId in json object form, no index
             this.bookings = res;
+            for (var index in this.bookings) {
+                this.userIds.push(this.bookings[index].userId);
+            }
+            const length = this.userIds.length;
+            for (var i = 0; i < length; i++) {
+                for (var k = 1; k < length; k++) {
+                    if (this.userIds[i] === this.userIds[k]) {
+                        this.userIds.splice(i, 1);
+                    }
+                }
+            }
+            console.log('The user ids who attend event: ', this.userIds);
+            for (var i = 0; i < this.userIds.length; i++){
+                this.userService.getUserById(token, this.userIds[i]).subscribe(res => {
+                    this.attendees.push(res);
+                });
+            }
+            console.log('Things that are stuck in attendees: ', this.attendees);
         });
     }
 }
