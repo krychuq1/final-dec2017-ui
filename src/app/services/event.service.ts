@@ -24,13 +24,13 @@ export class EventService {
         // return the res from api call
         return this.http.get(url, {headers: header});
     }
-    getListOfAttendees(token, id){
-        // create header with token
-        const header = new HttpHeaders().set('x-access-token', token); // create header object
-        // get url api call
-        const url = this.urlBooking + 'users/' + encodeURIComponent(id);
-        // return the res from api call
-        return this.http.get(url, {headers: header});
+    getListOfBookingsForEvent(token, id){
+         // create header with token
+         const header = new HttpHeaders().set('x-access-token', token); // create header object
+         // get url api call
+         const url = this.urlBooking + 'users/' + encodeURIComponent(id);
+         // return the res from api call
+         return this.http.get(url, {headers: header});
     }
     createEvent(token, event) {
       const url = this.urlEvent + 'event';
