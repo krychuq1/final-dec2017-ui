@@ -1,36 +1,79 @@
 <p>Event Details</p>
-<form [formGroup]="eventForm" (ngSubmit)="createEvent()">
-  <mat-form-field class="example-full-width block">
-    <input matInput placeholder="event title" formControlName="title" >
-    <div *ngIf="titleController.errors && titleController.touched">
-      <mat-error *ngIf="titleController.errors.required">event title is required</mat-error>
-      <mat-error *ngIf="titleController.errors.minlength">Title should be at least 5 char long</mat-error>
-    </div>
-  </mat-form-field>
-
-  <mat-form-field class="example-full-width block">
-    <input matInput placeholder="location" formControlName="location" >
-    <div *ngIf="locationController.errors && locationController.touched">
-      <mat-error *ngIf="locationController.errors.required">event location is required</mat-error>
-      <mat-error *ngIf="locationController.errors.minlength">Title should be at least 5 char long</mat-error>
-    </div>
-  </mat-form-field>
-
-  <mat-form-field>
-    <input matInput [matDatepicker]="startDate" placeholder="start  date">
-    <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
-    <mat-datepicker #startDate></mat-datepicker>
-  </mat-form-field>
-
-  <mat-form-field>
-    <input matInput [matDatepicker]="endDate" placeholder="end date">
-    <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
-    <mat-datepicker #endDate></mat-datepicker>
-  </mat-form-field>
-
-  <image-upload   [max]="1"
-                  (uploadFinished)="onUploadFinished($event)"
-                  (removed)="onRemoved($event)"></image-upload>
+<div class="formHolder">
+  <form [formGroup]="eventForm" (ngSubmit)="createEvent()">
+    <mat-form-field class="example-full-width block">
+      <input matInput placeholder="event title" formControlName="title" >
+      <div *ngIf="titleController.errors && titleController.touched">
+        <mat-error *ngIf="titleController.errors.required">event title is required</mat-error>
+        <mat-error *ngIf="titleController.errors.minlength">Title should be at least 5 char long</mat-error>
+      </div>
+    </mat-form-field>
 
 
-</form>
+    <mat-form-field class="example-full-width block">
+      <input matInput placeholder="location" formControlName="location" >
+      <div *ngIf="locationController.errors && locationController.touched">
+        <mat-error *ngIf="locationController.errors.required">location is required</mat-error>
+        <mat-error *ngIf="locationController.errors.minlength">location should be min 5 characters</mat-error>
+        <mat-error *ngIf="locationController.errors.maxlength">location should be max 400 characters</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width block">
+      <input matInput placeholder="city" formControlName="city" >
+      <div *ngIf="cityController.errors && cityController.touched">
+        <mat-error *ngIf="cityController.errors.required">city is required</mat-error>
+        <mat-error *ngIf="cityController.errors.minlength">city should be min 2 characters</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="startDate" placeholder="start date" formControlName="startDate">
+      <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+      <mat-datepicker #startDate></mat-datepicker>
+      <div *ngIf="startDateController.errors && startDateController.touched">
+        <mat-error *ngIf="startDateController.errors.required">date is required</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="endDate" placeholder="end date" formControlName="endDate">
+      <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+      <mat-datepicker #endDate></mat-datepicker>
+      <div *ngIf="endDateController.errors && endDateController.touched">
+        <mat-error *ngIf="endDateController.errors.required">date is required</mat-error>
+      </div>
+    </mat-form-field>
+    <image-upload   [max]="1"
+                    (uploadFinished)="onUploadFinished($event)"
+                    (removed)="onRemoved($event)">
+    </image-upload>
+
+    <mat-form-field class="example-full-width block">
+      <textarea matInput placeholder="description" formControlName="description" ></textarea>
+      <div *ngIf="descriptionController.errors && descriptionController.touched">
+        <mat-error *ngIf="descriptionController.errors.required">event description is required</mat-error>
+        <mat-error *ngIf="descriptionController.errors.minlength">description should be at least 20 char long</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width block">
+      <textarea matInput placeholder="organizer name" formControlName="organizer" ></textarea>
+      <div *ngIf="organizerController.errors && organizerController.touched">
+        <mat-error *ngIf="organizerController.errors.required">event organizer name is required</mat-error>
+        <mat-error *ngIf="organizerController.errors.minlength">organizer name  should be at least 2 char long</mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width block">
+      <textarea matInput placeholder="number of people" formControlName="numberOfPlaces" ></textarea>
+      <div *ngIf="numberOfPlacesController.errors && numberOfPlacesController.touched">
+        <mat-error *ngIf="numberOfPlacesController.errors.required">number of people  is required</mat-error>
+        <mat-error *ngIf="numberOfPlacesController.errors.pattern">Number of people has to be a number :D</mat-error>
+      </div>
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="!eventForm.valid">Get Started</button>
+
+  </form>
+</div>
+

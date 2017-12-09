@@ -15,6 +15,12 @@ export class EventService {
         const url = this.url + 'event';
         return this.http.get(url, {headers: header});
     }
+    createEvent(token, event) {
+      const url = this.url + 'event';
+      const header = new HttpHeaders().set('x-access-token', token); // create header object
+      return this.http.post(url, event, {headers: header});
+
+    }
     saveImage(img) {
       const url = this.url + 'image';
 
