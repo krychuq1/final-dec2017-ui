@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {UserService} from "../../services/user.service";
 import {UserModel} from "../../models/user.model";
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,7 @@ import {UserModel} from "../../models/user.model";
 })
 export class HeaderComponent {
     user: UserModel;
-    constructor(private userService: UserService) {
+    constructor(private userService: UserService, private router: Router) {
 
         this.userService.userUpdates.subscribe(
             (user) => {
@@ -23,5 +24,11 @@ export class HeaderComponent {
     }
     logOut() {
       this.userService.logOut();
+      this.router.navigateByUrl('');
+
+    }
+    goHome() {
+      this.router.navigateByUrl('');
+
     }
 }
