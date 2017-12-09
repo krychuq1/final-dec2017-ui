@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EventService } from "../../services/event.service";
-import {AppComponent} from "../../app.component";
+import { EventService } from '../../services/event.service';
+import {AppComponent} from '../../app.component';
 import {UserService} from '../../services/user.service';
 import {UserModel} from '../../models/user.model';
 import {EventModel} from '../../models/event.model';
@@ -24,7 +24,7 @@ export class EventComponent {
       this.getEvents(this.user.token);
       this.router.events.subscribe(event => {
         const url = event['url'];
-        if (url && url.indexOf('create') > -1) {
+        if (url && url.indexOf('create') > -1 || url && url.indexOf('one') > -1) {
           console.log(event['url']);
           this.showEvents = false;
 
