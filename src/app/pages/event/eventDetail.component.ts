@@ -5,36 +5,40 @@ import {UserService} from '../../services/user.service';
 import {UserModel} from '../../models/user.model';
 import {ActivatedRoute, Router} from "@angular/router";
 import 'rxjs/add/operator/switchMap';
+import {EventModel} from "../../models/event.model";
+import {BookingModel} from "../../models/booking.model";
 
 
 @Component({
     selector: 'event-detail',
     templateUrl: './eventDetails.html',
-    styleUrls: ['./event.scss']
+    styleUrls: ['./eventDetails.scss']
 })
 
-export class EventDetailComponent {
-/*    userToken;
-    user: UserModel;
+export class EventDetailComponent implements OnInit{
+    event: EventModel;
+    bookings;
     constructor (private eventService: EventService, private userService: UserService,
                  private route: ActivatedRoute) {
     }
     ngOnInit() {
-        this.userService.userUpdates.subscribe(
-            (user) => {
-                if (user) {
-                    this.userToken = user.token;
-                }
-                this.user = user;
-            }
-        );
-        console.log(this.route.snapshot.params.id);
-        this.viewEvent(this.route.snapshot.params.id, this.userToken)
+        console.log('nginit active +++!');
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            this.viewEvent(user.token, this.route.snapshot.params.id );
+            this.viewListOfAttendees(user.token, this.route.snapshot.params.id);
+        }
     }
     public viewEvent(token, id) {
         this.eventService.getEventById(token, id).subscribe(res => {
-            const response = res;
-            console.log('Response is: ', response);
+            this.event = new EventModel(res['title'], res['address'], res['city'],
+            res['online_event'], res['start_date'], res['end_date'], res['image'],
+            res['description'], res['category'], res['organizer_name'], res['number_of_places']);
         });
-    }*/
+    }
+    public viewListOfAttendees(token, id) {
+        this.eventService.getListOfAttendees(token, id).subscribe(res => {
+            this.bookings = res;
+        });
+    }
 }

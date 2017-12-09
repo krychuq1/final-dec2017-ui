@@ -1,26 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ViewEvent</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-
 <mat-tab-group>
     <mat-tab label="Details">
-        <mat-list role="list">
-            <div class = "elements-container">
-                <label>Event title</label>
-                <label>{{event.title}}</label>
-            </div>
-
-        </mat-list>
+        <div class="event-details-container" *ngIf="event">
+            <mat-list class="label-list">
+                <mat-list-item> Title: </mat-list-item>
+                <mat-list-item> Category: </mat-list-item>
+                <mat-list-item> Start date: </mat-list-item>
+                <mat-list-item> End date: </mat-list-item>
+                <mat-list-item> Online event: </mat-list-item>
+                <mat-list-item> Address: </mat-list-item>
+                <mat-list-item> City: </mat-list-item>
+                <mat-list-item> Organizer: </mat-list-item>
+            </mat-list>
+            <mat-list class="info-list">
+                <mat-list-item> {{event.title}} </mat-list-item>
+                <mat-list-item> {{event.category}} </mat-list-item>
+                <mat-list-item> {{event.start_date}} </mat-list-item>
+                <mat-list-item> {{event.end_date}} </mat-list-item>
+                <mat-list-item> {{event.online_event}} </mat-list-item>
+                <mat-list-item> {{event.address}} </mat-list-item>
+                <mat-list-item> {{event.city}} </mat-list-item>
+                <mat-list-item> {{event.organizer_name}} </mat-list-item>
+            </mat-list>
+        </div>
+    </mat-tab>
+    <mat-tab label="Attendees">
+        <div *ngFor="let book of bookings">
+            <mat-card>{{book.transactionStatus}}</mat-card>
+        </div>
     </mat-tab>
     <mat-tab label="Statistics">
         <h1>Test1</h1>
+        <p>Number of tickets bought since the event started --> chart with data from start date until end date? what would be an easier option?</p>
+        <p>Number of users who booked this event</p>
+        <p>Event category?</p>
+        <p>comparing this event with the rest of its category?</p>
     </mat-tab>
 </mat-tab-group>
 
-</body>
-</html>
+<router-outlet></router-outlet>
