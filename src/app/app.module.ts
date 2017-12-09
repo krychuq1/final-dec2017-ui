@@ -23,9 +23,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
 import { ImageUploadModule } from 'angular2-image-upload';
 import {MatIconModule} from '@angular/material/icon';
-import {EventDetailComponent} from "./pages/event/eventDetail.component";
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatListModule} from "@angular/material";
+import {EventDetailComponent} from './components/event-detail/eventDetail.component';
 
 @NgModule({
     declarations: [

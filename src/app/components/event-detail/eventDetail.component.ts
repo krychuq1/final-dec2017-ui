@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from "../../services/event.service";
-import { EventComponent } from "./event.component";
 import {UserService} from '../../services/user.service';
-import {UserModel} from '../../models/user.model';
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 import 'rxjs/add/operator/switchMap';
 import {EventModel} from "../../models/event.model";
-import {BookingModel} from "../../models/booking.model";
 
 
 @Component({
