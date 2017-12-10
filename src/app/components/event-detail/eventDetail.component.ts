@@ -40,6 +40,7 @@ export class EventDetailComponent implements OnInit{
             this.event = new EventModel(res['title'], res['address'], res['city'],
                 res['online_event'], res['start_date'], res['end_date'], res['image'],
                 res['description'], res['category'], res['organizer_name'], res['number_of_places']);
+            console.log('This is your event: ', this.event);
         });
     }
     public viewListOfAttendees(token, id) {
