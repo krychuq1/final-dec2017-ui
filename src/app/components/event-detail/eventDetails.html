@@ -1,26 +1,31 @@
-<mat-tab-group>
+<mat-tab-group *ngIf="event">
     <mat-tab label="Details">
-        <div class="event-details-container" *ngIf="event">
-            <mat-list class="label-list">
-                <mat-list-item> Title: </mat-list-item>
-                <mat-list-item> Category: </mat-list-item>
-                <mat-list-item> Start date: </mat-list-item>
-                <mat-list-item> End date: </mat-list-item>
-                <mat-list-item> Online event: </mat-list-item>
-                <mat-list-item> Address: </mat-list-item>
-                <mat-list-item> City: </mat-list-item>
-                <mat-list-item> Organizer: </mat-list-item>
-            </mat-list>
-            <mat-list class="info-list">
-                <mat-list-item> {{event.title}} </mat-list-item>
-                <mat-list-item> {{event.category}} </mat-list-item>
-                <mat-list-item> {{event.start_date}} </mat-list-item>
-                <mat-list-item> {{event.end_date}} </mat-list-item>
-                <mat-list-item> {{event.online_event}} </mat-list-item>
-                <mat-list-item> {{event.address}} </mat-list-item>
-                <mat-list-item> {{event.city}} </mat-list-item>
-                <mat-list-item> {{event.organizer_name}} </mat-list-item>
-            </mat-list>
+        <div id="main-event-details-container">
+            <div class="event-image-container">
+                <img src="http://localhost:7777/images/{{event.image}}" class="event-image" alt="testImage">
+            </div>
+            <div class="event-details-container" *ngIf="event">
+                <mat-list class="label-list">
+                    <mat-list-item> Title: </mat-list-item>
+                    <mat-list-item> Category: </mat-list-item>
+                    <mat-list-item> Start date: </mat-list-item>
+                    <mat-list-item> End date: </mat-list-item>
+                    <mat-list-item> Online event: </mat-list-item>
+                    <mat-list-item> Address: </mat-list-item>
+                    <mat-list-item> City: </mat-list-item>
+                    <mat-list-item> Organizer: </mat-list-item>
+                </mat-list>
+                <mat-list class="info-list">
+                    <mat-list-item> {{event.title}} </mat-list-item>
+                    <mat-list-item> {{event.category}} </mat-list-item>
+                    <mat-list-item> {{event.start_date}} </mat-list-item>
+                    <mat-list-item> {{event.end_date}} </mat-list-item>
+                    <mat-list-item> {{event.online_event}} </mat-list-item>
+                    <mat-list-item> {{event.address}} </mat-list-item>
+                    <mat-list-item> {{event.city}} </mat-list-item>
+                    <mat-list-item> {{event.organizer_name}} </mat-list-item>
+                </mat-list>
+            </div>
         </div>
     </mat-tab>
     <mat-tab label="Attendees">

@@ -1,14 +1,52 @@
 @import "../../../styles";
-
-.mat-tab-group{
-  .event-details-container{
+#main-event-details-container {
+  display: block;
+  .event-image-container {
     margin: 1em;
-    display: inline-flex;
-    .label-list{
-
+    border: 1px solid darkblue;
+    max-width: 385px;
+    text-align: center;
+    .event-image {
+      width: 385px;
+      height: 385px;
+      border-radius: 25%;
     }
-    .info-list{
-      padding-left: 50px;
+  }
+  .event-details-container {
+    margin: 1em;
+    text-align: center;
+    display: inline-flex;
+    border: 1px solid darkblue;
+    min-width: 385px;
+    .label-list {}
+    .info-list {}
+  }
+}
+/**
+ * Bigger than 767px mobile
+ */
+@include breakpoint($small) {
+  #main-event-details-container {
+    display: inline-flex;
+    .event-image-container {
+      margin: 1em;
+      padding-left: 3em;
+      .event-image {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+    }
+    .event-details-container {
+      margin: 1em;
+      padding-left: 3em;
+      display: inline-flex;
+      .label-list {
+
+      }
+      .info-list {
+
+      }
     }
   }
 }

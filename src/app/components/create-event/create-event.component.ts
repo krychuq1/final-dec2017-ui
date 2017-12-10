@@ -69,7 +69,7 @@ export class CreateEventComponent implements OnInit {
     this.imgError = false;
     this.eventService.saveImage(this.img).subscribe(res => {
       this.img_url = res['imgUrl'];
-      console.log(this.img_url );
+      console.log('This is image url after image was uploaded and saved: ', this.img_url );
     }, err => {
       this.imgError = 'Image is too big please upload img smaller than 5mb';
       console.log(err);
