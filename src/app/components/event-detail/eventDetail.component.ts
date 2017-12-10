@@ -22,14 +22,17 @@ export class EventDetailComponent implements OnInit{
     userIds_booked = [];
     attendeesPurchased = [];
     attendeesBooked = [];
+    eventId;
+    user;
     constructor (private eventService: EventService, private userService: UserService,
                  private route: ActivatedRoute) {
     }
     ngOnInit() {
-        const user = JSON.parse(localStorage.getItem('user'));
-        if (user) {
-            this.viewEvent(user.token, this.route.snapshot.params.id );
-            this.viewListOfAttendees(user.token, this.route.snapshot.params.id);
+        this.user = JSON.parse(localStorage.getItem('user'));
+        if (this.user) {
+            this.eventId = this.route.snapshot.params.id;
+            this.viewEvent(this.user.token, this.eventId );
+            this.viewListOfAttendees(this.user.token, this.route.snapshot.params.id);
         }
     }
     public viewEvent(token, id) {

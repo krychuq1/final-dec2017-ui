@@ -26,7 +26,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatListModule} from "@angular/material";
 import {EventDetailComponent} from './components/event-detail/eventDetail.component';
+import {TicketService} from './services/ticket.service';
 import {TicketComponent} from './components/ticket-component/ticket.component';
+import {AddTicketComponent} from './components/add-ticket/add-ticket.component';
 
 @NgModule({
     declarations: [
@@ -39,7 +41,8 @@ import {TicketComponent} from './components/ticket-component/ticket.component';
         EventDetailComponent,
         CreateEventComponent,
         UserRegisterComponent,
-        TicketComponent
+        TicketComponent,
+      AddTicketComponent
     ],
     imports: [
         BrowserModule,
@@ -59,7 +62,7 @@ import {TicketComponent} from './components/ticket-component/ticket.component';
       RouterModule.forRoot(routes)
 
     ],
-    providers: [FormBuilder, UserService, EventService],
+    providers: [FormBuilder, UserService, EventService, TicketService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

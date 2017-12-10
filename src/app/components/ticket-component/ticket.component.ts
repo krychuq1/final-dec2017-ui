@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {UserModel} from '../../models/user.model';
 import {ActivatedRoute, Router} from '@angular/router';
+import {TicketService} from '../../services/ticket.service';
 
 
 @Component({
@@ -9,20 +9,25 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./ticket.scss']
 })
 export class TicketComponent implements OnInit {
-  constructor(private router: ActivatedRoute) {
+  tickets;
+  eventId;
+  constructor(private router: ActivatedRoute, private ticketService: TicketService) {
 
   }
 
   ngOnInit(): void {
-    const eventId = this.router.snapshot.params.id;
+     this.eventId = this.router.snapshot.params.id;
     const user = JSON.parse(localStorage.getItem('user'));
     if (user) {
-
+        this.getTickets(user.token, this.eventId);
     }
   }
 
-  private getTickets(){
-
+  public getTickets(token, eventId) {
+    this.ticketService.getTicketsForEvent(token, eventId).subscribe(res => {
+      this.tickets = res;
+      console.log(this.tickets);
+    })
   }
 
 

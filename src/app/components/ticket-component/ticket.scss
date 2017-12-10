@@ -1,0 +1,14 @@
+.ticket-holder{
+  padding: 20px;
+}
+.ticket-des-holder{
+  display: flex;
+}
+.ticket-sub-container{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  span{
+    color: black;
+  }
+}

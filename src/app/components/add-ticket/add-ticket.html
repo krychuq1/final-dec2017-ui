@@ -1,0 +1,37 @@
+<div class="createTicket">
+  <h1>add ticket</h1>
+  <div class="formHolder">
+    <form [formGroup]="ticketForm" (ngSubmit)="createTicket()">
+
+      <mat-form-field class="example-full-width block">
+        <input matInput placeholder="ticket type" formControlName="type" >
+        <div *ngIf="typeController.errors && typeController.touched">
+          <mat-error *ngIf="typeController.errors.required">type  is required</mat-error>
+          <mat-error *ngIf="typeController.errors.minlength">type should be at least 3 char long</mat-error>
+        </div>
+      </mat-form-field>
+
+
+      <mat-form-field class="example-full-width block">
+        <input matInput placeholder="currency" formControlName="currency" >
+        <div *ngIf="currencyController.errors && currencyController.touched">
+          <mat-error *ngIf="currencyController.errors.required">currency is required</mat-error>
+          <mat-error *ngIf="currencyController.errors.minlength">currency should be min 3 characters</mat-error>
+        </div>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width block">
+        <input matInput placeholder="price" formControlName="price" >
+        <div *ngIf="priceController.errors && priceController.touched">
+          <mat-error *ngIf="priceController.errors.required">price is required</mat-error>
+          <mat-error *ngIf="priceController.errors.pattern">price should be a number</mat-error>
+        </div>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" [disabled]="!ticketForm.valid">create ticket</button>
+
+    </form>
+  </div>
+</div>
+
+
