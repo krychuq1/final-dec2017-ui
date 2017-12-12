@@ -1,10 +1,22 @@
 <div class="home">
-  <button *ngIf="user" mat-raised-button class="general-btn"  color="primary" routerLink="user-admin">Users</button>
+<button *ngIf="user" mat-raised-button class="general-btn"  color="primary" routerLink="user-admin">Users</button>
 
-  <event *ngIf="user"></event>
+<event *ngIf="user"></event>
+<div class="event-holder" *ngFor="let event of event" >
+    <!-- {{event | json}}-->
 
-  <p *ngIf="!user">Please login to get events</p>
+    <mat-card routerLink="/user/login">
+        <img src="http://localhost:7777/images/{{event.image}}" class="image-display">
+        <div class="event-details">
+            <div class="event-date-time">{{event.start_date}}, {{event.start_time}}</div>
+            <div class="event-title">{{event.title}}</div>
+            <div class="event-address">{{event.address}}</div>
+        </div>
+        <div class="event-detail-footer">
+            <div class="event-category">{{event.category}}</div>
+        </div>
+    </mat-card>
 </div>
 <router-outlet></router-outlet>
 
-
+</div>
