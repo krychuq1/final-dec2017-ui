@@ -8,6 +8,7 @@ import {UserRegisterComponent} from './components/user-register/user-register.co
 import {EventDetailComponent} from "./components/event-detail/eventDetail.component";
 import {TicketComponent} from './components/ticket-component/ticket.component';
 import {AddTicketComponent} from './components/add-ticket/add-ticket.component';
+import {UserAdminComponent} from "./pages/users-admin/user-admin.component";
 
 export const routes: Route[] = [
     { path: '', component: HomeComponent,  pathMatch: 'full'  },
@@ -17,16 +18,15 @@ export const routes: Route[] = [
             {path: 'register', component: UserRegisterComponent}
         ]
     },
-    // {path: 'event/:id', component: EventDetailComponent},
     {path: 'event', component: EventComponent,
         children: [
-            {path: 'create', component: CreateEventComponent},
+           {path: 'create', component: CreateEventComponent},
           {path: 'one/:id', component: EventDetailComponent},
-
-
           {path: 'tickets/:id', component: TicketComponent, children: [{
             path: 'create/:id', component: AddTicketComponent
             }]}
         ]
-    }
+    },
+  {path: 'user-admin', component: UserAdminComponent}
+
 ];
