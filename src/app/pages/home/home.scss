@@ -1,0 +1,15 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  button{
+    width: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin: 20px 20px 0 0;
+    //display: block;
+    //margin-left: 100%;
+    //margin-right: 90px;
+  }
+}

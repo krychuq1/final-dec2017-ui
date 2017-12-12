@@ -1,2 +1,10 @@
-<event *ngIf="user"></event>
-<p *ngIf="!user">Please login to get events</p>
+<div class="home">
+  <button *ngIf="user" mat-raised-button class="general-btn"  color="primary" routerLink="user-admin">Users</button>
+
+  <event *ngIf="user"></event>
+
+  <p *ngIf="!user">Please login to get events</p>
+</div>
+<router-outlet></router-outlet>
+
+

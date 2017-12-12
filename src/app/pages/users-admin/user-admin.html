@@ -1,0 +1,23 @@
+<div class="user-admin">
+  <div *ngIf="doughnutChartData" class="user-goal">
+    <p>Users to complete goals: {{userGoal - numberOfUsers}}</p>
+    <canvas  baseChart
+             [data]="doughnutChartData"
+             [labels]="doughnutChartLabels"
+             [chartType]="doughnutChartType"
+             (chartHover)="chartHovered($event)"
+             (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>
+  <div *ngIf="genderData" class="user-goal">
+    <p>Chart showing user's gender: </p>
+    <canvas  baseChart
+             [data]="genderData"
+             [labels]="genderLabels"
+             [chartType]="doughnutChartType"
+             (chartHover)="chartHovered($event)"
+             (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>
+</div>
+

@@ -20,6 +20,11 @@ export class UserService {
         const url = this.url + 'authenticate/' + encodeURIComponent(user.email) + '/' + encodeURIComponent(user.password);
         return this.http.get(url);
     }
+    getAllUsers(token) : Observable<any> {
+      const  url = this.url + 'user/';
+      const headers = new HttpHeaders().set('x-access-token', token); // create header object
+      return this.http.get(url, {headers: headers});
+    }
     getUser(obj) {
         // create header with token
         const headers = new HttpHeaders().set('x-access-token', obj.token); // create header object
