@@ -16,6 +16,10 @@ export class EventService {
         const url = this.urlEvent + 'event';
         return this.http.get(url, {headers: header});
     }
+    getAllEvents_allAccess() {
+        const url = this.urlEvent + 'event/all';
+        return this.http.get(url);
+    }
     getEventById(token, id) {
         // create header with token
         const header = new HttpHeaders().set('x-access-token', token); // create header object
