@@ -5,6 +5,7 @@ import {UserService} from '../../services/user.service';
 import {UserModel} from '../../models/user.model';
 import {EventModel} from '../../models/event.model';
 import {Router} from '@angular/router';
+import {UserBookingService} from "../../services/user-booking.service";
 
 @Component({
     selector: 'event',
@@ -16,8 +17,10 @@ export class EventComponent {
     user: UserModel;
     events;
     showEvents;
+    availableSets;
+    userBookings;
     constructor(private eventService: EventService, private appComponent: AppComponent, private userService: UserService,
-                private router: Router) {
+                private router: Router, private userBookingService: UserBookingService) {
       this.test = 'hello';
       this.showEvents = true;
       this.user = this.userService.getLocalUser();
@@ -41,8 +44,20 @@ export class EventComponent {
     }
     private getEvents(token) {
         this.eventService.getEvents(token).subscribe(res => {
+          this.userBookingService.getAll().subscribe(bookings => {
+            this.userBookings = bookings;
             this.events = res;
-            console.log('Response is: ', res);
+            console.log(res[0]);
+            this.events.forEach(obj => {
+              if(this.userBookings[obj.id]) {
+                console.log('match', this.userBookings[obj.id].lenght);
+                obj['percentage'] = 100 - ((this.userBookings[obj.id].length / obj.number_of_places ) * 100);
+                obj.number_of_places = obj.number_of_places - this.userBookings[obj.id].length;
+                console.log(obj['percentage'], 'this is percentage')
+              }
+              // console.log(obj.number_of_places, obj.id);
+            });
+          })
         })
     }
 }

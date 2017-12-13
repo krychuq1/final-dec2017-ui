@@ -30,6 +30,8 @@ import {TicketComponent} from './components/ticket-component/ticket.component';
 import {AddTicketComponent} from './components/add-ticket/add-ticket.component';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import {UserAdminComponent} from './pages/users-admin/user-admin.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {UserBookingService} from "./services/user-booking.service";
 
 @NgModule({
     declarations: [
@@ -43,8 +45,8 @@ import {UserAdminComponent} from './pages/users-admin/user-admin.component';
         CreateEventComponent,
         UserRegisterComponent,
         TicketComponent,
-      UserAdminComponent,
-      AddTicketComponent
+        UserAdminComponent,
+        AddTicketComponent
     ],
     imports: [
         BrowserModule,
@@ -56,16 +58,17 @@ import {UserAdminComponent} from './pages/users-admin/user-admin.component';
         ReactiveFormsModule,
         HttpClientModule,
         MatCardModule,
-      MatDatepickerModule,
-      MatNativeDateModule,
-      MatIconModule,
-      MatListModule,
-      ChartsModule,
-      ImageUploadModule.forRoot(),
-      RouterModule.forRoot(routes)
+        MatProgressBarModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatIconModule,
+        MatListModule,
+        ChartsModule,
+        ImageUploadModule.forRoot(),
+        RouterModule.forRoot(routes)
 
     ],
-    providers: [FormBuilder, UserService, EventService, TicketService],
+    providers: [FormBuilder, UserService, EventService, TicketService, UserBookingService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

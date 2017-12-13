@@ -27,6 +27,12 @@
             {{event.city}}
           </mat-card-subtitle>
           <mat-card-subtitle class="normal-text">
+            <mat-progress-bar *ngIf="event.percentage" mode="determinate" value="{{event.percentage}}">
+
+            </mat-progress-bar>
+            <mat-progress-bar *ngIf="!event.percentage" mode="determinate" value="100">
+
+            </mat-progress-bar>
             Available seats:
             {{event.number_of_places}}
           </mat-card-subtitle>
