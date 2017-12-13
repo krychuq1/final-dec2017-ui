@@ -86,7 +86,7 @@
     </mat-form-field>
 
     <mat-form-field class="example-full-width block">
-      <textarea matInput placeholder="organizer name" formControlName="organizer" ></textarea>
+      <input matInput placeholder="organizer name" formControlName="organizer" >
       <div *ngIf="organizerController.errors && organizerController.touched">
         <mat-error *ngIf="organizerController.errors.required">event organizer name is required</mat-error>
         <mat-error *ngIf="organizerController.errors.minlength">organizer name  should be at least 2 char long</mat-error>
@@ -94,7 +94,7 @@
     </mat-form-field>
 
     <mat-form-field class="example-full-width block">
-      <textarea matInput placeholder="number of people" formControlName="numberOfPlaces" ></textarea>
+      <input matInput placeholder="number of people" formControlName="numberOfPlaces" >
       <div *ngIf="numberOfPlacesController.errors && numberOfPlacesController.touched">
         <mat-error *ngIf="numberOfPlacesController.errors.required">number of people  is required</mat-error>
         <mat-error *ngIf="numberOfPlacesController.errors.pattern">Number of people has to be a number :D</mat-error>
