@@ -1,7 +1,9 @@
 .general-btn{
-  background-color: $white;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid #b6b6b6;
 }
 .material-icons{
   text-decoration-line: none;
-  color: $primary;
+  color: $secondary;
 }

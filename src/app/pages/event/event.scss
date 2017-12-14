@@ -1,4 +1,9 @@
 @import "../../../styles.scss";
+.currentEvents{
+  margin-left: 25px;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
 .event-holder{
   display: flex;
   flex-direction: column;
@@ -9,37 +14,61 @@
   margin-left: 20px;
   margin-right: 20px;
   padding: 5px;
+  h1{
+    font-size: 1.2rem;
+    color: #00695c;
+    margin-left: 20px;
+  }
   .mat-card{
-    box-shadow: 0 3px 1px -2px $primary, 0 2px 2px 0 rgba(0, 0, 0, 0.51), 0 1px 5px 0 rgba(0, 0, 0, 0.38);
+    //box-shadow: 0 3px 1px -2px $primary, 0 2px 2px 0 rgba(0, 0, 0, 0.51), 0 1px 5px 0 rgba(0, 0, 0, 0.38);
     width: -webkit-fill-available;
-    border-radius: 8px;
+    //border-radius: 8px;
     display: flex;
     flex-direction: column;
     padding: 0px;
+    background: #e0e0e0;
+    margin-bottom: 15px;
     .mat-card-title{
       padding-top:10px;
       font-size: 20px;
       padding-left: 20px;
+      .title-icons{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        .event-card-icons-container{
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          padding-right: 20px;
+        }
+      }
     }
     .event-sub-container{
       padding-left: 20px;
       display: inline-flex;
-      .event-card-icons-container{
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-
-      }
+      justify-content: space-between;
       .event-card-details-container{
         flex-direction: column;
         padding-left: 20px;
+        max-width: 400px;
+        span{
+          font-weight: bold;
+        }
+        .mat-progress-bar{
+          max-width: 200px;
+          margin-bottom: 10px;
+        }
         .mat-card-title{
           font-size: 20px;
         }
       }
       .event-card-content{
-        align-self: center;
         padding-left: 20px;
+        display: flex;
+        align-self: flex-end;
+        padding-right: 20px;
+
         .normal-text{
           color: black;
           margin-top: 0px;

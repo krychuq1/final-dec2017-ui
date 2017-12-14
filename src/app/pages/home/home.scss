@@ -1,6 +1,10 @@
 .home {
   display: flex;
   flex-direction: column;
+  .admin-button{
+    display: flex;
+    justify-content: flex-end;
+  }
   button {
     width: 100px;
     display: flex;

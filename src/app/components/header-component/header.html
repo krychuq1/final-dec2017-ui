@@ -5,9 +5,9 @@
         <button mat-raised-button class="general-btn" routerLink="user">Login</button>
     </div>
     <div class="actions" *ngIf="user">
-        <p>Welcome {{user.firstName}} {{user.lastName}}</p>
+        <p>Welcome <span class="name">{{user.firstName}} {{user.lastName}}</span></p>
         <button mat-raised-button class="general-btn" (click)="logOut()">LogOut</button>
-        <button mat-raised-button class="general-btn" routerLink="event/create">Create Event</button>
+        <!--<button mat-raised-button class="general-btn" routerLink="event/create">Create Event</button>-->
 
     </div>
 </div>
