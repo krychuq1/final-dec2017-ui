@@ -1,3 +1,4 @@
+@import "../../../styles";
 .home {
   display: flex;
   flex-direction: column;
@@ -43,6 +44,7 @@
         font-size: 20px;
         word-wrap:break-word;
         font-weight: bold;
+        color: $secondary
       }
       .event-address{
         padding-top: 10px;
