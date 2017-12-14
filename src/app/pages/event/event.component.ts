@@ -47,7 +47,7 @@ export class EventComponent {
           this.userBookingService.getAll().subscribe(bookings => {
             this.userBookings = bookings;
             this.events = res;
-            console.log(res[0]);
+            console.log(res);
             this.events.forEach(obj => {
               if(this.userBookings[obj.id]) {
                 console.log('match', this.userBookings[obj.id].lenght);
