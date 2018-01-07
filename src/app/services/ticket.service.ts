@@ -4,7 +4,7 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class TicketService {
-  url = 'https://eventhub-api.herokuapp.com/tickets/';
+  url = 'http://localhost:7777/tickets/';
   constructor(private http: HttpClient) {}
 
   getTicketsForEvent(token: string, eventId: number) {
