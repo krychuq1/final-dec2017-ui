@@ -7,7 +7,7 @@ import 'rxjs/add/observable/of';
 
 @Injectable()
 export class UserBookingService {
-  url = 'http://localhost:7777/bookings/';
+  url = 'https://eventhub-api.herokuapp.com/bookings/';
   constructor(private http: HttpClient ) {}
 
   getAll() {

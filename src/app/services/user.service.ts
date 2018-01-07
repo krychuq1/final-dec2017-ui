@@ -9,7 +9,7 @@ import 'rxjs/add/observable/of';
 export class UserService {
     userUpdates: EventEmitter<UserModel> = new EventEmitter();
     user: UserModel;
-    url = 'http://localhost:7777/users/';
+    url = 'https://eventhub-api.herokuapp.com/users/';
     constructor(private http: HttpClient ) {}
 
     checkIfUserExists(email): any {

@@ -73,7 +73,7 @@
 
     <image-upload   [max]="1"
                     (uploadFinished)="onUploadFinished($event)"
-                    (removed)="onRemoved($event)">
+                    (removed)="onRemoved()">
     </image-upload>
     <mat-error *ngIf="imgError">{{imgError}}</mat-error>
 

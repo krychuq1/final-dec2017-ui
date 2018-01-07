@@ -5,8 +5,8 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class EventService {
-    urlEvent = 'http://localhost:7777/events/';
-    urlBooking = 'http://localhost:7777/bookings/';
+    urlEvent = 'https://eventhub-api.herokuapp.com/events/';
+    urlBooking = 'https://eventhub-api.herokuapp.com/bookings/';
 
     constructor(private http: HttpClient) {}
 

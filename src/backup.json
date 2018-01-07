@@ -1,0 +1,1427 @@
+[
+  {
+    "_id": "5a326b4ebafc95003ab29764",
+    "name": "update-password",
+    "language": "de",
+    "brand": "lycalotto",
+    "type": "modal",
+    "content": [
+      {
+        "key": "updatepassword",
+        "value": "Passwort ändern"
+      },
+      {
+        "key": "oldpassword",
+        "value": "Altes Passwort"
+      },
+      {
+        "key": "pleaseenteroldpassword",
+        "value": "Bitte geben Sie Ihr altes Passwort an"
+      },
+      {
+        "key": "newpassword",
+        "value": "Neues Passwort"
+      },
+      {
+        "key": "pleaseenternewpassword",
+        "value": "Bitte geben Sie ein neues Passwort an"
+      },
+      {
+        "key": "confirmpassword",
+        "value": "Neues Passwort bestätigen"
+      },
+      {
+        "key": "pleaseenterpasswordconfirmation",
+        "value": "Bitte geben Sie Ihr neues Passwort erneut an"
+      },
+      {
+        "key": "cancel",
+        "value": "Abbrechen"
+      },
+      {
+        "key": "save",
+        "value": "Speichern"
+      }
+    ]
+  },
+  {
+    "_id": "5a326cbdbafc95003ab29765",
+    "name": "update-password",
+    "language": "de",
+    "brand": "lycalotto",
+    "type": "modal",
+    "content": [
+      {
+        "key": "updatepassword",
+        "value": "Passwort ändern"
+      },
+      {
+        "key": "oldpassword",
+        "value": "Altes Passwort"
+      },
+      {
+        "key": "pleaseenteroldpassword",
+        "value": "Bitte geben Sie Ihr altes Passwort an"
+      },
+      {
+        "key": "newpassword",
+        "value": "Neues Passwort"
+      },
+      {
+        "key": "pleaseenternewpassword",
+        "value": "Bitte geben Sie ein neues Passwort an"
+      },
+      {
+        "key": "confirmpassword",
+        "value": "Neues Passwort bestätigen"
+      },
+      {
+        "key": "pleaseenterpasswordconfirmation",
+        "value": "Bitte geben Sie Ihr neues Passwort erneut an"
+      },
+      {
+        "key": "cancel",
+        "value": "Abbrechen"
+      },
+      {
+        "key": "save",
+        "value": "Speichern"
+      }
+    ]
+  },
+  {
+    "_id": "5a326cc3bafc95003ab29766",
+    "name": "update-password",
+    "language": "de",
+    "brand": "lycalotto",
+    "type": "modal",
+    "content": [
+      {
+        "key": "updatepassword",
+        "value": "Passwort ändern"
+      },
+      {
+        "key": "oldpassword",
+        "value": "Altes Passwort"
+      },
+      {
+        "key": "pleaseenteroldpassword",
+        "value": "Bitte geben Sie Ihr altes Passwort an"
+      },
+      {
+        "key": "newpassword",
+        "value": "Neues Passwort"
+      },
+      {
+        "key": "pleaseenternewpassword",
+        "value": "Bitte geben Sie ein neues Passwort an"
+      },
+      {
+        "key": "confirmpassword",
+        "value": "Neues Passwort bestätigen"
+      },
+      {
+        "key": "pleaseenterpasswordconfirmation",
+        "value": "Bitte geben Sie Ihr neues Passwort erneut an"
+      },
+      {
+        "key": "cancel",
+        "value": "Abbrechen"
+      },
+      {
+        "key": "save",
+        "value": "Speichern"
+      }
+    ]
+  },
+  {
+    "_id": "5a326cc7bafc95003ab29767",
+    "name": "update-password",
+    "language": "de",
+    "brand": "lycalotto",
+    "type": "modal",
+    "content": [
+      {
+        "key": "updatepassword",
+        "value": "Passwort ändern"
+      },
+      {
+        "key": "oldpassword",
+        "value": "Altes Passwort"
+      },
+      {
+        "key": "pleaseenteroldpassword",
+        "value": "Bitte geben Sie Ihr altes Passwort an"
+      },
+      {
+        "key": "newpassword",
+        "value": "Neues Passwort"
+      },
+      {
+        "key": "pleaseenternewpassword",
+        "value": "Bitte geben Sie ein neues Passwort an"
+      },
+      {
+        "key": "confirmpassword",
+        "value": "Neues Passwort bestätigen"
+      },
+      {
+        "key": "pleaseenterpasswordconfirmation",
+        "value": "Bitte geben Sie Ihr neues Passwort erneut an"
+      },
+      {
+        "key": "cancel",
+        "value": "Abbrechen"
+      },
+      {
+        "key": "save",
+        "value": "Speichern"
+      }
+    ]
+  },
+  {
+    "_id": "5a326db2bafc95003ab29768",
+    "name": "terms-of-use",
+    "language": "en",
+    "brand": "lycalotto",
+    "type": "page",
+    "content": [
+      {
+        "key": "terms1",
+        "value": "Terms and Conditions"
+      },
+      {
+        "key": "terms2",
+        "value": "These Terms and Conditions are effective from September 1st 2017"
+      },
+      {
+        "key": "terms3",
+        "value": "Introduction"
+      },
+      {
+        "key": "terms4",
+        "value": "By visiting/accessing, registering or using any sections of the Website and/or any syndicate services or functionality offered through the Website including any Player Account, you agree that you are fully bound by the following (i) these Terms and Conditions (ii) the Games Rules, (iii) the Privacy Policy (collectively “Terms”), all of which apply to  such activities/usage, as further described in the following paragraphs of these Terms and Conditions.  By accessing, registering and/or using any part of our Website and/or our services via the Website you are also deemed to have understood the entirety of the Terms to which you have agreed to fully comply. If you do not agree with, or refuse to accept, these Terms you will not be able to use or otherwise benefit from our services (and you should cease accessing or making any other use of the Website, syndicate services and/or Player Account)."
+      },
+      {
+        "key": "terms5",
+        "value": "Please take your time to read these Terms and Conditions carefully before registering for or becoming members of our subscription service and/or using any of the syndicate services or Website."
+      },
+      {
+        "key": "terms6",
+        "value": "The Terms may be altered from time to time and at any time without notice to you and for any reason (including without limitation in order to comply with applicable laws and regulations, and/or for other regulatory reasons). Any such changes shall take effect immediately upon being posted to the Website, and in any event, your continued use of our services after such changes come into effect shall be deemed to constitute your continued acceptance and adherence to those Terms in such revised form."
+      },
+      {
+        "key": "terms7",
+        "value": "You should always print a copy of these Terms for your records and should you have any doubt or questions about the Terms or any of our services please contact our customer support via the Contact Us section on the website (and in case of legal questions we would encourage you to seek independent legal advice).   Any reference in these Terms to \"you\", \"your\", the “player” or the \"customer\" shall be deemed a reference to any individual using the Website or the services provided or procured by us alone or in conjunction with any of our group companies, subcontractors and/or agents."
+      },
+      {
+        "key": "terms8",
+        "value": "About Lycalotto.com"
+      },
+      {
+        "key": "terms9",
+        "value": "Lycalotto.com services are managed by Winners Operations (Alderney) Limited (Registration No. 1941) registered at Century House, 12 Victoria Street, Alderney, GY9 3UF. LycaLotto.com is a trade mark of Pettigo Comercio Internacional Lda, and is licensed for use by Winners Operations (Alderney) Limited. Winners Operations (Alderney) Limited makes available relevant functionalities including use of the Player Account to registered Players on behalf of the licensed gaming entity."
+      },
+      {
+        "key": "terms10",
+        "value": "“We” or “us” or “our” is any reference to Winners Operations (Alderney) Limited, LycaLotto.com Limited, Winners Worldwide Limited, or Winners Group."
+      },
+      {
+        "key": "terms11",
+        "value": "Our Services"
+      },
+      {
+        "key": "terms12",
+        "value": "We operate the LycaLotto.com branded Website which enables Players to purchase a share of a syndicate composed of lottery tickets. We do not purchase lottery tickets on your behalf or in your name, we offer a syndicate management service in which you purchase a share of potential winnings in a syndicate where the tickets are entirely owned and procured by Us."
+      },
+      {
+        "key": "terms13",
+        "value": "We do not sell lottery tickets and we do not operate or promote a lottery, and You agree that we are not affiliated directly or indirectly with any lottery, anywhere in the world."
+      },
+      {
+        "key": "terms14",
+        "value": "Syndicates available on LycaLotto.com are sold as advertised and contain variable numbers of shares depending on the syndicate chosen. All syndicate numbers are chosen randomly and will be made available to You in Your account."
+      },
+      {
+        "key": "terms15",
+        "value": "Definitions"
+      },
+      {
+        "key": "terms16",
+        "value": "“LycaLotto.com” is the name of the domain for the Website and represents the lycalotto brand."
+      },
+      {
+        "key": "terms17",
+        "value": "“Bank Account” – A transactional deposit account held with a financial institution which allows the Player to perform withdrawals and deposit. This bank account will be linked to the Player Account."
+      },
+      {
+        "key": "terms18",
+        "value": "“Bank Card” – A prepaid, debit or credit card or any other card with a payment- and/or credit function and used as a payment method."
+      },
+      {
+        "key": "terms19",
+        "value": "“Draw” – Is the outcome of the moment in which lottery numbers are randomly selected from a pool of numbers. Those numbers are considered drawn from the pool of numbered balls and constitute the draw winning numbers. "
+      },
+      {
+        "key": "terms20",
+        "value": "“Members Area” – the part/sections of the Website and functionalities available to Players (ie. individuals who have registered and granted access to a Player Account on the basis of these Terms)."
+      },
+      {
+        "key": "terms21",
+        "value": "“Pay Out” – Is the amount which is to be, or has been paid out in regards to a matched number on the outcome of one or more of the syndicates mentioned herein."
+      },
+      {
+        "key": "terms22",
+        "value": "“Player” - An individual who has a contractual relationship with Winners Operations (Alderney) Limited and registered to use the syndicate services by establishing a Player Account accessed through and operated via the “www.LycaLotto.com” Website."
+      },
+      {
+        "key": "terms23",
+        "value": "“Player Account” – An account held by the Player, for bona fide transactions, through which the Player may place and pay for products through the Website."
+      },
+      {
+        "key": "terms24",
+        "value": "“Prize Category” – In connection to any given lottery draw, the “Prize Category” establishes the tier of winnings as determined by the amount of numbers properly matched (including any star or bonus numbers)."
+      },
+      {
+        "key": "terms25",
+        "value": "“Privacy Policy” - Policy established by us in respect of the use, storage and disclosure of any personal information gathered in regards to a Player or prospective Player. This policy is subject to amendment and updating from time to time."
+      },
+      {
+        "key": "terms26",
+        "value": "“Prize” or “Winnings” - the premium and/or value to be paid to the Player by Us on behalf of LYCALOTTO.COM in regards to a successful purchase outcome on any relevant syndicate in respect of each successful purchase, and the terms shall be used interchangeably."
+      },
+      {
+        "key": "terms27",
+        "value": " “Web Site” – LycaLotto.com Internet portal, accessible at: www.LycaLotto.com and any of its subdomains or top level domains, iframes or analogous content provided by us in third party or other connected websites, mobile and/ or web applications."
+      },
+      {
+        "key": "terms28",
+        "value": "“Winning Purchase” - a winning Purchase placed via the LycaLotto.com Website by a Player, using his/her Player Account. "
+      },
+      {
+        "key": "terms29",
+        "value": "“Your Numbers” – Set of numbers selected by you from the selection of numbers provided through us on LycaLotto.com for each syndicate."
+      },
+      {
+        "key": "terms30",
+        "value": "Players"
+      },
+      {
+        "key": "terms31",
+        "value": "All Players and prospective Players have to register via the LycaLotto.com Website in order to use all services including making purchases. We reserve the right to refuse at our sole discretion to complete registration for any prospective Player. By registering on the Website and/or using the services, you warrant that:"
+      },
+      {
+        "key": "terms32",
+        "value": "You are over 18 years of age or other minimum age of majority required under applicable law;"
+      },
+      {
+        "key": "terms33",
+        "value": "You are legally capable of entering into this binding agreement"
+      },
+      {
+        "key": "terms34",
+        "value": "You are aware that you might lose your Purchase and the funds you have deposited to fulfil your purchase through the Website;"
+      },
+      {
+        "key": "terms35",
+        "value": "You are not a resident and/or are located in any country in which purchases of this type are prohibited by local, national, federal or other law or leglislation. We and LYCALOTTO.COM will not be liable for any breach by you of any such laws;"
+      },
+      {
+        "key": "terms36",
+        "value": "In regards to Your use of the Website and syndicate services, you may only have one Player Account registered with LycaLotto.com and you must register for this Player Account using your actual name as per your identification records."
+      },
+      {
+        "key": "terms37",
+        "value": "Your Player Account at LycaLotto.com is solely for your benefit and you should not allow other individuals to purchase syndicate entries using your Player Account or access your Player Account, nor should you use other account details other than your own to purchase syndicate entries at LycaLotto.com."
+      },
+      {
+        "key": "terms38",
+        "value": "You are not a director, officer, or employee (or a spouse or dependant) of any Winners Group company, LYCALOTTO.COM or their group companies at the time of placing any Purchase."
+      },
+      {
+        "key": "terms39",
+        "value": "Should any of the information that you provide to us be untrue, inaccurate, misleading or otherwise incomplete, you will be deemed to be in breach of the Terms and we reserve on behalf of LYCALOTTO.COM all rights to terminate your Player Account immediately and/or prevent you from using any related software or the services, in addition to any other action that we may choose to take."
+      },
+      {
+        "key": "terms40",
+        "value": "We reserve the right to ask, when you register for a Player Account and/or on an ongoing basis, for proof (or renewed evidence) of your age, residence, payment method, postal address as well as other relevant information from you and should you fail to provide satisfactory proof in a timely manner we may suspend or refuse to open your Player Account until safe receipt of the aforementioned proof. You hereby consent to us carrying out such age verification, identity or other checks on you as we may require, even if carried out by third parties."
+      },
+      {
+        "key": "terms41",
+        "value": "In respect of any Syndicate purchase, You are purchasing a share of any winnings that may occur as a result of Draw Winnings (if any) are determined by those results."
+      },
+      {
+        "key": "terms42",
+        "value": "In relation to the Draws, we may purchase lottery tickets or purchase insurance through third parties in relation to such Draws to cover our risks or liabilities. You shall have no rights of any nature in any lottery tickets we may buy in relation to the Draws or otherwise. For the avoidance of doubt, we shall only be obliged to pay Draw Winnings to you (and on behalf of LYCALOTTO.COM) in the event we have received the corresponding winning funds from the relevant lottery or third party."
+      },
+      {
+        "key": "terms43",
+        "value": "The Player is entitled to terminate his/her account at any time by contacting customer support through any of the points of contact indicated at LycaLotto.com (and subject to the formal notification process described below). Any termination by Player must be requested in writing to Support@LycaLotto.com clearly identifying yourself and your corresponding Player Account will upon our receipt of your notice enter into a seven (7) day suspension period until all submitted purchases are processed and the account closure process completed.  During such 7 day suspension period you will have no access to your Player Account or be able to submit additional purchases."
+      },
+      {
+        "key": "terms44",
+        "value": "After the Player Account is effectively terminated we will not accept further purchases or deposits from You, and you will not be entered into any further Draws other than the ones you have paid and/or subscribed for in advance prior to termination."
+      },
+      {
+        "key": "terms45",
+        "value": "Registration, Player Account and Password"
+      },
+      {
+        "key": "terms46",
+        "value": "When completing the registration application process at LycaLotto.com the Player must provide a username, valid email address, password, address and his/her age (together with any supporting documentation we may reasonably require to verify the accuracy and authenticity of all such information). Once the registration process is completed, LycaLotto.com at its sole discretion will confirm acceptance of your account registration and/or purchase by sending a confirmation email to the email address you provided during registration. Only after receiving this confirmation will your Player Account be deemed approved and these Terms valid between the applicable parties for any ongoing dealings with you via the Website and/or for making purchases and use of services."
+      },
+      {
+        "key": "terms47",
+        "value": "You must keep your Player Account information in a secure place thus preventing any unauthorised use or access. This information includes your personally created password, username and other relevant details. All changes made from the Player Account shall be your responsibility. Any hacking attempts or possible security breaches arising from your computer in regard to your Player Account information, credit cards and other payment methods should immediately be reported to LycaLotto.com support at security@lycalotto.com or other relevant security incident reporting email/phone contacts provided on the Website."
+      },
+      {
+        "key": "terms48",
+        "value": "It is the Player’s obligation to report any suspected or actual fraud or illegal use of their Player Account at LycaLotto.com and to take such steps as may be required (in full cooperation with us) in order to prevent any such fraud/illegality, such as by changing the password on the Player Account. The Player shall be responsible for all activities and transactions conducted through their Player Account."
+      },
+      {
+        "key": "terms49",
+        "value": "The Player shall ensure that the details in respect of their payment method data provided by them at the point of registration and payment respectively are complete, accurate and have not been stolen or lost. The Player shall immediately inform us if their Bank Card or a comparable payment method, which they have specified on the Website, becomes lost, suspended or stolen; the same applies, if relevant passwords or confidential information has been submitted to third parties. The Player shall inform us of any changes in regards to information provided including, but not limited to Bank Cards and Bank Accounts, by updating their Player Account.  Neither we nor LYCALOTTO.COM shall be responsible for failure of Payouts due to non-provision of data by the Player, or the provision of missing, incorrect, incomplete or expired data. Neither we nor LYCALOTTO.COM are under any obligation to verify any data provided or to make contact with a Player to complete or change incorrect, incomplete or invalid data."
+      },
+      {
+        "key": "terms50",
+        "value": "The Player can see a list of all their active and expired purchases under their Player Account and this information may be accessed at any time. Player is strongly encouraged to make use of their Player Account to keep track of their purchases as well as adjusting preferences to improve the quality of their experience. The Player may self-manage their data at any time through the relevant Player Account."
+      },
+      {
+        "key": "terms51",
+        "value": "Lottery Draws"
+      },
+      {
+        "key": "terms52",
+        "value": "At LycaLotto.com the Player is offered the opportunity to purchase syndicate entries as featured from time to time on the Website:"
+      },
+      {
+        "key": "terms53",
+        "value": "Syndicate service is where the Player will be pooled with other Players playing together and sharing the winnings in a format defined by LycaLotto.com. The current format, which LycaLotto.com may amend and modify at any time at its own discretion, allows Players to purchase shares, aggregated with other participating Players. From time to time, at our sole discretion, it may be necessary to withdraw defined sets of numbers for the Draws and in such event we shall notify you in writing of other defined sets of numbers which could replace the Original Numbers. Your group may win the full prize amount if there are no other winners with the same matching numbers at LycaLotto.com."
+      },
+      {
+        "key": "terms54",
+        "value": "All syndicates featured on LycaLotto.com follow their specific set of games rules, and each one of them carries its own base odds and prizes breakdown, which may be at any time reviewed in our Games Rules (which form an integral part of the Terms). For the avoidance of any doubt, LycaLotto.com is not a lottery nor draws its own numbers or otherwise operates any lottery draw."
+      },
+      {
+        "key": "terms55",
+        "value": "By selecting one of the aforementioned services and filling the appropriate bulletin or package selection you are instructing us to act in your behalf submitting those purchases to LYCALOTTO.COM"
+      },
+      {
+        "key": "terms56",
+        "value": "Your subscription and registration are aimed at the use of a syndicate service and you are purchasing a share in the outcome of certain lotteries."
+      },
+      {
+        "key": "terms57",
+        "value": "Once the Purchase is submitted in accordance with the Terms, it cannot be amended or cancelled. Your participation in any of the services described in these Terms and Conditions or any part of the Website to which the Terms apply and your eligibility for relevant draws is dependent on the Payment you will have provided for the aforementioned services. Your Purchase will only be validated upon collection by us or other authorised third party payment provider of the funds cleared by your financial institution or other operator of a relevant valid payment method accepted for payment in respect of the services offered via the Website. For the avoidance of any doubt, our email confirmations to you will only occur after payment funds to us have been cleared and if this occurs after the Draw Deadline you will only be eligible to enter a similar draw thereafter. In the event of any dispute regarding when your registration (Player Account set up) confirmation was sent to you, our records regarding such dispatch shall be final and binding."
+      },
+      {
+        "key": "terms58",
+        "value": "After the number and/or package selection, you will be deemed to fill out the appropriate registration for it if you are playing with us for the very first time. Returning Players can use the login button available for existing users. You will be asked for confirmation of your purchase order and once it is submitted it can no longer be amended or cancelled.</p>"
+      },
+      {
+        "key": "terms59",
+        "value": "Winnings and Pay outs"
+      },
+      {
+        "key": "terms60",
+        "value": "After submitting and validating the purchases correctly as described in the above section 4.7 of these Terms and Conditions, you will be prompted for payment by selecting your preferred payment method. Please note that you cannot purchase syndicate entries on credit."
+      }
+    ]
+  },
+  {
+    "_id": "5a326db3bafc95003ab29769",
+    "name": "terms-of-use",
+    "language": "en",
+    "brand": "lycalotto",
+    "type": "page",
+    "content": [
+      {
+        "key": "terms1",
+        "value": "Terms and Conditions"
+      },
+      {
+        "key": "terms2",
+        "value": "These Terms and Conditions are effective from September 1st 2017"
+      },
+      {
+        "key": "terms3",
+        "value": "Introduction"
+      },
+      {
+        "key": "terms4",
+        "value": "By visiting/accessing, registering or using any sections of the Website and/or any syndicate services or functionality offered through the Website including any Player Account, you agree that you are fully bound by the following (i) these Terms and Conditions (ii) the Games Rules, (iii) the Privacy Policy (collectively “Terms”), all of which apply to  such activities/usage, as further described in the following paragraphs of these Terms and Conditions.  By accessing, registering and/or using any part of our Website and/or our services via the Website you are also deemed to have understood the entirety of the Terms to which you have agreed to fully comply. If you do not agree with, or refuse to accept, these Terms you will not be able to use or otherwise benefit from our services (and you should cease accessing or making any other use of the Website, syndicate services and/or Player Account)."
+      },
+      {
+        "key": "terms5",
+        "value": "Please take your time to read these Terms and Conditions carefully before registering for or becoming members of our subscription service and/or using any of the syndicate services or Website."
+      },
+      {
+        "key": "terms6",
+        "value": "The Terms may be altered from time to time and at any time without notice to you and for any reason (including without limitation in order to comply with applicable laws and regulations, and/or for other regulatory reasons). Any such changes shall take effect immediately upon being posted to the Website, and in any event, your continued use of our services after such changes come into effect shall be deemed to constitute your continued acceptance and adherence to those Terms in such revised form."
+      },
+      {
+        "key": "terms7",
+        "value": "You should always print a copy of these Terms for your records and should you have any doubt or questions about the Terms or any of our services please contact our customer support via the Contact Us section on the website (and in case of legal questions we would encourage you to seek independent legal advice).   Any reference in these Terms to \"you\", \"your\", the “player” or the \"customer\" shall be deemed a reference to any individual using the Website or the services provided or procured by us alone or in conjunction with any of our group companies, subcontractors and/or agents."
+      },
+      {
+        "key": "terms8",
+        "value": "About Lycalotto.com"
+      },
+      {
+        "key": "terms9",
+        "value": "Lycalotto.com services are managed by Winners Operations (Alderney) Limited (Registration No. 1941) registered at Century House, 12 Victoria Street, Alderney, GY9 3UF. LycaLotto.com is a trade mark of Pettigo Comercio Internacional Lda, and is licensed for use by Winners Operations (Alderney) Limited. Winners Operations (Alderney) Limited makes available relevant functionalities including use of the Player Account to registered Players on behalf of the licensed gaming entity."
+      },
+      {
+        "key": "terms10",
+        "value": "“We” or “us” or “our” is any reference to Winners Operations (Alderney) Limited, LycaLotto.com Limited, Winners Worldwide Limited, or Winners Group."
+      },
+      {
+        "key": "terms11",
+        "value": "Our Services"
+      },
+      {
+        "key": "terms12",
+        "value": "We operate the LycaLotto.com branded Website which enables Players to purchase a share of a syndicate composed of lottery tickets. We do not purchase lottery tickets on your behalf or in your name, we offer a syndicate management service in which you purchase a share of potential winnings in a syndicate where the tickets are entirely owned and procured by Us."
+      },
+      {
+        "key": "terms13",
+        "value": "We do not sell lottery tickets and we do not operate or promote a lottery, and You agree that we are not affiliated directly or indirectly with any lottery, anywhere in the world."
+      },
+      {
+        "key": "terms14",
+        "value": "Syndicates available on LycaLotto.com are sold as advertised and contain variable numbers of shares depending on the syndicate chosen. All syndicate numbers are chosen randomly and will be made available to You in Your account."
+      },
+      {
+        "key": "terms15",
+        "value": "Definitions"
+      },
+      {
+        "key": "terms16",
+        "value": "“LycaLotto.com” is the name of the domain for the Website and represents the lycalotto brand."
+      },
+      {
+        "key": "terms17",
+        "value": "“Bank Account” – A transactional deposit account held with a financial institution which allows the Player to perform withdrawals and deposit. This bank account will be linked to the Player Account."
+      },
+      {
+        "key": "terms18",
+        "value": "“Bank Card” – A prepaid, debit or credit card or any other card with a payment- and/or credit function and used as a payment method."
+      },
+      {
+        "key": "terms19",
+        "value": "“Draw” – Is the outcome of the moment in which lottery numbers are randomly selected from a pool of numbers. Those numbers are considered drawn from the pool of numbered balls and constitute the draw winning numbers. "
+      },
+      {
+        "key": "terms20",
+        "value": "“Members Area” – the part/sections of the Website and functionalities available to Players (ie. individuals who have registered and granted access to a Player Account on the basis of these Terms)."
+      },
+      {
+        "key": "terms21",
+        "value": "“Pay Out” – Is the amount which is to be, or has been paid out in regards to a matched number on the outcome of one or more of the syndicates mentioned herein."
+      },
+      {
+        "key": "terms22",
+        "value": "“Player” - An individual who has a contractual relationship with Winners Operations (Alderney) Limited and registered to use the syndicate services by establishing a Player Account accessed through and operated via the “www.LycaLotto.com” Website."
+      },
+      {
+        "key": "terms23",
+        "value": "“Player Account” – An account held by the Player, for bona fide transactions, through which the Player may place and pay for products through the Website."
+      },
+      {
+        "key": "terms24",
+        "value": "“Prize Category” – In connection to any given lottery draw, the “Prize Category” establishes the tier of winnings as determined by the amount of numbers properly matched (including any star or bonus numbers)."
+      },
+      {
+        "key": "terms25",
+        "value": "“Privacy Policy” - Policy established by us in respect of the use, storage and disclosure of any personal information gathered in regards to a Player or prospective Player. This policy is subject to amendment and updating from time to time."
+      },
+      {
+        "key": "terms26",
+        "value": "“Prize” or “Winnings” - the premium and/or value to be paid to the Player by Us on behalf of LYCALOTTO.COM in regards to a successful purchase outcome on any relevant syndicate in respect of each successful purchase, and the terms shall be used interchangeably."
+      },
+      {
+        "key": "terms27",
+        "value": " “Web Site” – LycaLotto.com Internet portal, accessible at: www.LycaLotto.com and any of its subdomains or top level domains, iframes or analogous content provided by us in third party or other connected websites, mobile and/ or web applications."
+      },
+      {
+        "key": "terms28",
+        "value": "“Winning Purchase” - a winning Purchase placed via the LycaLotto.com Website by a Player, using his/her Player Account. "
+      },
+      {
+        "key": "terms29",
+        "value": "“Your Numbers” – Set of numbers selected by you from the selection of numbers provided through us on LycaLotto.com for each syndicate."
+      },
+      {
+        "key": "terms30",
+        "value": "Players"
+      },
+      {
+        "key": "terms31",
+        "value": "All Players and prospective Players have to register via the LycaLotto.com Website in order to use all services including making purchases. We reserve the right to refuse at our sole discretion to complete registration for any prospective Player. By registering on the Website and/or using the services, you warrant that:"
+      },
+      {
+        "key": "terms32",
+        "value": "You are over 18 years of age or other minimum age of majority required under applicable law;"
+      },
+      {
+        "key": "terms33",
+        "value": "You are legally capable of entering into this binding agreement"
+      },
+      {
+        "key": "terms34",
+        "value": "You are aware that you might lose your Purchase and the funds you have deposited to fulfil your purchase through the Website;"
+      },
+      {
+        "key": "terms35",
+        "value": "You are not a resident and/or are located in any country in which purchases of this type are prohibited by local, national, federal or other law or leglislation. We and LYCALOTTO.COM will not be liable for any breach by you of any such laws;"
+      },
+      {
+        "key": "terms36",
+        "value": "In regards to Your use of the Website and syndicate services, you may only have one Player Account registered with LycaLotto.com and you must register for this Player Account using your actual name as per your identification records."
+      },
+      {
+        "key": "terms37",
+        "value": "Your Player Account at LycaLotto.com is solely for your benefit and you should not allow other individuals to purchase syndicate entries using your Player Account or access your Player Account, nor should you use other account details other than your own to purchase syndicate entries at LycaLotto.com."
+      },
+      {
+        "key": "terms38",
+        "value": "You are not a director, officer, or employee (or a spouse or dependant) of any Winners Group company, LYCALOTTO.COM or their group companies at the time of placing any Purchase."
+      },
+      {
+        "key": "terms39",
+        "value": "Should any of the information that you provide to us be untrue, inaccurate, misleading or otherwise incomplete, you will be deemed to be in breach of the Terms and we reserve on behalf of LYCALOTTO.COM all rights to terminate your Player Account immediately and/or prevent you from using any related software or the services, in addition to any other action that we may choose to take."
+      },
+      {
+        "key": "terms40",
+        "value": "We reserve the right to ask, when you register for a Player Account and/or on an ongoing basis, for proof (or renewed evidence) of your age, residence, payment method, postal address as well as other relevant information from you and should you fail to provide satisfactory proof in a timely manner we may suspend or refuse to open your Player Account until safe receipt of the aforementioned proof. You hereby consent to us carrying out such age verification, identity or other checks on you as we may require, even if carried out by third parties."
+      },
+      {
+        "key": "terms41",
+        "value": "In respect of any Syndicate purchase, You are purchasing a share of any winnings that may occur as a result of Draw Winnings (if any) are determined by those results."
+      },
+      {
+        "key": "terms42",
+        "value": "In relation to the Draws, we may purchase lottery tickets or purchase insurance through third parties in relation to such Draws to cover our risks or liabilities. You shall have no rights of any nature in any lottery tickets we may buy in relation to the Draws or otherwise. For the avoidance of doubt, we shall only be obliged to pay Draw Winnings to you (and on behalf of LYCALOTTO.COM) in the event we have received the corresponding winning funds from the relevant lottery or third party."
+      },
+      {
+        "key": "terms43",
+        "value": "The Player is entitled to terminate his/her account at any time by contacting customer support through any of the points of contact indicated at LycaLotto.com (and subject to the formal notification process described below). Any termination by Player must be requested in writing to Support@LycaLotto.com clearly identifying yourself and your corresponding Player Account will upon our receipt of your notice enter into a seven (7) day suspension period until all submitted purchases are processed and the account closure process completed.  During such 7 day suspension period you will have no access to your Player Account or be able to submit additional purchases."
+      },
+      {
+        "key": "terms44",
+        "value": "After the Player Account is effectively terminated we will not accept further purchases or deposits from You, and you will not be entered into any further Draws other than the ones you have paid and/or subscribed for in advance prior to termination."
+      },
+      {
+        "key": "terms45",
+        "value": "Registration, Player Account and Password"
+      },
+      {
+        "key": "terms46",
+        "value": "When completing the registration application process at LycaLotto.com the Player must provide a username, valid email address, password, address and his/her age (together with any supporting documentation we may reasonably require to verify the accuracy and authenticity of all such information). Once the registration process is completed, LycaLotto.com at its sole discretion will confirm acceptance of your account registration and/or purchase by sending a confirmation email to the email address you provided during registration. Only after receiving this confirmation will your Player Account be deemed approved and these Terms valid between the applicable parties for any ongoing dealings with you via the Website and/or for making purchases and use of services."
+      },
+      {
+        "key": "terms47",
+        "value": "You must keep your Player Account information in a secure place thus preventing any unauthorised use or access. This information includes your personally created password, username and other relevant details. All changes made from the Player Account shall be your responsibility. Any hacking attempts or possible security breaches arising from your computer in regard to your Player Account information, credit cards and other payment methods should immediately be reported to LycaLotto.com support at security@lycalotto.com or other relevant security incident reporting email/phone contacts provided on the Website."
+      },
+      {
+        "key": "terms48",
+        "value": "It is the Player’s obligation to report any suspected or actual fraud or illegal use of their Player Account at LycaLotto.com and to take such steps as may be required (in full cooperation with us) in order to prevent any such fraud/illegality, such as by changing the password on the Player Account. The Player shall be responsible for all activities and transactions conducted through their Player Account."
+      },
+      {
+        "key": "terms49",
+        "value": "The Player shall ensure that the details in respect of their payment method data provided by them at the point of registration and payment respectively are complete, accurate and have not been stolen or lost. The Player shall immediately inform us if their Bank Card or a comparable payment method, which they have specified on the Website, becomes lost, suspended or stolen; the same applies, if relevant passwords or confidential information has been submitted to third parties. The Player shall inform us of any changes in regards to information provided including, but not limited to Bank Cards and Bank Accounts, by updating their Player Account.  Neither we nor LYCALOTTO.COM shall be responsible for failure of Payouts due to non-provision of data by the Player, or the provision of missing, incorrect, incomplete or expired data. Neither we nor LYCALOTTO.COM are under any obligation to verify any data provided or to make contact with a Player to complete or change incorrect, incomplete or invalid data."
+      },
+      {
+        "key": "terms50",
+        "value": "The Player can see a list of all their active and expired purchases under their Player Account and this information may be accessed at any time. Player is strongly encouraged to make use of their Player Account to keep track of their purchases as well as adjusting preferences to improve the quality of their experience. The Player may self-manage their data at any time through the relevant Player Account."
+      },
+      {
+        "key": "terms51",
+        "value": "Lottery Draws"
+      },
+      {
+        "key": "terms52",
+        "value": "At LycaLotto.com the Player is offered the opportunity to purchase syndicate entries as featured from time to time on the Website:"
+      },
+      {
+        "key": "terms53",
+        "value": "Syndicate service is where the Player will be pooled with other Players playing together and sharing the winnings in a format defined by LycaLotto.com. The current format, which LycaLotto.com may amend and modify at any time at its own discretion, allows Players to purchase shares, aggregated with other participating Players. From time to time, at our sole discretion, it may be necessary to withdraw defined sets of numbers for the Draws and in such event we shall notify you in writing of other defined sets of numbers which could replace the Original Numbers. Your group may win the full prize amount if there are no other winners with the same matching numbers at LycaLotto.com."
+      },
+      {
+        "key": "terms54",
+        "value": "All syndicates featured on LycaLotto.com follow their specific set of games rules, and each one of them carries its own base odds and prizes breakdown, which may be at any time reviewed in our Games Rules (which form an integral part of the Terms). For the avoidance of any doubt, LycaLotto.com is not a lottery nor draws its own numbers or otherwise operates any lottery draw."
+      },
+      {
+        "key": "terms55",
+        "value": "By selecting one of the aforementioned services and filling the appropriate bulletin or package selection you are instructing us to act in your behalf submitting those purchases to LYCALOTTO.COM"
+      },
+      {
+        "key": "terms56",
+        "value": "Your subscription and registration are aimed at the use of a syndicate service and you are purchasing a share in the outcome of certain lotteries."
+      },
+      {
+        "key": "terms57",
+        "value": "Once the Purchase is submitted in accordance with the Terms, it cannot be amended or cancelled. Your participation in any of the services described in these Terms and Conditions or any part of the Website to which the Terms apply and your eligibility for relevant draws is dependent on the Payment you will have provided for the aforementioned services. Your Purchase will only be validated upon collection by us or other authorised third party payment provider of the funds cleared by your financial institution or other operator of a relevant valid payment method accepted for payment in respect of the services offered via the Website. For the avoidance of any doubt, our email confirmations to you will only occur after payment funds to us have been cleared and if this occurs after the Draw Deadline you will only be eligible to enter a similar draw thereafter. In the event of any dispute regarding when your registration (Player Account set up) confirmation was sent to you, our records regarding such dispatch shall be final and binding."
+      },
+      {
+        "key": "terms58",
+        "value": "After the number and/or package selection, you will be deemed to fill out the appropriate registration for it if you are playing with us for the very first time. Returning Players can use the login button available for existing users. You will be asked for confirmation of your purchase order and once it is submitted it can no longer be amended or cancelled.</p>"
+      },
+      {
+        "key": "terms59",
+        "value": "Winnings and Pay outs"
+      },
+      {
+        "key": "terms60",
+        "value": "After submitting and validating the purchases correctly as described in the above section 4.7 of these Terms and Conditions, you will be prompted for payment by selecting your preferred payment method. Please note that you cannot purchase syndicate entries on credit."
+      }
+    ]
+  },
+  {
+    "_id": "5a326db7bafc95003ab2976a",
+    "name": "terms-of-use",
+    "language": "en",
+    "brand": "lycalotto",
+    "type": "page",
+    "content": [
+      {
+        "key": "terms1",
+        "value": "Terms and Conditions"
+      },
+      {
+        "key": "terms2",
+        "value": "These Terms and Conditions are effective from September 1st 2017"
+      },
+      {
+        "key": "terms3",
+        "value": "Introduction"
+      },
+      {
+        "key": "terms4",
+        "value": "By visiting/accessing, registering or using any sections of the Website and/or any syndicate services or functionality offered through the Website including any Player Account, you agree that you are fully bound by the following (i) these Terms and Conditions (ii) the Games Rules, (iii) the Privacy Policy (collectively “Terms”), all of which apply to  such activities/usage, as further described in the following paragraphs of these Terms and Conditions.  By accessing, registering and/or using any part of our Website and/or our services via the Website you are also deemed to have understood the entirety of the Terms to which you have agreed to fully comply. If you do not agree with, or refuse to accept, these Terms you will not be able to use or otherwise benefit from our services (and you should cease accessing or making any other use of the Website, syndicate services and/or Player Account)."
+      },
+      {
+        "key": "terms5",
+        "value": "Please take your time to read these Terms and Conditions carefully before registering for or becoming members of our subscription service and/or using any of the syndicate services or Website."
+      },
+      {
+        "key": "terms6",
+        "value": "The Terms may be altered from time to time and at any time without notice to you and for any reason (including without limitation in order to comply with applicable laws and regulations, and/or for other regulatory reasons). Any such changes shall take effect immediately upon being posted to the Website, and in any event, your continued use of our services after such changes come into effect shall be deemed to constitute your continued acceptance and adherence to those Terms in such revised form."
+      },
+      {
+        "key": "terms7",
+        "value": "You should always print a copy of these Terms for your records and should you have any doubt or questions about the Terms or any of our services please contact our customer support via the Contact Us section on the website (and in case of legal questions we would encourage you to seek independent legal advice).   Any reference in these Terms to \"you\", \"your\", the “player” or the \"customer\" shall be deemed a reference to any individual using the Website or the services provided or procured by us alone or in conjunction with any of our group companies, subcontractors and/or agents."
+      },
+      {
+        "key": "terms8",
+        "value": "About Lycalotto.com"
+      },
+      {
+        "key": "terms9",
+        "value": "Lycalotto.com services are managed by Winners Operations (Alderney) Limited (Registration No. 1941) registered at Century House, 12 Victoria Street, Alderney, GY9 3UF. LycaLotto.com is a trade mark of Pettigo Comercio Internacional Lda, and is licensed for use by Winners Operations (Alderney) Limited. Winners Operations (Alderney) Limited makes available relevant functionalities including use of the Player Account to registered Players on behalf of the licensed gaming entity."
+      },
+      {
+        "key": "terms10",
+        "value": "“We” or “us” or “our” is any reference to Winners Operations (Alderney) Limited, LycaLotto.com Limited, Winners Worldwide Limited, or Winners Group."
+      },
+      {
+        "key": "terms11",
+        "value": "Our Services"
+      },
+      {
+        "key": "terms12",
+        "value": "We operate the LycaLotto.com branded Website which enables Players to purchase a share of a syndicate composed of lottery tickets. We do not purchase lottery tickets on your behalf or in your name, we offer a syndicate management service in which you purchase a share of potential winnings in a syndicate where the tickets are entirely owned and procured by Us."
+      },
+      {
+        "key": "terms13",
+        "value": "We do not sell lottery tickets and we do not operate or promote a lottery, and You agree that we are not affiliated directly or indirectly with any lottery, anywhere in the world."
+      },
+      {
+        "key": "terms14",
+        "value": "Syndicates available on LycaLotto.com are sold as advertised and contain variable numbers of shares depending on the syndicate chosen. All syndicate numbers are chosen randomly and will be made available to You in Your account."
+      },
+      {
+        "key": "terms15",
+        "value": "Definitions"
+      },
+      {
+        "key": "terms16",
+        "value": "“LycaLotto.com” is the name of the domain for the Website and represents the lycalotto brand."
+      },
+      {
+        "key": "terms17",
+        "value": "“Bank Account” – A transactional deposit account held with a financial institution which allows the Player to perform withdrawals and deposit. This bank account will be linked to the Player Account."
+      },
+      {
+        "key": "terms18",
+        "value": "“Bank Card” – A prepaid, debit or credit card or any other card with a payment- and/or credit function and used as a payment method."
+      },
+      {
+        "key": "terms19",
+        "value": "“Draw” – Is the outcome of the moment in which lottery numbers are randomly selected from a pool of numbers. Those numbers are considered drawn from the pool of numbered balls and constitute the draw winning numbers. "
+      },
+      {
+        "key": "terms20",
+        "value": "“Members Area” – the part/sections of the Website and functionalities available to Players (ie. individuals who have registered and granted access to a Player Account on the basis of these Terms)."
+      },
+      {
+        "key": "terms21",
+        "value": "“Pay Out” – Is the amount which is to be, or has been paid out in regards to a matched number on the outcome of one or more of the syndicates mentioned herein."
+      },
+      {
+        "key": "terms22",
+        "value": "“Player” - An individual who has a contractual relationship with Winners Operations (Alderney) Limited and registered to use the syndicate services by establishing a Player Account accessed through and operated via the “www.LycaLotto.com” Website."
+      },
+      {
+        "key": "terms23",
+        "value": "“Player Account” – An account held by the Player, for bona fide transactions, through which the Player may place and pay for products through the Website."
+      },
+      {
+        "key": "terms24",
+        "value": "“Prize Category” – In connection to any given lottery draw, the “Prize Category” establishes the tier of winnings as determined by the amount of numbers properly matched (including any star or bonus numbers)."
+      },
+      {
+        "key": "terms25",
+        "value": "“Privacy Policy” - Policy established by us in respect of the use, storage and disclosure of any personal information gathered in regards to a Player or prospective Player. This policy is subject to amendment and updating from time to time."
+      },
+      {
+        "key": "terms26",
+        "value": "“Prize” or “Winnings” - the premium and/or value to be paid to the Player by Us on behalf of LYCALOTTO.COM in regards to a successful purchase outcome on any relevant syndicate in respect of each successful purchase, and the terms shall be used interchangeably."
+      },
+      {
+        "key": "terms27",
+        "value": " “Web Site” – LycaLotto.com Internet portal, accessible at: www.LycaLotto.com and any of its subdomains or top level domains, iframes or analogous content provided by us in third party or other connected websites, mobile and/ or web applications."
+      },
+      {
+        "key": "terms28",
+        "value": "“Winning Purchase” - a winning Purchase placed via the LycaLotto.com Website by a Player, using his/her Player Account. "
+      },
+      {
+        "key": "terms29",
+        "value": "“Your Numbers” – Set of numbers selected by you from the selection of numbers provided through us on LycaLotto.com for each syndicate."
+      },
+      {
+        "key": "terms30",
+        "value": "Players"
+      },
+      {
+        "key": "terms31",
+        "value": "All Players and prospective Players have to register via the LycaLotto.com Website in order to use all services including making purchases. We reserve the right to refuse at our sole discretion to complete registration for any prospective Player. By registering on the Website and/or using the services, you warrant that:"
+      },
+      {
+        "key": "terms32",
+        "value": "You are over 18 years of age or other minimum age of majority required under applicable law;"
+      },
+      {
+        "key": "terms33",
+        "value": "You are legally capable of entering into this binding agreement"
+      },
+      {
+        "key": "terms34",
+        "value": "You are aware that you might lose your Purchase and the funds you have deposited to fulfil your purchase through the Website;"
+      },
+      {
+        "key": "terms35",
+        "value": "You are not a resident and/or are located in any country in which purchases of this type are prohibited by local, national, federal or other law or leglislation. We and LYCALOTTO.COM will not be liable for any breach by you of any such laws;"
+      },
+      {
+        "key": "terms36",
+        "value": "In regards to Your use of the Website and syndicate services, you may only have one Player Account registered with LycaLotto.com and you must register for this Player Account using your actual name as per your identification records."
+      },
+      {
+        "key": "terms37",
+        "value": "Your Player Account at LycaLotto.com is solely for your benefit and you should not allow other individuals to purchase syndicate entries using your Player Account or access your Player Account, nor should you use other account details other than your own to purchase syndicate entries at LycaLotto.com."
+      },
+      {
+        "key": "terms38",
+        "value": "You are not a director, officer, or employee (or a spouse or dependant) of any Winners Group company, LYCALOTTO.COM or their group companies at the time of placing any Purchase."
+      },
+      {
+        "key": "terms39",
+        "value": "Should any of the information that you provide to us be untrue, inaccurate, misleading or otherwise incomplete, you will be deemed to be in breach of the Terms and we reserve on behalf of LYCALOTTO.COM all rights to terminate your Player Account immediately and/or prevent you from using any related software or the services, in addition to any other action that we may choose to take."
+      },
+      {
+        "key": "terms40",
+        "value": "We reserve the right to ask, when you register for a Player Account and/or on an ongoing basis, for proof (or renewed evidence) of your age, residence, payment method, postal address as well as other relevant information from you and should you fail to provide satisfactory proof in a timely manner we may suspend or refuse to open your Player Account until safe receipt of the aforementioned proof. You hereby consent to us carrying out such age verification, identity or other checks on you as we may require, even if carried out by third parties."
+      },
+      {
+        "key": "terms41",
+        "value": "In respect of any Syndicate purchase, You are purchasing a share of any winnings that may occur as a result of Draw Winnings (if any) are determined by those results."
+      },
+      {
+        "key": "terms42",
+        "value": "In relation to the Draws, we may purchase lottery tickets or purchase insurance through third parties in relation to such Draws to cover our risks or liabilities. You shall have no rights of any nature in any lottery tickets we may buy in relation to the Draws or otherwise. For the avoidance of doubt, we shall only be obliged to pay Draw Winnings to you (and on behalf of LYCALOTTO.COM) in the event we have received the corresponding winning funds from the relevant lottery or third party."
+      },
+      {
+        "key": "terms43",
+        "value": "The Player is entitled to terminate his/her account at any time by contacting customer support through any of the points of contact indicated at LycaLotto.com (and subject to the formal notification process described below). Any termination by Player must be requested in writing to Support@LycaLotto.com clearly identifying yourself and your corresponding Player Account will upon our receipt of your notice enter into a seven (7) day suspension period until all submitted purchases are processed and the account closure process completed.  During such 7 day suspension period you will have no access to your Player Account or be able to submit additional purchases."
+      },
+      {
+        "key": "terms44",
+        "value": "After the Player Account is effectively terminated we will not accept further purchases or deposits from You, and you will not be entered into any further Draws other than the ones you have paid and/or subscribed for in advance prior to termination."
+      },
+      {
+        "key": "terms45",
+        "value": "Registration, Player Account and Password"
+      },
+      {
+        "key": "terms46",
+        "value": "When completing the registration application process at LycaLotto.com the Player must provide a username, valid email address, password, address and his/her age (together with any supporting documentation we may reasonably require to verify the accuracy and authenticity of all such information). Once the registration process is completed, LycaLotto.com at its sole discretion will confirm acceptance of your account registration and/or purchase by sending a confirmation email to the email address you provided during registration. Only after receiving this confirmation will your Player Account be deemed approved and these Terms valid between the applicable parties for any ongoing dealings with you via the Website and/or for making purchases and use of services."
+      },
+      {
+        "key": "terms47",
+        "value": "You must keep your Player Account information in a secure place thus preventing any unauthorised use or access. This information includes your personally created password, username and other relevant details. All changes made from the Player Account shall be your responsibility. Any hacking attempts or possible security breaches arising from your computer in regard to your Player Account information, credit cards and other payment methods should immediately be reported to LycaLotto.com support at security@lycalotto.com or other relevant security incident reporting email/phone contacts provided on the Website."
+      },
+      {
+        "key": "terms48",
+        "value": "It is the Player’s obligation to report any suspected or actual fraud or illegal use of their Player Account at LycaLotto.com and to take such steps as may be required (in full cooperation with us) in order to prevent any such fraud/illegality, such as by changing the password on the Player Account. The Player shall be responsible for all activities and transactions conducted through their Player Account."
+      },
+      {
+        "key": "terms49",
+        "value": "The Player shall ensure that the details in respect of their payment method data provided by them at the point of registration and payment respectively are complete, accurate and have not been stolen or lost. The Player shall immediately inform us if their Bank Card or a comparable payment method, which they have specified on the Website, becomes lost, suspended or stolen; the same applies, if relevant passwords or confidential information has been submitted to third parties. The Player shall inform us of any changes in regards to information provided including, but not limited to Bank Cards and Bank Accounts, by updating their Player Account.  Neither we nor LYCALOTTO.COM shall be responsible for failure of Payouts due to non-provision of data by the Player, or the provision of missing, incorrect, incomplete or expired data. Neither we nor LYCALOTTO.COM are under any obligation to verify any data provided or to make contact with a Player to complete or change incorrect, incomplete or invalid data."
+      },
+      {
+        "key": "terms50",
+        "value": "The Player can see a list of all their active and expired purchases under their Player Account and this information may be accessed at any time. Player is strongly encouraged to make use of their Player Account to keep track of their purchases as well as adjusting preferences to improve the quality of their experience. The Player may self-manage their data at any time through the relevant Player Account."
+      },
+      {
+        "key": "terms51",
+        "value": "Lottery Draws"
+      },
+      {
+        "key": "terms52",
+        "value": "At LycaLotto.com the Player is offered the opportunity to purchase syndicate entries as featured from time to time on the Website:"
+      },
+      {
+        "key": "terms53",
+        "value": "Syndicate service is where the Player will be pooled with other Players playing together and sharing the winnings in a format defined by LycaLotto.com. The current format, which LycaLotto.com may amend and modify at any time at its own discretion, allows Players to purchase shares, aggregated with other participating Players. From time to time, at our sole discretion, it may be necessary to withdraw defined sets of numbers for the Draws and in such event we shall notify you in writing of other defined sets of numbers which could replace the Original Numbers. Your group may win the full prize amount if there are no other winners with the same matching numbers at LycaLotto.com."
+      },
+      {
+        "key": "terms54",
+        "value": "All syndicates featured on LycaLotto.com follow their specific set of games rules, and each one of them carries its own base odds and prizes breakdown, which may be at any time reviewed in our Games Rules (which form an integral part of the Terms). For the avoidance of any doubt, LycaLotto.com is not a lottery nor draws its own numbers or otherwise operates any lottery draw."
+      },
+      {
+        "key": "terms55",
+        "value": "By selecting one of the aforementioned services and filling the appropriate bulletin or package selection you are instructing us to act in your behalf submitting those purchases to LYCALOTTO.COM"
+      },
+      {
+        "key": "terms56",
+        "value": "Your subscription and registration are aimed at the use of a syndicate service and you are purchasing a share in the outcome of certain lotteries."
+      },
+      {
+        "key": "terms57",
+        "value": "Once the Purchase is submitted in accordance with the Terms, it cannot be amended or cancelled. Your participation in any of the services described in these Terms and Conditions or any part of the Website to which the Terms apply and your eligibility for relevant draws is dependent on the Payment you will have provided for the aforementioned services. Your Purchase will only be validated upon collection by us or other authorised third party payment provider of the funds cleared by your financial institution or other operator of a relevant valid payment method accepted for payment in respect of the services offered via the Website. For the avoidance of any doubt, our email confirmations to you will only occur after payment funds to us have been cleared and if this occurs after the Draw Deadline you will only be eligible to enter a similar draw thereafter. In the event of any dispute regarding when your registration (Player Account set up) confirmation was sent to you, our records regarding such dispatch shall be final and binding."
+      },
+      {
+        "key": "terms58",
+        "value": "After the number and/or package selection, you will be deemed to fill out the appropriate registration for it if you are playing with us for the very first time. Returning Players can use the login button available for existing users. You will be asked for confirmation of your purchase order and once it is submitted it can no longer be amended or cancelled.</p>"
+      },
+      {
+        "key": "terms59",
+        "value": "Winnings and Pay outs"
+      },
+      {
+        "key": "terms60",
+        "value": "After submitting and validating the purchases correctly as described in the above section 4.7 of these Terms and Conditions, you will be prompted for payment by selecting your preferred payment method. Please note that you cannot purchase syndicate entries on credit."
+      }
+    ]
+  },
+  {
+    "_id": "5a326dcdbafc95003ab2976b",
+    "name": "terms-of-use",
+    "language": "en",
+    "brand": "lycalotto",
+    "type": "page",
+    "content": [
+      {
+        "key": "terms1",
+        "value": "Terms and Conditions"
+      },
+      {
+        "key": "terms2",
+        "value": "These Terms and Conditions are effective from September 1st 2017"
+      },
+      {
+        "key": "terms3",
+        "value": "Introduction"
+      },
+      {
+        "key": "terms4",
+        "value": "By visiting/accessing, registering or using any sections of the Website and/or any syndicate services or functionality offered through the Website including any Player Account, you agree that you are fully bound by the following (i) these Terms and Conditions (ii) the Games Rules, (iii) the Privacy Policy (collectively “Terms”), all of which apply to  such activities/usage, as further described in the following paragraphs of these Terms and Conditions.  By accessing, registering and/or using any part of our Website and/or our services via the Website you are also deemed to have understood the entirety of the Terms to which you have agreed to fully comply. If you do not agree with, or refuse to accept, these Terms you will not be able to use or otherwise benefit from our services (and you should cease accessing or making any other use of the Website, syndicate services and/or Player Account)."
+      },
+      {
+        "key": "terms5",
+        "value": "Please take your time to read these Terms and Conditions carefully before registering for or becoming members of our subscription service and/or using any of the syndicate services or Website."
+      },
+      {
+        "key": "terms6",
+        "value": "The Terms may be altered from time to time and at any time without notice to you and for any reason (including without limitation in order to comply with applicable laws and regulations, and/or for other regulatory reasons). Any such changes shall take effect immediately upon being posted to the Website, and in any event, your continued use of our services after such changes come into effect shall be deemed to constitute your continued acceptance and adherence to those Terms in such revised form."
+      },
+      {
+        "key": "terms7",
+        "value": "You should always print a copy of these Terms for your records and should you have any doubt or questions about the Terms or any of our services please contact our customer support via the Contact Us section on the website (and in case of legal questions we would encourage you to seek independent legal advice).   Any reference in these Terms to \"you\", \"your\", the “player” or the \"customer\" shall be deemed a reference to any individual using the Website or the services provided or procured by us alone or in conjunction with any of our group companies, subcontractors and/or agents."
+      },
+      {
+        "key": "terms8",
+        "value": "About Lycalotto.com"
+      },
+      {
+        "key": "terms9",
+        "value": "Lycalotto.com services are managed by Winners Operations (Alderney) Limited (Registration No. 1941) registered at Century House, 12 Victoria Street, Alderney, GY9 3UF. LycaLotto.com is a trade mark of Pettigo Comercio Internacional Lda, and is licensed for use by Winners Operations (Alderney) Limited. Winners Operations (Alderney) Limited makes available relevant functionalities including use of the Player Account to registered Players on behalf of the licensed gaming entity."
+      },
+      {
+        "key": "terms10",
+        "value": "“We” or “us” or “our” is any reference to Winners Operations (Alderney) Limited, LycaLotto.com Limited, Winners Worldwide Limited, or Winners Group."
+      },
+      {
+        "key": "terms11",
+        "value": "Our Services"
+      },
+      {
+        "key": "terms12",
+        "value": "We operate the LycaLotto.com branded Website which enables Players to purchase a share of a syndicate composed of lottery tickets. We do not purchase lottery tickets on your behalf or in your name, we offer a syndicate management service in which you purchase a share of potential winnings in a syndicate where the tickets are entirely owned and procured by Us."
+      },
+      {
+        "key": "terms13",
+        "value": "We do not sell lottery tickets and we do not operate or promote a lottery, and You agree that we are not affiliated directly or indirectly with any lottery, anywhere in the world."
+      },
+      {
+        "key": "terms14",
+        "value": "Syndicates available on LycaLotto.com are sold as advertised and contain variable numbers of shares depending on the syndicate chosen. All syndicate numbers are chosen randomly and will be made available to You in Your account."
+      },
+      {
+        "key": "terms15",
+        "value": "Definitions"
+      },
+      {
+        "key": "terms16",
+        "value": "“LycaLotto.com” is the name of the domain for the Website and represents the lycalotto brand."
+      },
+      {
+        "key": "terms17",
+        "value": "“Bank Account” – A transactional deposit account held with a financial institution which allows the Player to perform withdrawals and deposit. This bank account will be linked to the Player Account."
+      },
+      {
+        "key": "terms18",
+        "value": "“Bank Card” – A prepaid, debit or credit card or any other card with a payment- and/or credit function and used as a payment method."
+      },
+      {
+        "key": "terms19",
+        "value": "“Draw” – Is the outcome of the moment in which lottery numbers are randomly selected from a pool of numbers. Those numbers are considered drawn from the pool of numbered balls and constitute the draw winning numbers. "
+      },
+      {
+        "key": "terms20",
+        "value": "“Members Area” – the part/sections of the Website and functionalities available to Players (ie. individuals who have registered and granted access to a Player Account on the basis of these Terms)."
+      },
+      {
+        "key": "terms21",
+        "value": "“Pay Out” – Is the amount which is to be, or has been paid out in regards to a matched number on the outcome of one or more of the syndicates mentioned herein."
+      },
+      {
+        "key": "terms22",
+        "value": "“Player” - An individual who has a contractual relationship with Winners Operations (Alderney) Limited and registered to use the syndicate services by establishing a Player Account accessed through and operated via the “www.LycaLotto.com” Website."
+      },
+      {
+        "key": "terms23",
+        "value": "“Player Account” – An account held by the Player, for bona fide transactions, through which the Player may place and pay for products through the Website."
+      },
+      {
+        "key": "terms24",
+        "value": "“Prize Category” – In connection to any given lottery draw, the “Prize Category” establishes the tier of winnings as determined by the amount of numbers properly matched (including any star or bonus numbers)."
+      },
+      {
+        "key": "terms25",
+        "value": "“Privacy Policy” - Policy established by us in respect of the use, storage and disclosure of any personal information gathered in regards to a Player or prospective Player. This policy is subject to amendment and updating from time to time."
+      },
+      {
+        "key": "terms26",
+        "value": "“Prize” or “Winnings” - the premium and/or value to be paid to the Player by Us on behalf of LYCALOTTO.COM in regards to a successful purchase outcome on any relevant syndicate in respect of each successful purchase, and the terms shall be used interchangeably."
+      },
+      {
+        "key": "terms27",
+        "value": " “Web Site” – LycaLotto.com Internet portal, accessible at: www.LycaLotto.com and any of its subdomains or top level domains, iframes or analogous content provided by us in third party or other connected websites, mobile and/ or web applications."
+      },
+      {
+        "key": "terms28",
+        "value": "“Winning Purchase” - a winning Purchase placed via the LycaLotto.com Website by a Player, using his/her Player Account. "
+      },
+      {
+        "key": "terms29",
+        "value": "“Your Numbers” – Set of numbers selected by you from the selection of numbers provided through us on LycaLotto.com for each syndicate."
+      },
+      {
+        "key": "terms30",
+        "value": "Players"
+      },
+      {
+        "key": "terms31",
+        "value": "All Players and prospective Players have to register via the LycaLotto.com Website in order to use all services including making purchases. We reserve the right to refuse at our sole discretion to complete registration for any prospective Player. By registering on the Website and/or using the services, you warrant that:"
+      },
+      {
+        "key": "terms32",
+        "value": "You are over 18 years of age or other minimum age of majority required under applicable law;"
+      },
+      {
+        "key": "terms33",
+        "value": "You are legally capable of entering into this binding agreement"
+      },
+      {
+        "key": "terms34",
+        "value": "You are aware that you might lose your Purchase and the funds you have deposited to fulfil your purchase through the Website;"
+      },
+      {
+        "key": "terms35",
+        "value": "You are not a resident and/or are located in any country in which purchases of this type are prohibited by local, national, federal or other law or leglislation. We and LYCALOTTO.COM will not be liable for any breach by you of any such laws;"
+      },
+      {
+        "key": "terms36",
+        "value": "In regards to Your use of the Website and syndicate services, you may only have one Player Account registered with LycaLotto.com and you must register for this Player Account using your actual name as per your identification records."
+      },
+      {
+        "key": "terms37",
+        "value": "Your Player Account at LycaLotto.com is solely for your benefit and you should not allow other individuals to purchase syndicate entries using your Player Account or access your Player Account, nor should you use other account details other than your own to purchase syndicate entries at LycaLotto.com."
+      },
+      {
+        "key": "terms38",
+        "value": "You are not a director, officer, or employee (or a spouse or dependant) of any Winners Group company, LYCALOTTO.COM or their group companies at the time of placing any Purchase."
+      },
+      {
+        "key": "terms39",
+        "value": "Should any of the information that you provide to us be untrue, inaccurate, misleading or otherwise incomplete, you will be deemed to be in breach of the Terms and we reserve on behalf of LYCALOTTO.COM all rights to terminate your Player Account immediately and/or prevent you from using any related software or the services, in addition to any other action that we may choose to take."
+      },
+      {
+        "key": "terms40",
+        "value": "We reserve the right to ask, when you register for a Player Account and/or on an ongoing basis, for proof (or renewed evidence) of your age, residence, payment method, postal address as well as other relevant information from you and should you fail to provide satisfactory proof in a timely manner we may suspend or refuse to open your Player Account until safe receipt of the aforementioned proof. You hereby consent to us carrying out such age verification, identity or other checks on you as we may require, even if carried out by third parties."
+      },
+      {
+        "key": "terms41",
+        "value": "In respect of any Syndicate purchase, You are purchasing a share of any winnings that may occur as a result of Draw Winnings (if any) are determined by those results."
+      },
+      {
+        "key": "terms42",
+        "value": "In relation to the Draws, we may purchase lottery tickets or purchase insurance through third parties in relation to such Draws to cover our risks or liabilities. You shall have no rights of any nature in any lottery tickets we may buy in relation to the Draws or otherwise. For the avoidance of doubt, we shall only be obliged to pay Draw Winnings to you (and on behalf of LYCALOTTO.COM) in the event we have received the corresponding winning funds from the relevant lottery or third party."
+      },
+      {
+        "key": "terms43",
+        "value": "The Player is entitled to terminate his/her account at any time by contacting customer support through any of the points of contact indicated at LycaLotto.com (and subject to the formal notification process described below). Any termination by Player must be requested in writing to Support@LycaLotto.com clearly identifying yourself and your corresponding Player Account will upon our receipt of your notice enter into a seven (7) day suspension period until all submitted purchases are processed and the account closure process completed.  During such 7 day suspension period you will have no access to your Player Account or be able to submit additional purchases."
+      },
+      {
+        "key": "terms44",
+        "value": "After the Player Account is effectively terminated we will not accept further purchases or deposits from You, and you will not be entered into any further Draws other than the ones you have paid and/or subscribed for in advance prior to termination."
+      },
+      {
+        "key": "terms45",
+        "value": "Registration, Player Account and Password"
+      },
+      {
+        "key": "terms46",
+        "value": "When completing the registration application process at LycaLotto.com the Player must provide a username, valid email address, password, address and his/her age (together with any supporting documentation we may reasonably require to verify the accuracy and authenticity of all such information). Once the registration process is completed, LycaLotto.com at its sole discretion will confirm acceptance of your account registration and/or purchase by sending a confirmation email to the email address you provided during registration. Only after receiving this confirmation will your Player Account be deemed approved and these Terms valid between the applicable parties for any ongoing dealings with you via the Website and/or for making purchases and use of services."
+      },
+      {
+        "key": "terms47",
+        "value": "You must keep your Player Account information in a secure place thus preventing any unauthorised use or access. This information includes your personally created password, username and other relevant details. All changes made from the Player Account shall be your responsibility. Any hacking attempts or possible security breaches arising from your computer in regard to your Player Account information, credit cards and other payment methods should immediately be reported to LycaLotto.com support at security@lycalotto.com or other relevant security incident reporting email/phone contacts provided on the Website."
+      },
+      {
+        "key": "terms48",
+        "value": "It is the Player’s obligation to report any suspected or actual fraud or illegal use of their Player Account at LycaLotto.com and to take such steps as may be required (in full cooperation with us) in order to prevent any such fraud/illegality, such as by changing the password on the Player Account. The Player shall be responsible for all activities and transactions conducted through their Player Account."
+      },
+      {
+        "key": "terms49",
+        "value": "The Player shall ensure that the details in respect of their payment method data provided by them at the point of registration and payment respectively are complete, accurate and have not been stolen or lost. The Player shall immediately inform us if their Bank Card or a comparable payment method, which they have specified on the Website, becomes lost, suspended or stolen; the same applies, if relevant passwords or confidential information has been submitted to third parties. The Player shall inform us of any changes in regards to information provided including, but not limited to Bank Cards and Bank Accounts, by updating their Player Account.  Neither we nor LYCALOTTO.COM shall be responsible for failure of Payouts due to non-provision of data by the Player, or the provision of missing, incorrect, incomplete or expired data. Neither we nor LYCALOTTO.COM are under any obligation to verify any data provided or to make contact with a Player to complete or change incorrect, incomplete or invalid data."
+      },
+      {
+        "key": "terms50",
+        "value": "The Player can see a list of all their active and expired purchases under their Player Account and this information may be accessed at any time. Player is strongly encouraged to make use of their Player Account to keep track of their purchases as well as adjusting preferences to improve the quality of their experience. The Player may self-manage their data at any time through the relevant Player Account."
+      },
+      {
+        "key": "terms51",
+        "value": "Lottery Draws"
+      },
+      {
+        "key": "terms52",
+        "value": "At LycaLotto.com the Player is offered the opportunity to purchase syndicate entries as featured from time to time on the Website:"
+      },
+      {
+        "key": "terms53",
+        "value": "Syndicate service is where the Player will be pooled with other Players playing together and sharing the winnings in a format defined by LycaLotto.com. The current format, which LycaLotto.com may amend and modify at any time at its own discretion, allows Players to purchase shares, aggregated with other participating Players. From time to time, at our sole discretion, it may be necessary to withdraw defined sets of numbers for the Draws and in such event we shall notify you in writing of other defined sets of numbers which could replace the Original Numbers. Your group may win the full prize amount if there are no other winners with the same matching numbers at LycaLotto.com."
+      },
+      {
+        "key": "terms54",
+        "value": "All syndicates featured on LycaLotto.com follow their specific set of games rules, and each one of them carries its own base odds and prizes breakdown, which may be at any time reviewed in our Games Rules (which form an integral part of the Terms). For the avoidance of any doubt, LycaLotto.com is not a lottery nor draws its own numbers or otherwise operates any lottery draw."
+      },
+      {
+        "key": "terms55",
+        "value": "By selecting one of the aforementioned services and filling the appropriate bulletin or package selection you are instructing us to act in your behalf submitting those purchases to LYCALOTTO.COM"
+      },
+      {
+        "key": "terms56",
+        "value": "Your subscription and registration are aimed at the use of a syndicate service and you are purchasing a share in the outcome of certain lotteries."
+      },
+      {
+        "key": "terms57",
+        "value": "Once the Purchase is submitted in accordance with the Terms, it cannot be amended or cancelled. Your participation in any of the services described in these Terms and Conditions or any part of the Website to which the Terms apply and your eligibility for relevant draws is dependent on the Payment you will have provided for the aforementioned services. Your Purchase will only be validated upon collection by us or other authorised third party payment provider of the funds cleared by your financial institution or other operator of a relevant valid payment method accepted for payment in respect of the services offered via the Website. For the avoidance of any doubt, our email confirmations to you will only occur after payment funds to us have been cleared and if this occurs after the Draw Deadline you will only be eligible to enter a similar draw thereafter. In the event of any dispute regarding when your registration (Player Account set up) confirmation was sent to you, our records regarding such dispatch shall be final and binding."
+      },
+      {
+        "key": "terms58",
+        "value": "After the number and/or package selection, you will be deemed to fill out the appropriate registration for it if you are playing with us for the very first time. Returning Players can use the login button available for existing users. You will be asked for confirmation of your purchase order and once it is submitted it can no longer be amended or cancelled.</p>"
+      },
+      {
+        "key": "terms59",
+        "value": "Winnings and Pay outs"
+      },
+      {
+        "key": "terms60",
+        "value": "After submitting and validating the purchases correctly as described in the above section 4.7 of these Terms and Conditions, you will be prompted for payment by selecting your preferred payment method. Please note that you cannot purchase syndicate entries on credit."
+      }
+    ]
+  },
+  {
+    "_id": "5a326dcdbafc95003ab2976c",
+    "name": "terms-of-use",
+    "language": "en",
+    "brand": "lycalotto",
+    "type": "page",
+    "content": [
+      {
+        "key": "terms1",
+        "value": "Terms and Conditions"
+      },
+      {
+        "key": "terms2",
+        "value": "These Terms and Conditions are effective from September 1st 2017"
+      },
+      {
+        "key": "terms3",
+        "value": "Introduction"
+      },
+      {
+        "key": "terms4",
+        "value": "By visiting/accessing, registering or using any sections of the Website and/or any syndicate services or functionality offered through the Website including any Player Account, you agree that you are fully bound by the following (i) these Terms and Conditions (ii) the Games Rules, (iii) the Privacy Policy (collectively “Terms”), all of which apply to  such activities/usage, as further described in the following paragraphs of these Terms and Conditions.  By accessing, registering and/or using any part of our Website and/or our services via the Website you are also deemed to have understood the entirety of the Terms to which you have agreed to fully comply. If you do not agree with, or refuse to accept, these Terms you will not be able to use or otherwise benefit from our services (and you should cease accessing or making any other use of the Website, syndicate services and/or Player Account)."
+      },
+      {
+        "key": "terms5",
+        "value": "Please take your time to read these Terms and Conditions carefully before registering for or becoming members of our subscription service and/or using any of the syndicate services or Website."
+      },
+      {
+        "key": "terms6",
+        "value": "The Terms may be altered from time to time and at any time without notice to you and for any reason (including without limitation in order to comply with applicable laws and regulations, and/or for other regulatory reasons). Any such changes shall take effect immediately upon being posted to the Website, and in any event, your continued use of our services after such changes come into effect shall be deemed to constitute your continued acceptance and adherence to those Terms in such revised form."
+      },
+      {
+        "key": "terms7",
+        "value": "You should always print a copy of these Terms for your records and should you have any doubt or questions about the Terms or any of our services please contact our customer support via the Contact Us section on the website (and in case of legal questions we would encourage you to seek independent legal advice).   Any reference in these Terms to \"you\", \"your\", the “player” or the \"customer\" shall be deemed a reference to any individual using the Website or the services provided or procured by us alone or in conjunction with any of our group companies, subcontractors and/or agents."
+      },
+      {
+        "key": "terms8",
+        "value": "About Lycalotto.com"
+      },
+      {
+        "key": "terms9",
+        "value": "Lycalotto.com services are managed by Winners Operations (Alderney) Limited (Registration No. 1941) registered at Century House, 12 Victoria Street, Alderney, GY9 3UF. LycaLotto.com is a trade mark of Pettigo Comercio Internacional Lda, and is licensed for use by Winners Operations (Alderney) Limited. Winners Operations (Alderney) Limited makes available relevant functionalities including use of the Player Account to registered Players on behalf of the licensed gaming entity."
+      },
+      {
+        "key": "terms10",
+        "value": "“We” or “us” or “our” is any reference to Winners Operations (Alderney) Limited, LycaLotto.com Limited, Winners Worldwide Limited, or Winners Group."
+      },
+      {
+        "key": "terms11",
+        "value": "Our Services"
+      },
+      {
+        "key": "terms12",
+        "value": "We operate the LycaLotto.com branded Website which enables Players to purchase a share of a syndicate composed of lottery tickets. We do not purchase lottery tickets on your behalf or in your name, we offer a syndicate management service in which you purchase a share of potential winnings in a syndicate where the tickets are entirely owned and procured by Us."
+      },
+      {
+        "key": "terms13",
+        "value": "We do not sell lottery tickets and we do not operate or promote a lottery, and You agree that we are not affiliated directly or indirectly with any lottery, anywhere in the world."
+      },
+      {
+        "key": "terms14",
+        "value": "Syndicates available on LycaLotto.com are sold as advertised and contain variable numbers of shares depending on the syndicate chosen. All syndicate numbers are chosen randomly and will be made available to You in Your account."
+      },
+      {
+        "key": "terms15",
+        "value": "Definitions"
+      },
+      {
+        "key": "terms16",
+        "value": "“LycaLotto.com” is the name of the domain for the Website and represents the lycalotto brand."
+      },
+      {
+        "key": "terms17",
+        "value": "“Bank Account” – A transactional deposit account held with a financial institution which allows the Player to perform withdrawals and deposit. This bank account will be linked to the Player Account."
+      },
+      {
+        "key": "terms18",
+        "value": "“Bank Card” – A prepaid, debit or credit card or any other card with a payment- and/or credit function and used as a payment method."
+      },
+      {
+        "key": "terms19",
+        "value": "“Draw” – Is the outcome of the moment in which lottery numbers are randomly selected from a pool of numbers. Those numbers are considered drawn from the pool of numbered balls and constitute the draw winning numbers. "
+      },
+      {
+        "key": "terms20",
+        "value": "“Members Area” – the part/sections of the Website and functionalities available to Players (ie. individuals who have registered and granted access to a Player Account on the basis of these Terms)."
+      },
+      {
+        "key": "terms21",
+        "value": "“Pay Out” – Is the amount which is to be, or has been paid out in regards to a matched number on the outcome of one or more of the syndicates mentioned herein."
+      },
+      {
+        "key": "terms22",
+        "value": "“Player” - An individual who has a contractual relationship with Winners Operations (Alderney) Limited and registered to use the syndicate services by establishing a Player Account accessed through and operated via the “www.LycaLotto.com” Website."
+      },
+      {
+        "key": "terms23",
+        "value": "“Player Account” – An account held by the Player, for bona fide transactions, through which the Player may place and pay for products through the Website."
+      },
+      {
+        "key": "terms24",
+        "value": "“Prize Category” – In connection to any given lottery draw, the “Prize Category” establishes the tier of winnings as determined by the amount of numbers properly matched (including any star or bonus numbers)."
+      },
+      {
+        "key": "terms25",
+        "value": "“Privacy Policy” - Policy established by us in respect of the use, storage and disclosure of any personal information gathered in regards to a Player or prospective Player. This policy is subject to amendment and updating from time to time."
+      },
+      {
+        "key": "terms26",
+        "value": "“Prize” or “Winnings” - the premium and/or value to be paid to the Player by Us on behalf of LYCALOTTO.COM in regards to a successful purchase outcome on any relevant syndicate in respect of each successful purchase, and the terms shall be used interchangeably."
+      },
+      {
+        "key": "terms27",
+        "value": " “Web Site” – LycaLotto.com Internet portal, accessible at: www.LycaLotto.com and any of its subdomains or top level domains, iframes or analogous content provided by us in third party or other connected websites, mobile and/ or web applications."
+      },
+      {
+        "key": "terms28",
+        "value": "“Winning Purchase” - a winning Purchase placed via the LycaLotto.com Website by a Player, using his/her Player Account. "
+      },
+      {
+        "key": "terms29",
+        "value": "“Your Numbers” – Set of numbers selected by you from the selection of numbers provided through us on LycaLotto.com for each syndicate."
+      },
+      {
+        "key": "terms30",
+        "value": "Players"
+      },
+      {
+        "key": "terms31",
+        "value": "All Players and prospective Players have to register via the LycaLotto.com Website in order to use all services including making purchases. We reserve the right to refuse at our sole discretion to complete registration for any prospective Player. By registering on the Website and/or using the services, you warrant that:"
+      },
+      {
+        "key": "terms32",
+        "value": "You are over 18 years of age or other minimum age of majority required under applicable law;"
+      },
+      {
+        "key": "terms33",
+        "value": "You are legally capable of entering into this binding agreement"
+      },
+      {
+        "key": "terms34",
+        "value": "You are aware that you might lose your Purchase and the funds you have deposited to fulfil your purchase through the Website;"
+      },
+      {
+        "key": "terms35",
+        "value": "You are not a resident and/or are located in any country in which purchases of this type are prohibited by local, national, federal or other law or leglislation. We and LYCALOTTO.COM will not be liable for any breach by you of any such laws;"
+      },
+      {
+        "key": "terms36",
+        "value": "In regards to Your use of the Website and syndicate services, you may only have one Player Account registered with LycaLotto.com and you must register for this Player Account using your actual name as per your identification records."
+      },
+      {
+        "key": "terms37",
+        "value": "Your Player Account at LycaLotto.com is solely for your benefit and you should not allow other individuals to purchase syndicate entries using your Player Account or access your Player Account, nor should you use other account details other than your own to purchase syndicate entries at LycaLotto.com."
+      },
+      {
+        "key": "terms38",
+        "value": "You are not a director, officer, or employee (or a spouse or dependant) of any Winners Group company, LYCALOTTO.COM or their group companies at the time of placing any Purchase."
+      },
+      {
+        "key": "terms39",
+        "value": "Should any of the information that you provide to us be untrue, inaccurate, misleading or otherwise incomplete, you will be deemed to be in breach of the Terms and we reserve on behalf of LYCALOTTO.COM all rights to terminate your Player Account immediately and/or prevent you from using any related software or the services, in addition to any other action that we may choose to take."
+      },
+      {
+        "key": "terms40",
+        "value": "We reserve the right to ask, when you register for a Player Account and/or on an ongoing basis, for proof (or renewed evidence) of your age, residence, payment method, postal address as well as other relevant information from you and should you fail to provide satisfactory proof in a timely manner we may suspend or refuse to open your Player Account until safe receipt of the aforementioned proof. You hereby consent to us carrying out such age verification, identity or other checks on you as we may require, even if carried out by third parties."
+      },
+      {
+        "key": "terms41",
+        "value": "In respect of any Syndicate purchase, You are purchasing a share of any winnings that may occur as a result of Draw Winnings (if any) are determined by those results."
+      },
+      {
+        "key": "terms42",
+        "value": "In relation to the Draws, we may purchase lottery tickets or purchase insurance through third parties in relation to such Draws to cover our risks or liabilities. You shall have no rights of any nature in any lottery tickets we may buy in relation to the Draws or otherwise. For the avoidance of doubt, we shall only be obliged to pay Draw Winnings to you (and on behalf of LYCALOTTO.COM) in the event we have received the corresponding winning funds from the relevant lottery or third party."
+      },
+      {
+        "key": "terms43",
+        "value": "The Player is entitled to terminate his/her account at any time by contacting customer support through any of the points of contact indicated at LycaLotto.com (and subject to the formal notification process described below). Any termination by Player must be requested in writing to Support@LycaLotto.com clearly identifying yourself and your corresponding Player Account will upon our receipt of your notice enter into a seven (7) day suspension period until all submitted purchases are processed and the account closure process completed.  During such 7 day suspension period you will have no access to your Player Account or be able to submit additional purchases."
+      },
+      {
+        "key": "terms44",
+        "value": "After the Player Account is effectively terminated we will not accept further purchases or deposits from You, and you will not be entered into any further Draws other than the ones you have paid and/or subscribed for in advance prior to termination."
+      },
+      {
+        "key": "terms45",
+        "value": "Registration, Player Account and Password"
+      },
+      {
+        "key": "terms46",
+        "value": "When completing the registration application process at LycaLotto.com the Player must provide a username, valid email address, password, address and his/her age (together with any supporting documentation we may reasonably require to verify the accuracy and authenticity of all such information). Once the registration process is completed, LycaLotto.com at its sole discretion will confirm acceptance of your account registration and/or purchase by sending a confirmation email to the email address you provided during registration. Only after receiving this confirmation will your Player Account be deemed approved and these Terms valid between the applicable parties for any ongoing dealings with you via the Website and/or for making purchases and use of services."
+      },
+      {
+        "key": "terms47",
+        "value": "You must keep your Player Account information in a secure place thus preventing any unauthorised use or access. This information includes your personally created password, username and other relevant details. All changes made from the Player Account shall be your responsibility. Any hacking attempts or possible security breaches arising from your computer in regard to your Player Account information, credit cards and other payment methods should immediately be reported to LycaLotto.com support at security@lycalotto.com or other relevant security incident reporting email/phone contacts provided on the Website."
+      },
+      {
+        "key": "terms48",
+        "value": "It is the Player’s obligation to report any suspected or actual fraud or illegal use of their Player Account at LycaLotto.com and to take such steps as may be required (in full cooperation with us) in order to prevent any such fraud/illegality, such as by changing the password on the Player Account. The Player shall be responsible for all activities and transactions conducted through their Player Account."
+      },
+      {
+        "key": "terms49",
+        "value": "The Player shall ensure that the details in respect of their payment method data provided by them at the point of registration and payment respectively are complete, accurate and have not been stolen or lost. The Player shall immediately inform us if their Bank Card or a comparable payment method, which they have specified on the Website, becomes lost, suspended or stolen; the same applies, if relevant passwords or confidential information has been submitted to third parties. The Player shall inform us of any changes in regards to information provided including, but not limited to Bank Cards and Bank Accounts, by updating their Player Account.  Neither we nor LYCALOTTO.COM shall be responsible for failure of Payouts due to non-provision of data by the Player, or the provision of missing, incorrect, incomplete or expired data. Neither we nor LYCALOTTO.COM are under any obligation to verify any data provided or to make contact with a Player to complete or change incorrect, incomplete or invalid data."
+      },
+      {
+        "key": "terms50",
+        "value": "The Player can see a list of all their active and expired purchases under their Player Account and this information may be accessed at any time. Player is strongly encouraged to make use of their Player Account to keep track of their purchases as well as adjusting preferences to improve the quality of their experience. The Player may self-manage their data at any time through the relevant Player Account."
+      },
+      {
+        "key": "terms51",
+        "value": "Lottery Draws"
+      },
+      {
+        "key": "terms52",
+        "value": "At LycaLotto.com the Player is offered the opportunity to purchase syndicate entries as featured from time to time on the Website:"
+      },
+      {
+        "key": "terms53",
+        "value": "Syndicate service is where the Player will be pooled with other Players playing together and sharing the winnings in a format defined by LycaLotto.com. The current format, which LycaLotto.com may amend and modify at any time at its own discretion, allows Players to purchase shares, aggregated with other participating Players. From time to time, at our sole discretion, it may be necessary to withdraw defined sets of numbers for the Draws and in such event we shall notify you in writing of other defined sets of numbers which could replace the Original Numbers. Your group may win the full prize amount if there are no other winners with the same matching numbers at LycaLotto.com."
+      },
+      {
+        "key": "terms54",
+        "value": "All syndicates featured on LycaLotto.com follow their specific set of games rules, and each one of them carries its own base odds and prizes breakdown, which may be at any time reviewed in our Games Rules (which form an integral part of the Terms). For the avoidance of any doubt, LycaLotto.com is not a lottery nor draws its own numbers or otherwise operates any lottery draw."
+      },
+      {
+        "key": "terms55",
+        "value": "By selecting one of the aforementioned services and filling the appropriate bulletin or package selection you are instructing us to act in your behalf submitting those purchases to LYCALOTTO.COM"
+      },
+      {
+        "key": "terms56",
+        "value": "Your subscription and registration are aimed at the use of a syndicate service and you are purchasing a share in the outcome of certain lotteries."
+      },
+      {
+        "key": "terms57",
+        "value": "Once the Purchase is submitted in accordance with the Terms, it cannot be amended or cancelled. Your participation in any of the services described in these Terms and Conditions or any part of the Website to which the Terms apply and your eligibility for relevant draws is dependent on the Payment you will have provided for the aforementioned services. Your Purchase will only be validated upon collection by us or other authorised third party payment provider of the funds cleared by your financial institution or other operator of a relevant valid payment method accepted for payment in respect of the services offered via the Website. For the avoidance of any doubt, our email confirmations to you will only occur after payment funds to us have been cleared and if this occurs after the Draw Deadline you will only be eligible to enter a similar draw thereafter. In the event of any dispute regarding when your registration (Player Account set up) confirmation was sent to you, our records regarding such dispatch shall be final and binding."
+      },
+      {
+        "key": "terms58",
+        "value": "After the number and/or package selection, you will be deemed to fill out the appropriate registration for it if you are playing with us for the very first time. Returning Players can use the login button available for existing users. You will be asked for confirmation of your purchase order and once it is submitted it can no longer be amended or cancelled.</p>"
+      },
+      {
+        "key": "terms59",
+        "value": "Winnings and Pay outs"
+      },
+      {
+        "key": "terms60",
+        "value": "After submitting and validating the purchases correctly as described in the above section 4.7 of these Terms and Conditions, you will be prompted for payment by selecting your preferred payment method. Please note that you cannot purchase syndicate entries on credit."
+      }
+    ]
+  }
+]
