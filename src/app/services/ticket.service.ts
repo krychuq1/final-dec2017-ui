@@ -1,10 +1,11 @@
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import 'rxjs/add/operator/toPromise';
 import {Injectable} from "@angular/core";
+import * as vars from '../config';
 
 @Injectable()
 export class TicketService {
-  url = 'http://localhost:7777/tickets/';
+  url = vars.apiUrl + 'tickets/';
   constructor(private http: HttpClient) {}
 
   getTicketsForEvent(token: string, eventId: number) {

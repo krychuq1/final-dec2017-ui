@@ -2,12 +2,12 @@ import { EventModel } from "../models/event.model";
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import 'rxjs/add/operator/toPromise';
 import {Injectable} from "@angular/core";
+import * as vars from '../config';
 
 @Injectable()
 export class EventService {
-    urlEvent = 'http://localhost:7777/events/';
-    urlBooking = 'http://localhost:7777/bookings/';
-
+    urlEvent = vars.apiUrl + 'events/';
+    urlBooking = vars.apiUrl + 'bookings/';
     constructor(private http: HttpClient) {}
 
     getEvents(token) {

@@ -1,18 +1,21 @@
-<div class="userPage" *ngIf="!processing">
-  <h1>Let's get started</h1>
-  <p>Enter your email to sign up or log in.</p>
+<div class="userPageHolder">
+  <div class="userPage" *ngIf="!processing.processing && !processing.completed">
+    <h1>Let's get started</h1>
+    <p>Enter your email to sign up or log in.</p>
 
-  <form class="user-form"  [formGroup]="emailForm" (ngSubmit)="onSubmitForm()" >
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Email" formControlName="email" >
-      <div *ngIf="emailControler.errors && emailControler.touched">
-        <mat-error *ngIf="emailControler.errors.required">Email is required</mat-error>
-        <mat-error *ngIf="emailControler.errors.pattern">Please enter valid email</mat-error>
-      </div>
-    </mat-form-field>
-    <button mat-raised-button color="primary" [disabled]="!emailForm.valid">Get Started</button>
+    <form class="user-form"  [formGroup]="emailForm" (ngSubmit)="onSubmitForm()" >
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" formControlName="email" >
+        <div *ngIf="emailControler.errors && emailControler.touched">
+          <mat-error *ngIf="emailControler.errors.required">Email is required</mat-error>
+          <mat-error *ngIf="emailControler.errors.pattern">Please enter valid email</mat-error>
+        </div>
+      </mat-form-field>
+      <button mat-raised-button color="primary" [disabled]="!emailForm.valid">Get Started</button>
+    </form>
+  </div>
+  <mat-spinner *ngIf="processing.processing && !processing.completed"></mat-spinner>
 
-  </form>
 </div>
 
 <router-outlet></router-outlet>

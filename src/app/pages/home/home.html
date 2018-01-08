@@ -10,7 +10,7 @@
   <div class="event-holder" *ngFor="let event of event" >
     <!-- {{event | json}}-->
     <mat-card routerLink="/user/login">
-      <img src="http://localhost:7777/images/{{event.image}}" class="image-display">
+      <img src="{{apiUrl}}images/{{event.image}}" class="image-display">
       <div class="event-details">
         <div class="event-date-time">{{event.start_date}}, {{event.start_time}}</div>
         <div class="event-title">{{event.title}}</div>

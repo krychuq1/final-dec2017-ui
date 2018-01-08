@@ -5,7 +5,7 @@ import {UserService} from '../../services/user.service';
 import {UserModel} from '../../models/user.model';
 import {EventService} from "../../services/event.service";
 import {EventModel} from "../../models/event.model";
-
+import * as vars from "../../config"
 @Component({
     selector: 'home',
     templateUrl: './home.html',
@@ -14,7 +14,9 @@ import {EventModel} from "../../models/event.model";
 export class HomeComponent {
     user: UserModel;
     event;
+    apiUrl;
     constructor(private userService: UserService, private eventService: EventService ) {
+        this.apiUrl = vars.apiUrl;
         this.checkLocalStorage();
         this.displayAllActiveEvents();
         this.userService.userUpdates.subscribe(

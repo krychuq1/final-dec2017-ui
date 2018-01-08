@@ -13,14 +13,21 @@ export class UserComponent {
   emailForm: FormGroup;
   emailControler;
   EMAIL_PATTERN = /^[a-z]+[a-z0-9._]+@[a-z]+[a-z0-9._]+\.[a-z.]{2,5}$/;
-  processing: boolean;
+  processing;
 
   constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router) {
+    this.processing = {
+      completed: false,
+      processing: true
+    };
     this.buildForm();
-    if (this.router.url.indexOf('/register') > -1) {
-      this.processing = true;
+    console.log(this.router.url);
+    if (this.router.url === '/user') {
+      this.processing.completed = false;
+      this.processing.processing = false;
     }else {
-      this.processing = false;
+      this.processing.processing = true;
+      this.processing.completed = true;
     }
   }
 
@@ -32,11 +39,12 @@ export class UserComponent {
   }
 
   public onSubmitForm() {
-    this.processing = true;
+    this.processing.processing = true;
     // make a call to api to check if email exits
     this.userService.checkIfUserExists(this.emailControler.value).subscribe(res => {
-      this.router.navigateByUrl('/user/login');
-
+     this.router.navigateByUrl('/user/login');
+      this.processing.processing = false;
+      this.processing.completed = true;
     }, (err: HttpErrorResponse) => {
       if (err.error instanceof Error) {
         // A client-side or network error occurred. Handle it accordingly.

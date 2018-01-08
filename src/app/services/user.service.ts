@@ -2,6 +2,7 @@ import {EventEmitter, Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {UserModel} from "../models/user.model";
 import {Observable} from "rxjs/Observable";
+import * as vars from '../config';
 import {Subject} from "rxjs/Subject";
 import 'rxjs/add/observable/of';
 
@@ -9,7 +10,7 @@ import 'rxjs/add/observable/of';
 export class UserService {
     userUpdates: EventEmitter<UserModel> = new EventEmitter();
     user: UserModel;
-    url = 'http://localhost:7777/users/';
+    url = vars.apiUrl + 'users/';
     constructor(private http: HttpClient ) {}
 
     checkIfUserExists(email): any {
