@@ -15,11 +15,23 @@ export class UserLoginComponent {
     loginForm: FormGroup;
     passwordController;
     userValidation: boolean;
-
+    processing;
     constructor(private formBuilder: FormBuilder, private userController: UserComponent,
                 private userService: UserService, private router: Router, private appComponent: AppComponent) {
+      this.processing = {
+        completed: false,
+        processing: true
+      };
+      if (this.router.url.indexOf('/login') > -1) {
+        this.processing.completed = false;
+        this.processing.processing = false;
+      }else {
+        this.processing.processing = true;
+        this.processing.completed = true;
+      }
         this.buildForm();
         this.userValidation = false;
+
     }
 
     private buildForm() {
@@ -30,13 +42,12 @@ export class UserLoginComponent {
     }
 
     public login(): void {
+        this.processing.processing = true;
         const user = {
             email: this.userController.getEmail(),
             password: this.passwordController.value
         };
-        console.log('user data is : ', user);
         this.userService.getToken(user).subscribe(res => {
-            console.log('token: ', res);
             const localUserData = {
                 token: res['token'],
                 email: user.email
@@ -46,12 +57,19 @@ export class UserLoginComponent {
             this.userValidation = false;
             this.appComponent.checkLocalStorage();
             this.router.navigateByUrl('');
+            this.processing.processing = false;
+            this.processing.completed = true;
+
         }, (err: HttpErrorResponse) => {
             if (err.error instanceof Error) {
                 this.userValidation = true;
                 console.log('An error occurred:', err.error.message);
+              this.processing.processing = false;
+              this.processing.completed = false;
             } else {
                 this.userValidation = true;
+              this.processing.processing = false;
+              this.processing.completed = false;
                 console.log('should go to register');
                 console.log(`Backend returned code ${err.status}, body was: ${err.error}`);
             }

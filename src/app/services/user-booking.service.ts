@@ -4,10 +4,11 @@ import {UserModel} from "../models/user.model";
 import {Observable} from "rxjs/Observable";
 import {Subject} from "rxjs/Subject";
 import 'rxjs/add/observable/of';
+import * as vars from '../config';
 
 @Injectable()
 export class UserBookingService {
-  url = 'https://eventhub-api.herokuapp.com/bookings/';
+  url = vars.apiUrl + 'bookings/';
   constructor(private http: HttpClient ) {}
 
   getAll() {

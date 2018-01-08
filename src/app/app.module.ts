@@ -32,7 +32,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import {UserAdminComponent} from './pages/users-admin/user-admin.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {UserBookingService} from "./services/user-booking.service";
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 @NgModule({
     declarations: [
         AppComponent,
@@ -55,6 +55,7 @@ import {UserBookingService} from "./services/user-booking.service";
         MatTabsModule,
         BrowserAnimationsModule,
         FormsModule,
+        MatProgressSpinnerModule,
         ReactiveFormsModule,
         HttpClientModule,
         MatCardModule,
