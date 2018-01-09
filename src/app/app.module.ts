@@ -33,6 +33,7 @@ import {UserAdminComponent} from './pages/users-admin/user-admin.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {UserBookingService} from "./services/user-booking.service";
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {WebsiteWatcherService} from './services/website-watcher.service';
 @NgModule({
     declarations: [
         AppComponent,
@@ -69,7 +70,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
         RouterModule.forRoot(routes)
 
     ],
-    providers: [FormBuilder, UserService, EventService, TicketService, UserBookingService],
+    providers: [FormBuilder, UserService, EventService, TicketService, UserBookingService, WebsiteWatcherService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

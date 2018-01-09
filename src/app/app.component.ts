@@ -3,6 +3,8 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "./services/user.service";
 import {HttpErrorResponse} from "@angular/common/http";
 import {EventService} from "./services/event.service";
+import {WebsiteWatcherService} from './services/website-watcher.service';
+import * as moment from 'moment';
 
 @Component({
     selector: 'app-root',
@@ -11,18 +13,32 @@ import {EventService} from "./services/event.service";
 })
 export class AppComponent {
     constructor(private router: Router, private userService: UserService, private routeActive:ActivatedRoute,
-                private eventService: EventService ) {
+                public websiteWatcherService: WebsiteWatcherService ) {
         routeActive.params.subscribe(val => {
             this.checkLocalStorage();
         });
     }
     public checkLocalStorage() {
         const obj = JSON.parse(localStorage.getItem('user'));
+        this.websiteWatcherService.getIp().subscribe(res => {
+          let user = {
+            ip: res['ip'],
+            city: res['city'],
+            location: res['loc'],
+            organization: res['org'],
+            region: res['region'],
+            startTime: moment().format("YYYY-MM-DD HH:mm:ss"),
+            endTime: ''
+          };
+        this.websiteWatcherService.addUser(user).subscribe(savedUser => {
+          console.log("we are here ", savedUser)
+
+        });
+        });
          if (obj) {
            this.userService.getUser(obj).subscribe(res => {
                 res['token'] = obj.token;
                 this.userService.setUser(res);
-                console.log(this.userService.getLocalUser());
            }, (err: HttpErrorResponse) => {
                if (err.error instanceof Error) {
                    console.log('An error occurred:', err.error.message);
@@ -32,9 +48,5 @@ export class AppComponent {
            });
          }
     }
-    public parseLocalStorageToken() {
-        console.log('AT app.components parseLocalStorage');
-        const obj = JSON.parse(localStorage.getItem('user'));
-        return obj;
-    }
+
 }
