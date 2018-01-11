@@ -20,26 +20,13 @@ export class AppComponent {
     }
     public checkLocalStorage() {
         const obj = JSON.parse(localStorage.getItem('user'));
-        this.websiteWatcherService.getIp().subscribe(res => {
-          let user = {
-            ip: res['ip'],
-            city: res['city'],
-            location: res['loc'],
-            organization: res['org'],
-            region: res['region'],
-            startTime: moment().format("YYYY-MM-DD HH:mm:ss"),
-            endTime: ''
-          };
-        this.websiteWatcherService.addUser(user).subscribe(savedUser => {
-          console.log("we are here ", savedUser)
 
-        });
-        });
          if (obj) {
            this.userService.getUser(obj).subscribe(res => {
                 res['token'] = obj.token;
                 this.userService.setUser(res);
-           }, (err: HttpErrorResponse) => {
+                this.websiteWatcherService.addUser(res['id']);
+                }, (err: HttpErrorResponse) => {
                if (err.error instanceof Error) {
                    console.log('An error occurred:', err.error.message);
                } else {
