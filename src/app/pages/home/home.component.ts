@@ -52,7 +52,6 @@ export class HomeComponent {
     });
   }
   public createEvent(){
-    console.log('Im working');
     let event = {
       startTime: moment().format("YYYY-MM-DD HH:mm:ss")
     };
