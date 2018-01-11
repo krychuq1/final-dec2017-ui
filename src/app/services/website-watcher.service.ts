@@ -5,12 +5,16 @@ import * as vars from '../config';
 
 @Injectable()
 export class WebsiteWatcherService {
-  url = vars.websiteWatcherUrl + 'users/';
+  usersUrl = vars.websiteWatcherUrl + 'users/';
+  eventsUrl = vars.websiteWatcherUrl + 'events/';
   constructor(private http: HttpClient ) {}
   getIp(){
     return this.http.get('https://ipinfo.io');
   }
   addUser(user){
-    return this.http.post(this.url, user)
+    return this.http.post(this.usersUrl, user)
+  }
+  logEvent(event){
+    return this.http.post(this.eventsUrl, event)
   }
 }
