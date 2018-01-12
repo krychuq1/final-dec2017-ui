@@ -2,7 +2,7 @@
   <div *ngIf="user" class="admin-button">
     <button  mat-raised-button   color="primary" routerLink="user-admin">Users</button>
     <div ng-controller="createEvent()">
-      <button mat-raised-button (click)="adminAction_createEvent()" routerLink="event/create" color="primary">Create Event</button>
+      <button mat-raised-button id = "create-event-btn" (click)="adminAction_createEvent()" routerLink="event/create" color="primary">Create Event</button>
     </div>
     <!--<button mat-raised-button routerLink="event/create" color="primary">Create Event</button>-->
     <!--clickfct send/add click create event time and date to create event through api in mongo-->

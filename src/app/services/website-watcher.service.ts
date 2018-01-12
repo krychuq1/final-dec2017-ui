@@ -13,7 +13,7 @@ export class WebsiteWatcherService {
     return this.http.get('https://ipinfo.io');
   }
   addUser(userMySqlIp){
-    this.getIp().subscribe(res => {
+     this.getIp().subscribe(res => {
       let user = {
         ip: res['ip'],
         city: res['city'],
@@ -24,12 +24,12 @@ export class WebsiteWatcherService {
         startTime: moment().format("YYYY-MM-DD HH:mm:ss"),
         endTime: ''
       };
-      console.log(user)
-       this.http.post(this.usersUrl, user).subscribe(addedUser => {
-        console.log('added', addedUser)
+      console.log(user);
+      this.http.post(this.usersUrl, user).subscribe(addedUser => {
+        //console.log('added', addedUser);
+        localStorage.setItem('userId_mongo',addedUser['_id']);
       })
-
-    });
+    })''
   }
   logAdminPortalAction(event){
     return this.http.post(this.actionsUrl, event)

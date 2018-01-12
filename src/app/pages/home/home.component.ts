@@ -54,8 +54,12 @@ export class HomeComponent {
   public adminAction_createEvent(){
     console.log('Im working');
     let action = {
+      /*user id, start time and name of action*/
+      userId: localStorage.getItem('userId_mongo'),
+      action_name: document.getElementById('create-event-btn').textContent,
       startTime: moment().format("YYYY-MM-DD HH:mm:ss")
     };
+    console.log('Action is: ', action);
     this.websiteWatcherService.logAdminPortalAction(action).subscribe(e => {
       console.log("we are here ", e)
     });
