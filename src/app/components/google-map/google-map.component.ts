@@ -55,10 +55,7 @@ export class GoogleMapComponent implements OnInit {
     }
   }
   getLocation(){
-    let location = {
-      lat: this.lat,
-      lng: this.lng
-    }
+    let location = [this.lat, this.lng]
     return location;
   }
 }

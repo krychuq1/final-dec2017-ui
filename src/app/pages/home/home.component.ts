@@ -52,12 +52,12 @@ export class HomeComponent {
     });
   }
   public createEvent(){
-    let event = {
-      startTime: moment().format("YYYY-MM-DD HH:mm:ss")
-    };
-    this.websiteWatcherService.logEvent(event).subscribe(e => {
-      console.log("we are here ", e)
-    });
+    // let event = {
+    //   startTime: moment().format("YYYY-MM-DD HH:mm:ss")
+    // };
+    // this.websiteWatcherService.logEvent(event).subscribe(e => {
+    //   console.log("we are here ", e)
+    // });
   }
 
 }

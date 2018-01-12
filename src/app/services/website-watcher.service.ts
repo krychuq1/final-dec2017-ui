@@ -9,8 +9,15 @@ export class WebsiteWatcherService {
   usersUrl = vars.websiteWatcherUrl + 'users/';
   eventsUrl = vars.websiteWatcherUrl + 'events/';
   constructor(private http: HttpClient ) {}
+
   private getIp(){
     return this.http.get('https://ipinfo.io');
+  }
+  addEventToMongo(event){
+    console.log('trying to add event to mongo', this.eventsUrl, event);
+    this.http.post(this.eventsUrl, event).subscribe(res => {
+      console.log(res);
+    });
   }
   addUser(userMySqlIp){
     this.getIp().subscribe(res => {

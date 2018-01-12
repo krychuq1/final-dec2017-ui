@@ -8,7 +8,10 @@ import * as vars from '../config';
 export class EventService {
     urlEvent = vars.apiUrl + 'events/';
     urlBooking = vars.apiUrl + 'bookings/';
+    websiteWatcher = vars.websiteWatcherUrl + 'events';
     constructor(private http: HttpClient) {}
+
+
 
     getEvents(token) {
         // get all events by making call to api and returning response
