@@ -1,28 +1,32 @@
 <div class="home">
   <div *ngIf="user" class="admin-button">
     <button  mat-raised-button   color="primary" routerLink="user-admin">Users</button>
-    <button mat-raised-button routerLink="event/create" color="primary">Create Event</button>
+    <div ng-controller="createEvent()">
+      <button mat-raised-button id = "create-event-btn" (click)="adminAction_createEvent()" routerLink="event/create" color="primary">Create Event</button>
+    </div>
+    <!--<button mat-raised-button routerLink="event/create" color="primary">Create Event</button>-->
+    <!--clickfct send/add click create event time and date to create event through api in mongo-->
   </div>
 
 
-<event *ngIf="user"></event>
-<div *ngIf="!user">
-  <div class="event-holder" *ngFor="let event of event" >
-    <!-- {{event | json}}-->
-    <mat-card routerLink="/user/login">
-      <img src="{{apiUrl}}images/{{event.image}}" class="image-display">
-      <div class="event-details">
-        <div class="event-date-time">{{event.start_date}}, {{event.start_time}}</div>
-        <div class="event-title">{{event.title}}</div>
-        <div class="event-address">{{event.address}}</div>
-      </div>
-      <div class="event-detail-footer">
-        <div class="event-category">{{event.category}}</div>
-      </div>
-    </mat-card>
+  <event *ngIf="user"></event>
+  <div *ngIf="!user">
+    <div class="event-holder" *ngFor="let event of event" >
+      <!-- {{event | json}}-->
+      <mat-card routerLink="/user/login">
+        <img src="{{apiUrl}}images/{{event.image}}" class="image-display">
+        <div class="event-details">
+          <div class="event-date-time">{{event.start_date}}, {{event.start_time}}</div>
+          <div class="event-title">{{event.title}}</div>
+          <div class="event-address">{{event.address}}</div>
+        </div>
+        <div class="event-detail-footer">
+          <div class="event-category">{{event.category}}</div>
+        </div>
+      </mat-card>
+    </div>
   </div>
-</div>
 
-<router-outlet></router-outlet>
+  <!--<router-outlet></router-outlet>-->
 
 </div>

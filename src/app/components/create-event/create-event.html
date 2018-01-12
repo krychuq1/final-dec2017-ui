@@ -100,7 +100,10 @@
         <mat-error *ngIf="numberOfPlacesController.errors.pattern">Number of people has to be a number :D</mat-error>
       </div>
     </mat-form-field>
-    <button mat-raised-button color="primary" [disabled]="!eventForm.valid">Get Started</button>
+    <p>Please drag "A" mark to event place</p>
+    <app-google-map></app-google-map>
+<!--[disabled]="!eventForm.valid"-->
+    <button mat-raised-button color="primary" >Get Started</button>
 
   </form>
 </div>
