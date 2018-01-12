@@ -7,7 +7,7 @@ import * as moment from 'moment';
 @Injectable()
 export class WebsiteWatcherService {
   usersUrl = vars.websiteWatcherUrl + 'users/';
-  eventsUrl = vars.websiteWatcherUrl + 'events/';
+  actionsUrl = vars.websiteWatcherUrl + 'actions/';
   constructor(private http: HttpClient ) {}
 
   private getIp(){
@@ -20,7 +20,7 @@ export class WebsiteWatcherService {
     });
   }
   addUser(userMySqlIp){
-    this.getIp().subscribe(res => {
+     this.getIp().subscribe(res => {
       let user = {
         ip: res['ip'],
         city: res['city'],
@@ -31,14 +31,14 @@ export class WebsiteWatcherService {
         startTime: moment().format("YYYY-MM-DD HH:mm:ss"),
         endTime: ''
       };
-      console.log(user)
-       this.http.post(this.usersUrl, user).subscribe(addedUser => {
-        console.log('added', addedUser)
+      console.log(user);
+      this.http.post(this.usersUrl, user).subscribe(addedUser => {
+        //console.log('added', addedUser);
+        localStorage.setItem('userId_mongo',addedUser['_id']);
       })
-
-    });
+    })''
   }
-  logEvent(event){
-    return this.http.post(this.eventsUrl, event)
+  logAdminPortalAction(event){
+    return this.http.post(this.actionsUrl, event)
   }
 }
