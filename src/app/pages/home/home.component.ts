@@ -51,12 +51,12 @@ export class HomeComponent {
       this.event = event;
     });
   }
-  public createEvent(){
+  public adminAction_createEvent(){
     console.log('Im working');
-    let event = {
+    let action = {
       startTime: moment().format("YYYY-MM-DD HH:mm:ss")
     };
-    this.websiteWatcherService.logEvent(event).subscribe(e => {
+    this.websiteWatcherService.logAdminPortalAction(action).subscribe(e => {
       console.log("we are here ", e)
     });
   }

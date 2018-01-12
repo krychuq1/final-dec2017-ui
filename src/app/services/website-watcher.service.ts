@@ -6,7 +6,7 @@ import * as vars from '../config';
 @Injectable()
 export class WebsiteWatcherService {
   usersUrl = vars.websiteWatcherUrl + 'users/';
-  eventsUrl = vars.websiteWatcherUrl + 'events/';
+  actionsUrl = vars.websiteWatcherUrl + 'actions/';
   constructor(private http: HttpClient ) {}
   getIp(){
     return this.http.get('https://ipinfo.io');
@@ -14,7 +14,7 @@ export class WebsiteWatcherService {
   addUser(user){
     return this.http.post(this.usersUrl, user)
   }
-  logEvent(event){
-    return this.http.post(this.eventsUrl, event)
+  logAdminPortalAction(event){
+    return this.http.post(this.actionsUrl, event)
   }
 }
