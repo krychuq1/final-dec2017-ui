@@ -12,6 +12,7 @@ import * as moment from 'moment';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
     constructor(private router: Router, private userService: UserService, private routeActive:ActivatedRoute,
                 public websiteWatcherService: WebsiteWatcherService ) {
         routeActive.params.subscribe(val => {
@@ -25,7 +26,7 @@ export class AppComponent {
            this.userService.getUser(obj).subscribe(res => {
                 res['token'] = obj.token;
                 this.userService.setUser(res);
-                this.websiteWatcherService.addUser(res['id']);
+              //  this.websiteWatcherService.addUser(res['id']);
                 }, (err: HttpErrorResponse) => {
                if (err.error instanceof Error) {
                    console.log('An error occurred:', err.error.message);
@@ -35,5 +36,4 @@ export class AppComponent {
            });
          }
     }
-
 }

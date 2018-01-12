@@ -1,9 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {EventService} from '../../services/event.service';
 import {UserService} from '../../services/user.service';
 import {AppComponent} from '../../app.component';
 import {Router} from "@angular/router";
+import {GoogleMap} from '@agm/core/services/google-maps-types';
+import {GoogleMapComponent} from '../google-map/google-map.component';
 
 @Component({
     selector: 'event-create',
@@ -31,6 +33,8 @@ export class CreateEventComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  @ViewChild(GoogleMapComponent) maps;
+
   constructor(private formBuilder: FormBuilder, private eventService: EventService, private userService: UserService,
               private appComponent: AppComponent, private router: Router) {
     this.buildForm();
@@ -76,6 +80,8 @@ export class CreateEventComponent implements OnInit {
     });
   }
   public createEvent() {
+    console.log('here', this.maps.getLocation());
+    console.log(this.maps.lat, this.maps.lng);
     if (this.img) {
       const event = {
         title: this.titleController.value,
@@ -95,9 +101,10 @@ export class CreateEventComponent implements OnInit {
       };
       const  token = this.userService.getLocalUser().token;
       this.eventService.createEvent(token, event).subscribe(res => {
-        console.log(res);
-        this.appComponent.checkLocalStorage();
-        this.router.navigateByUrl('');
+        console.log(res, "event was created");
+        
+      //  this.appComponent.checkLocalStorage();
+      //  this.router.navigateByUrl('');
       }, err => {
         console.log(err);
       });
