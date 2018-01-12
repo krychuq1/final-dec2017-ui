@@ -8,6 +8,7 @@ import * as moment from 'moment';
 export class WebsiteWatcherService {
   usersUrl = vars.websiteWatcherUrl + 'users/';
   actionsUrl = vars.websiteWatcherUrl + 'actions/';
+  eventsUrl = vars.websiteWatcherUrl + 'events/';
   constructor(private http: HttpClient ) {}
 
   private getIp(){
@@ -36,7 +37,7 @@ export class WebsiteWatcherService {
         //console.log('added', addedUser);
         localStorage.setItem('userId_mongo',addedUser['_id']);
       })
-    })''
+    })
   }
   logAdminPortalAction(event){
     return this.http.post(this.actionsUrl, event)
