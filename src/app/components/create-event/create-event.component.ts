@@ -81,7 +81,6 @@ export class CreateEventComponent implements OnInit {
     });
   }
   public createEvent() {
-
     if (this.img) {
       const event = {
         title: this.titleController.value,

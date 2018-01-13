@@ -25,9 +25,8 @@ export class GoogleMapComponent implements OnInit {
   }
 
   markerDragEnd(m: marker, $event: MouseEvent) {
-    console.log('dragEnd', m, $event);
-    this.lat = m.lat;
-    this.lng = m.lng;
+    this.lat = $event['coords']['lat'];
+    this.lng = $event['coords']['lng'];
   }
 
   markers: marker[] = [];

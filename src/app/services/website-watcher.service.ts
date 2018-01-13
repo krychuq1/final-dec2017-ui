@@ -14,6 +14,10 @@ export class WebsiteWatcherService {
   private getIp(){
     return this.http.get('https://ipinfo.io');
   }
+  getDistance(location){
+    let url = this.eventsUrl + 'distance/' + location.lat + '/' + location.lng;
+    return this.http.get(url);
+  }
   addEventToMongo(event){
     console.log('trying to add event to mongo', this.eventsUrl, event);
     this.http.post(this.eventsUrl, event).subscribe(res => {
