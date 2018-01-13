@@ -3,6 +3,6 @@
 //prod
 export let apiUrl:string = 'https://eventhub-api.herokuapp.com/';
 //link website_watcher
-export let websiteWatcherUrl:string = 'http://localhost:9994/';
-
+//export let websiteWatcherUrl:string = 'http://localhost:9994/';
+export let websiteWatcherUrl:string = 'https://website-watcher.herokuapp.com/';
 export let googleMapsKey: 'AIzaSyAyacOfD0dwXRGFfa56n_2h3Y5sQiwTDMg';
