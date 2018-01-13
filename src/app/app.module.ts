@@ -33,6 +33,11 @@ import {UserAdminComponent} from './pages/users-admin/user-admin.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {UserBookingService} from "./services/user-booking.service";
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {WebsiteWatcherService} from './services/website-watcher.service';
+import {AgmCoreModule} from '@agm/core';
+import * as vars from './config';
+import { GoogleMapComponent } from './components/google-map/google-map.component';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -46,7 +51,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
         UserRegisterComponent,
         TicketComponent,
         UserAdminComponent,
-        AddTicketComponent
+        AddTicketComponent,
+        GoogleMapComponent
     ],
     imports: [
         BrowserModule,
@@ -66,10 +72,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
         MatListModule,
         ChartsModule,
         ImageUploadModule.forRoot(),
-        RouterModule.forRoot(routes)
-
+        RouterModule.forRoot(routes),
+        AgmCoreModule.forRoot({
+          apiKey: 'AIzaSyAHMMILduzb1J850riEDisf-n_xmVZ-ov4'
+        })
     ],
-    providers: [FormBuilder, UserService, EventService, TicketService, UserBookingService],
+    providers: [FormBuilder, UserService, EventService, TicketService, UserBookingService, WebsiteWatcherService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
