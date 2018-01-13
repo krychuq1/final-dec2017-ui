@@ -6,6 +6,7 @@ import {UserModel} from '../../models/user.model';
 import {EventModel} from '../../models/event.model';
 import {Router} from '@angular/router';
 import {UserBookingService} from "../../services/user-booking.service";
+import {WebsiteWatcherService} from '../../services/website-watcher.service';
 
 @Component({
     selector: 'event',
@@ -19,12 +20,23 @@ export class EventComponent {
     showEvents;
     availableSets;
     userBookings;
+    eventDistance;
     constructor(private eventService: EventService, private appComponent: AppComponent, private userService: UserService,
-                private router: Router, private userBookingService: UserBookingService) {
+                private router: Router, private userBookingService: UserBookingService, private websiteWatcherService: WebsiteWatcherService) {
       this.test = 'hello';
       this.showEvents = true;
       this.user = this.userService.getLocalUser();
       this.getEvents(this.user.token);
+      navigator.geolocation.getCurrentPosition(position =>{
+        let location = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+        this.websiteWatcherService.getDistance(location).subscribe(distance => {
+          this.eventDistance = distance;
+        })
+      });
+      console.log("show cuurent location ", navigator.geolocation);
       this.router.events.subscribe(event => {
         const url = event['url'];
         if (url && url.indexOf('create') > -1 || url && url.indexOf('one') > -1
@@ -34,6 +46,16 @@ export class EventComponent {
 
         }
       });
+
+
+    }
+    public getDistance(id){
+      for(let i in this.eventDistance){
+        if(this.eventDistance[i].eventId === id){
+          return this.eventDistance[i]['distance']
+        }
+      }
+
 
     }
     public deleteEvent(id) {
@@ -55,7 +77,6 @@ export class EventComponent {
                 obj.number_of_places = obj.number_of_places - this.userBookings[obj.id].length;
                 console.log(obj['percentage'], 'this is percentage')
               }
-              // console.log(obj.number_of_places, obj.id);
             });
           })
         })
