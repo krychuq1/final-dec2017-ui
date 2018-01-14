@@ -51,7 +51,7 @@ export class HomeComponent {
       this.event = event;
     });
   }
-  public adminAction_createEvent(){
+  public adminEvent_actionRec(){
     console.log('Im working');
     let action = {
       /*user id, start time and name of action*/
@@ -59,7 +59,7 @@ export class HomeComponent {
       action_name: document.getElementById('create-event-btn').textContent,
       startTime: moment().format("YYYY-MM-DD HH:mm:ss")
     };
-    console.log('Action is: ', action);
+    console.log('Action for userId is: ', action.userId);
     this.websiteWatcherService.logAdminPortalAction(action).subscribe(e => {
       console.log("we are here ", e)
     });

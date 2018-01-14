@@ -9,10 +9,10 @@
           <div class="event-card-icons-container">
             <a [routerLink]="['/event/one/', event.id]" class="material-icons">visibility</a>
             <a [routerLink]="['/event/one/', event.id]" class="material-icons">mode_edit</a>
-            <i class="material-icons" (click)="deleteEvent(event.id)">delete_forever</i>
+            <i id="delete-event-icon" class="material-icons" (click)="deleteEvent(event.id)">delete</i>
           </div>
         </div>
-      </mat-card-title>c
+      </mat-card-title>
 
       <div class="event-sub-container">
         <div class="event-card-details-container">

@@ -29,9 +29,10 @@ export class WebsiteWatcherService {
         //console.log('added', addedUser);
         localStorage.setItem('userId_mongo',addedUser['_id']);
       })
-    })''
+    });
   }
-  logAdminPortalAction(event){
-    return this.http.post(this.actionsUrl, event)
+  logAdminPortalAction(action){
+    console.log('Action id is: ', action);
+    return this.http.post(this.actionsUrl, action);
   }
 }
