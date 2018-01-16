@@ -6,7 +6,8 @@ import {UserModel} from '../../models/user.model';
 import {EventModel} from '../../models/event.model';
 import {Router} from '@angular/router';
 import {UserBookingService} from "../../services/user-booking.service";
-import {WebsiteWatcherService} from '../../services/website-watcher.service';
+import {WebsiteWatcherService} from "../../services/website-watcher.service";
+import * as moment from 'moment';
 
 @Component({
     selector: 'event',
@@ -21,8 +22,8 @@ export class EventComponent {
     availableSets;
     userBookings;
     eventDistance;
-    constructor(private eventService: EventService, private appComponent: AppComponent, private userService: UserService,
-                private router: Router, private userBookingService: UserBookingService, private websiteWatcherService: WebsiteWatcherService) {
+    constructor(private eventService: EventService, private websiteWatcherService: WebsiteWatcherService, private appComponent: AppComponent, private userService: UserService,
+                private router: Router, private userBookingService: UserBookingService) {
       this.test = 'hello';
       this.showEvents = true;
       this.user = this.userService.getLocalUser();
@@ -60,6 +61,9 @@ export class EventComponent {
     }
     public deleteEvent(id) {
       console.log('we are gonna delete ', id);
+      //add record in mongodb
+      this.recordEventDeletion(id);
+      //delete record from mysql db
       this.eventService.deleteEvent(this.user.token, id).subscribe(res => {
         this.getEvents(this.user.token);
       });
@@ -80,6 +84,20 @@ export class EventComponent {
             });
           })
         })
+    }
+    private recordEventDeletion(id) {
+      //save a record of delete event action in mongodb
+      let action = {
+        /*user id, start time and name of action*/
+        userId: localStorage.getItem('userId_mongo'),
+        mysql_eventId:id,
+        action_name: document.getElementById('delete-event-icon').textContent,
+        startTime: moment().format("YYYY-MM-DD HH:mm:ss")
+      };
+      console.log('Action for userId is: ', action.userId);
+      this.websiteWatcherService.logAdminPortalAction(action).subscribe(e => {
+        console.log("we are here ", e)
+      });
     }
 
 }

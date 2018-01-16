@@ -43,13 +43,11 @@ export class EventService {
       const url = this.urlEvent + 'event';
       const header = new HttpHeaders().set('x-access-token', token); // create header object
       return this.http.post(url, event, {headers: header});
-
     }
     deleteEvent(token, eventId) {
       const header = new HttpHeaders().set('x-access-token', token); // create header object
       const url = this.urlEvent + 'event/' + eventId;
       return this.http.delete(url, {headers: header});
-
     }
     saveImage(img) {
       const url = this.urlEvent + 'image';
