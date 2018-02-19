@@ -20,12 +20,15 @@ export class AddTicketComponent {
   eventId;
   NUMBER_PATTERN = /^[0-9]*$/;
 
-  constructor(private ticketService: TicketService, private formBuilder: FormBuilder, private activatedRoute: ActivatedRoute, private router: Router, private ticketComponent: TicketComponent) {
+  constructor(private ticketService: TicketService, private formBuilder: FormBuilder,
+              private activatedRoute: ActivatedRoute, private router: Router,
+              ) {
     this.buildForm();
     this.eventId = this.activatedRoute.snapshot.params.id;
     this.user = JSON.parse(localStorage.getItem('user'));
 
   }
+  // private ticketComponent: TicketComponent
   private buildForm() {
     this.ticketForm = this.formBuilder.group( {
       type: this.formBuilder.control(null, [Validators.required, Validators.minLength(3)]),
@@ -45,9 +48,10 @@ export class AddTicketComponent {
     };
     this.ticketService.createTicket(this.user.token, ticket).subscribe(res => {
       const url = 'event/tickets/' + this.eventId;
-      this.router.navigateByUrl(url)
-      this.ticketComponent.getTickets(this.user.token, this.eventId)
+      this.router.navigateByUrl(url);
       console.log(res);
+
+      // this.ticketComponent.getTickets(this.user.token, this.eventId)
     });
   }
 

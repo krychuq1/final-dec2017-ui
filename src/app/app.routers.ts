@@ -21,12 +21,15 @@ export const routes: Route[] = [
     {path: 'event', component: EventComponent,
         children: [
            {path: 'create', component: CreateEventComponent},
+          {path: 'edit/:id', component: CreateEventComponent},
           {path: 'one/:id', component: EventDetailComponent},
           {path: 'tickets/:id', component: TicketComponent, children: [{
             path: 'create/:id', component: AddTicketComponent
-            }]}
+            }]},
         ]
     },
+  {path: 'ticket/create/:id', component: AddTicketComponent},
+
   {path: 'user-admin', component: UserAdminComponent}
 
 ];

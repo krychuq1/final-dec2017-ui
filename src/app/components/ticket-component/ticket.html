@@ -1,15 +1,16 @@
 <div class="ticket-manager">
   <div class="ticket-manager-header">
     <h1 *ngIf="tickets">Ticket manager:</h1>
-    <button mat-raised-button   color="primary" [routerLink]="['create', eventId]">
+    <button mat-raised-button   color="primary" [routerLink]="['/ticket/create', eventId]">
       Add tickets
     </button>
   </div>
+
   <div class="ticket-holder" *ngFor="let ticket of tickets" >
     <mat-card>
       <mat-card-title>
         Type: {{ticket.type}}
-        <i class="material-icons" (click)="deleteEvent(event)">delete_forever</i>
+        <i class="material-icons" (click)="deleteTicket(ticket)">delete_forever</i>
       </mat-card-title>
 
       <div class="ticket-des-holder">

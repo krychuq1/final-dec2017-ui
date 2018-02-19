@@ -3,7 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {EventService} from '../../services/event.service';
 import {UserService} from '../../services/user.service';
 import {AppComponent} from '../../app.component';
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from '@angular/router';
 import {GoogleMap} from '@agm/core/services/google-maps-types';
 import {GoogleMapComponent} from '../google-map/google-map.component';
 import {WebsiteWatcherService} from '../../services/website-watcher.service';
@@ -42,15 +42,53 @@ export class CreateEventComponent implements OnInit {
   imgError;
   img_url;
   isLinear = false;
+  user;
+  eventId;
 
   ngOnInit(): void {
   }
   @ViewChild(GoogleMapComponent) maps;
 
-  constructor(private formBuilder: FormBuilder, private eventService: EventService, private userService: UserService,
-              private appComponent: AppComponent, private router: Router, private websiteWatcherService: WebsiteWatcherService) {
+  constructor(private formBuilder: FormBuilder, private eventService: EventService,
+              private userService: UserService,
+              private appComponent: AppComponent, private router: Router,
+              private activeRoute:  ActivatedRoute,
+              private websiteWatcherService: WebsiteWatcherService) {
     this.buildForm();
     this.event = {};
+    //check on router
+    this.router.events.subscribe(event => {
+      //get user
+      this.user = JSON.parse(localStorage.getItem('user'));
+      if(this.user){
+        this.eventId = this.activeRoute.snapshot.params.id;
+
+        //get url
+        const url = event['url'];
+        if (url && url.indexOf('edit') > -1) {
+          console.log('you are going to edit event');
+          this.getEvent(this.user.token, this.eventId);
+        }
+      }
+
+    });
+  }
+  public getEvent(token, id) {
+    this.eventService.getEventById(token, id).subscribe(res => {
+      // this.event =  new EventModel(res['title'], res['address'], res['city'],
+      //   res['online_event'], res['start_date'], res['end_date'], res['image'],
+      //   res['description'], res['category'], res['organizer_name'], res['number_of_places']);
+      this.setForm(res);
+    });
+  }
+  public setForm(event){
+    this.titleController.setValue(event['title']);
+    this.cityController.setValue(event['city']);
+    //todo fix this crap
+    this.organizerController.setValue('kea school test');
+    this.locationController.setValue(event['address']);
+    this.numberOfPlacesController.setValue(event['number_of_places']);
+    // this.locationController.value =  event['title'];
   }
   private buildForm() {
     this.eventFormStepOne = this.formBuilder.group( {

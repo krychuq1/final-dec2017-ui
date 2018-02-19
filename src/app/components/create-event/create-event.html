@@ -1,7 +1,8 @@
-<p>Event Details</p>
+<!--<p>Event Details</p>-->
 <div class="formHolder">
   <mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
     <mat-step [stepControl]="eventFormStepOne">
+      <h1>Gerenal information:</h1>
       <form [formGroup]="eventFormStepOne" (ngSubmit)="stepOne()">
         <ng-template matStepLabel>GENERAL</ng-template>
         <!--event title-->
@@ -57,6 +58,7 @@
     </mat-step>
 
     <mat-step [stepControl]="dateFormStepTwo">
+      <h1>Choose date:</h1>
       <form [formGroup]="dateFormStepTwo" (ngSubmit)="stepTwo()">
         <ng-template matStepLabel>DATE</ng-template>
         <!--start time-->
@@ -101,6 +103,7 @@
     </mat-step>
 
     <mat-step [stepControl]="detailsFormStepThree">
+      <h1>Event details:</h1>
       <form [formGroup]="detailsFormStepThree"  (ngSubmit)="stepThree()">
         <ng-template matStepLabel>DETAILS</ng-template>
         <!--category-->
@@ -127,13 +130,14 @@
     </mat-step>
 
     <mat-step [stepControl]="imageFormStepFour">
-        <ng-template matStepLabel>IMAGE</ng-template>
+      <h1>Image:</h1>
+      <ng-template matStepLabel>IMAGE</ng-template>
         <image-upload   [max]="1"
         (uploadFinished)="onUploadFinished($event)"
         (removed)="onRemoved()">
         </image-upload>
         <mat-error *ngIf="imgError">{{imgError}}</mat-error>
-        <div>
+        <div class="img-btn">
           <button mat-button matStepperPrevious>Back</button>
           <button mat-raised-button matStepperNext color="primary">Next</button>
 

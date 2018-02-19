@@ -39,14 +39,13 @@ export class EventComponent {
           this.eventDistance = distance;
         })
       });
-      console.log("show cuurent location ", navigator.geolocation);
+      // console.log("show cuurent location ", navigator.geolocation);
       this.router.events.subscribe(event => {
         const url = event['url'];
         if (url && url.indexOf('create') > -1 || url && url.indexOf('one') > -1
-        || url && url.indexOf('tickets') > -1) {
+        || url && url.indexOf('tickets') > -1 || url && url.indexOf('edit') > -1) {
           console.log(event['url']);
           this.showEvents = false;
-
         }
       });
 

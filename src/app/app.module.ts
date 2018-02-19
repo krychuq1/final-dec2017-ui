@@ -40,6 +40,7 @@ import { GoogleMapComponent } from './components/google-map/google-map.component
 import {MatDialogModule} from '@angular/material/dialog';
 import {DeleteDialog} from './pop-ups/delete/delete.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import {DeleteTicketDialog} from './pop-ups/delete-ticket/delete-ticket.component';
 
 @NgModule({
     declarations: [
@@ -56,9 +57,10 @@ import {MatStepperModule} from '@angular/material/stepper';
         UserAdminComponent,
         AddTicketComponent,
         GoogleMapComponent,
-      DeleteDialog
+      DeleteDialog,
+      DeleteTicketDialog
     ],
-    entryComponents: [DeleteDialog],
+    entryComponents: [DeleteDialog, DeleteTicketDialog],
     imports: [
         BrowserModule,
         MatButtonModule,
