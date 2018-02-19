@@ -1,37 +1,39 @@
-<h1 *ngIf="tickets">Ticket editor</h1>
+<div class="ticket-manager">
+  <div class="ticket-manager-header">
+    <h1 *ngIf="tickets">Ticket manager:</h1>
+    <button mat-raised-button   color="primary" [routerLink]="['create', eventId]">
+      Add tickets
+    </button>
+  </div>
+  <div class="ticket-holder" *ngFor="let ticket of tickets" >
+    <mat-card>
+      <mat-card-title>
+        Type: {{ticket.type}}
+        <i class="material-icons" (click)="deleteEvent(event)">delete_forever</i>
+      </mat-card-title>
 
+      <div class="ticket-des-holder">
+        <div class="ticket-sub-container">
+          <mat-card-subtitle>
+            currency
+          </mat-card-subtitle>
+          <mat-card-subtitle>
+            price
+          </mat-card-subtitle>
+        </div>
+        <div class="ticket-sub-container">
+          <mat-card-subtitle class="normal-text">
+            <span>{{ticket.currency}}</span>
+          </mat-card-subtitle>
+          <mat-card-subtitle class="normal-text">
+            <span>{{ticket.price}}</span>
+          </mat-card-subtitle>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
 <router-outlet></router-outlet>
 
-<button mat-raised-button class="general-btn"  color="primary" [routerLink]="['create', eventId]" >Add tickets</button>
-<div class="ticket-holder" *ngFor="let ticket of tickets" >
-  <mat-card>
-    <mat-card-title>
-      Type: {{ticket.type}}
-    </mat-card-title>
-
-    <div class="ticket-des-holder">
-      <div class="ticket-sub-container">
-        <mat-card-subtitle>
-          currency
-        </mat-card-subtitle>
-        <mat-card-subtitle>
-          price
-        </mat-card-subtitle>
-      </div>
-      <div class="ticket-sub-container">
-        <mat-card-subtitle class="normal-text">
-          <span>{{ticket.currency}}</span>
-        </mat-card-subtitle>
-        <mat-card-subtitle class="normal-text">
-          <span>{{ticket.price}}</span>
-        </mat-card-subtitle>
-      </div>
-    </div>
-
-
-  </mat-card>
-
-
-</div>
 
 

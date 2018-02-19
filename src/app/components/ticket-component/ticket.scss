@@ -1,14 +1,37 @@
-.ticket-holder{
-  padding: 20px;
-}
-.ticket-des-holder{
-  display: flex;
-}
-.ticket-sub-container{
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  span{
-    color: black;
+.ticket-manager{
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+  background-color: white;
+  padding: 20px 40px;
+  &-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    h1{
+      font-size: 1.5rem;
+    }
   }
+  .ticket-holder{
+    .mat-card-title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .material-icons{
+        cursor: pointer;
+      }
+    }
+  }
+  .ticket-des-holder{
+    display: flex;
+  }
+  .ticket-sub-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    span{
+      color: black;
+    }
+  }
+
 }

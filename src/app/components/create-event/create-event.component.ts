@@ -7,6 +7,7 @@ import {Router} from "@angular/router";
 import {GoogleMap} from '@agm/core/services/google-maps-types';
 import {GoogleMapComponent} from '../google-map/google-map.component';
 import {WebsiteWatcherService} from '../../services/website-watcher.service';
+import {EventModel} from '../../models/event.model';
 
 @Component({
     selector: 'event-create',
@@ -14,7 +15,14 @@ import {WebsiteWatcherService} from '../../services/website-watcher.service';
     styleUrls: ['./create-event.scss']
 })
 export class CreateEventComponent implements OnInit {
-  eventForm: FormGroup;
+  //first step form
+  eventFormStepOne: FormGroup;
+  //second step form
+  dateFormStepTwo: FormGroup;
+  // third step from
+  detailsFormStepThree: FormGroup;
+  // four step form
+  imageFormStepFour: FormGroup;
   titleController;
   locationController;
   descriptionController;
@@ -28,9 +36,12 @@ export class CreateEventComponent implements OnInit {
   startTimeController;
   endTimeController;
   categoryController;
+  //event object
+  event;
   img;
   imgError;
   img_url;
+  isLinear = false;
 
   ngOnInit(): void {
   }
@@ -39,34 +50,44 @@ export class CreateEventComponent implements OnInit {
   constructor(private formBuilder: FormBuilder, private eventService: EventService, private userService: UserService,
               private appComponent: AppComponent, private router: Router, private websiteWatcherService: WebsiteWatcherService) {
     this.buildForm();
+    this.event = {};
   }
   private buildForm() {
-    this.eventForm = this.formBuilder.group( {
+    this.eventFormStepOne = this.formBuilder.group( {
+      //general form
       title: this.formBuilder.control(null, [Validators.required, Validators.minLength(5)]),
-      location: this.formBuilder.control(null, [Validators.required, Validators.minLength(5), Validators.maxLength(400)]),
-      description: this.formBuilder.control(null, [Validators.required, Validators.minLength(20)]),
       organizer: this.formBuilder.control(null, [Validators.required, Validators.minLength(2)]),
       city: this.formBuilder.control(null, [Validators.required, Validators.minLength(2)]),
       numberOfPlaces: this.formBuilder.control(null, [Validators.required, Validators.pattern(this.NUMBER_PATTERN)]),
-      startDate: this.formBuilder.control(null, [Validators.required]),
-      endDate: this.formBuilder.control(null, [Validators.required]),
-      startTime: this.formBuilder.control(null, [Validators.required, Validators.pattern(this.TIME_PATTERN)]),
-      category: this.formBuilder.control(null, [Validators.required, Validators.minLength(2)]),
-      endTime: this.formBuilder.control(null, [Validators.required,  Validators.pattern(this.TIME_PATTERN)])
+      location: this.formBuilder.control(null, [Validators.required, Validators.minLength(5), Validators.maxLength(400)]),
 
     });
-    this.titleController = this.eventForm.get('title');
-    this.locationController = this.eventForm.get('location');
-    this.descriptionController = this.eventForm.get('description');
-    this.organizerController = this.eventForm.get('organizer');
-    this.numberOfPlacesController = this.eventForm.get('numberOfPlaces');
-    this.startDateController = this.eventForm.get('startDate');
-    this.endDateController = this.eventForm.get('endDate');
-    this.cityController = this.eventForm.get('city');
-    this.startTimeController = this.eventForm.get('startTime');
-    this.endTimeController = this.eventForm.get('endTime');
-    this.categoryController = this.eventForm.get('category');
+    this.dateFormStepTwo = this.formBuilder.group({
+      startTime: this.formBuilder.control(null, [Validators.required, Validators.pattern(this.TIME_PATTERN)]),
+      startDate: this.formBuilder.control(null, [Validators.required]),
+      endDate: this.formBuilder.control(null, [Validators.required]),
+      endTime: this.formBuilder.control(null, [Validators.required,  Validators.pattern(this.TIME_PATTERN)])
+    });
+    this.detailsFormStepThree = this.formBuilder.group({
+      description: this.formBuilder.control(null, [Validators.required, Validators.minLength(20)]),
+      category: this.formBuilder.control(null, [Validators.required, Validators.minLength(2)])
+    });
+    this.imageFormStepFour =  this.formBuilder.group({});
 
+    //first step form
+    this.titleController = this.eventFormStepOne.get('title');
+    this.cityController = this.eventFormStepOne.get('city');
+    this.organizerController = this.eventFormStepOne.get('organizer');
+    this.numberOfPlacesController = this.eventFormStepOne.get('numberOfPlaces');
+    this.locationController = this.eventFormStepOne.get('location');
+    //second step form
+    this.startDateController = this.dateFormStepTwo.get('startDate');
+    this.endDateController = this.dateFormStepTwo.get('endDate');
+    this.startTimeController = this.dateFormStepTwo.get('startTime');
+    this.endTimeController = this.dateFormStepTwo.get('endTime');
+    //third step form
+    this.categoryController = this.detailsFormStepThree.get('category');
+    this.descriptionController = this.detailsFormStepThree.get('description');
   }
   public onUploadFinished(event) {
     console.log('img updated', event);
@@ -77,6 +98,46 @@ export class CreateEventComponent implements OnInit {
       console.log('This is image url after image was uploaded and saved: ', this.img_url );
     }, err => {
       this.imgError = 'Image is too big please upload img smaller than 5mb';
+      console.log(err);
+    });
+  }
+  public stepOne(){
+    console.log("you are going to complete step one");
+    this.event['title'] = this.titleController.value;
+    this.event['city'] = this.cityController.value;
+    this.event['organizer_name'] = this.organizerController.value;
+    this.event['number_of_places'] = this.numberOfPlacesController.value;
+    this.event['address'] = this.locationController.value;
+    console.log('this is event after step one ', this.event);
+  }
+  public stepTwo(){
+    console.log("you are going to complete step two");
+    this.event['start_time'] = this.startTimeController.value;
+    this.event['start_date'] = this.startDateController.value.toString();
+    this.event['end_time'] = this.endTimeController.value;
+    this.event['end_date'] = this.endDateController.value.toString();
+    console.log('this is event after step two ', this.event);
+  }
+  public stepThree(){
+    console.log("you are going to complete step three");
+    console.log('this is event after step two ', this.event);
+    this.event['category'] = this.categoryController.value;
+    this.event['description'] = this.descriptionController.value;
+    console.log('this is event after step three ', this.event);
+  }
+  public complete(){
+    const  token = this.userService.getLocalUser().token;
+    this.eventService.createEvent(token, this.event).subscribe(res => {
+      console.log('event created ', res);
+      //event to store in mongo
+      let event = {
+        eventId: res['id'],
+       // location: this.maps.getLocation()
+      };
+   //   this.websiteWatcherService.addEventToMongo(event);
+      this.appComponent.checkLocalStorage();
+      this.router.navigateByUrl('');
+    }, err => {
       console.log(err);
     });
   }
@@ -102,11 +163,11 @@ export class CreateEventComponent implements OnInit {
       this.eventService.createEvent(token, event).subscribe(res => {
         console.log('event created ', res);
         //event to store in mongo
-        let event = {
-          eventId: res['id'],
-          location: this.maps.getLocation()
-        };
-         this.websiteWatcherService.addEventToMongo(event);
+        // let event = {
+        //   eventId: res['id'],
+        //   location: this.maps.getLocation()
+        // };
+        //  this.websiteWatcherService.addEventToMongo(event);
          this.appComponent.checkLocalStorage();
          this.router.navigateByUrl('');
       }, err => {

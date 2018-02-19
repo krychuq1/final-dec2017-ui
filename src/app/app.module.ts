@@ -37,6 +37,9 @@ import {WebsiteWatcherService} from './services/website-watcher.service';
 import {AgmCoreModule} from '@agm/core';
 import * as vars from './config';
 import { GoogleMapComponent } from './components/google-map/google-map.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {DeleteDialog} from './pop-ups/delete/delete.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
     declarations: [
@@ -52,8 +55,10 @@ import { GoogleMapComponent } from './components/google-map/google-map.component
         TicketComponent,
         UserAdminComponent,
         AddTicketComponent,
-        GoogleMapComponent
+        GoogleMapComponent,
+      DeleteDialog
     ],
+    entryComponents: [DeleteDialog],
     imports: [
         BrowserModule,
         MatButtonModule,
@@ -71,6 +76,8 @@ import { GoogleMapComponent } from './components/google-map/google-map.component
         MatIconModule,
         MatListModule,
         ChartsModule,
+        MatDialogModule,
+        MatStepperModule,
         ImageUploadModule.forRoot(),
         RouterModule.forRoot(routes),
         AgmCoreModule.forRoot({

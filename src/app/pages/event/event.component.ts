@@ -7,6 +7,8 @@ import {EventModel} from '../../models/event.model';
 import {Router} from '@angular/router';
 import {UserBookingService} from "../../services/user-booking.service";
 import {WebsiteWatcherService} from '../../services/website-watcher.service';
+import {MatDialog} from '@angular/material';
+import {DeleteDialog} from '../../pop-ups/delete/delete.component';
 
 @Component({
     selector: 'event',
@@ -22,7 +24,8 @@ export class EventComponent {
     userBookings;
     eventDistance;
     constructor(private eventService: EventService, private appComponent: AppComponent, private userService: UserService,
-                private router: Router, private userBookingService: UserBookingService, private websiteWatcherService: WebsiteWatcherService) {
+                private router: Router, private userBookingService: UserBookingService,
+                private websiteWatcherService: WebsiteWatcherService, public dialog: MatDialog) {
       this.test = 'hello';
       this.showEvents = true;
       this.user = this.userService.getLocalUser();
@@ -55,13 +58,16 @@ export class EventComponent {
           return this.eventDistance[i]['distance']
         }
       }
-
-
     }
-    public deleteEvent(id) {
-      console.log('we are gonna delete ', id);
-      this.eventService.deleteEvent(this.user.token, id).subscribe(res => {
-        this.getEvents(this.user.token);
+    public deleteEvent(event) {
+      let dialogRef = this.dialog.open(DeleteDialog, {
+        width: 'auto',
+        minWidth: '300px',
+        data: {event: event, token: this.user.token}
+      });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('event was closed');
+          this.getEvents(this.user.token);
       });
     }
     private getEvents(token) {

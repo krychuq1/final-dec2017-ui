@@ -5,7 +5,7 @@
 
     <form class="user-form"  [formGroup]="emailForm" (ngSubmit)="onSubmitForm()" >
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Email" formControlName="email" >
+        <input matInput placeholder="insert your email here" formControlName="email" >
         <div *ngIf="emailControler.errors && emailControler.touched">
           <mat-error *ngIf="emailControler.errors.required">Email is required</mat-error>
           <mat-error *ngIf="emailControler.errors.pattern">Please enter valid email</mat-error>
