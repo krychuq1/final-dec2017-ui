@@ -5,11 +5,11 @@
     <mat-card  id="{{event.id}}">
       <mat-card-title>
         <div class="title-icons">
-          <h1 >{{event.title}}</h1>
+          <h1>{{event.title}}</h1>
           <!--<p *ngIf="eventDistance">{{getDistance(event.id)}} away form you</p>-->
           <div class="event-card-icons-container">
-
-            <a [routerLink]="['/event/one/', event.id]" class="material-icons">visibility</a>
+            <a class="material-icons" (click)="showDetails(event)">visibility</a>
+            <!--<a [routerLink]="['/event/one/', event.id]" class="material-icons">visibility</a>-->
             <a class="material-icons" [routerLink]="['/event/edit/', event.id]">mode_edit</a>
             <i class="material-icons" (click)="deleteEvent(event)">delete_forever</i>
           </div>

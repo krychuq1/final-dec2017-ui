@@ -41,6 +41,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {DeleteDialog} from './pop-ups/delete/delete.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {DeleteTicketDialog} from './pop-ups/delete-ticket/delete-ticket.component';
+import {EventDetailsDialog} from './pop-ups/event-details/eventDetails.component';
 
 @NgModule({
     declarations: [
@@ -58,9 +59,10 @@ import {DeleteTicketDialog} from './pop-ups/delete-ticket/delete-ticket.componen
         AddTicketComponent,
         GoogleMapComponent,
       DeleteDialog,
-      DeleteTicketDialog
+      DeleteTicketDialog,
+      EventDetailsDialog
     ],
-    entryComponents: [DeleteDialog, DeleteTicketDialog],
+    entryComponents: [DeleteDialog, DeleteTicketDialog, EventDetailsDialog],
     imports: [
         BrowserModule,
         MatButtonModule,

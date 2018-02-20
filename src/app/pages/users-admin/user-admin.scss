@@ -1,10 +1,31 @@
+@import "../../../styles";
+
 .user-admin{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  .graph-holder{
+    //border: 1px solid red;
+    //max-width: 1000px;
+    //margin: 40px auto 0 auto;
+    //display: flex;
+  }
   .user-goal{
     p{
       text-align: center;
+    }
+  }
+}
+/**
+ * Bigger than 767px mobile
+ */
+@include breakpoint($medium) {
+  .user-admin{
+    .graph-holder{
+      //border: 1px solid red;
+      max-width: 1000px;
+      margin: 40px auto 0 auto;
+      display: flex;
     }
   }
 }

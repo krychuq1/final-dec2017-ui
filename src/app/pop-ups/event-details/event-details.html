@@ -1,0 +1,17 @@
+<div class="modal-holder">
+  <div class="header">
+    <p>event preview</p>
+    <div class="exit" (click)="close()">
+      X
+    </div>
+  </div>
+  <h3>{{data.title}}</h3>
+  <div class="img-holder">
+    <img src="{{apiUrl}}images/{{data.image}}">
+  </div>
+  <!--<h1>{{data.event.title}}</h1>-->
+  <div class="buttons">
+    <button mat-raised-button color="primary" (click)="close()">Cancel</button>
+    <!--<button mat-raised-button class="general-btn" (click)="delete()">Delete</button>-->
+  </div>
+</div>

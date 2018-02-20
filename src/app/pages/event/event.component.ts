@@ -9,6 +9,7 @@ import {UserBookingService} from "../../services/user-booking.service";
 import {WebsiteWatcherService} from '../../services/website-watcher.service';
 import {MatDialog} from '@angular/material';
 import {DeleteDialog} from '../../pop-ups/delete/delete.component';
+import {EventDetailsDialog} from '../../pop-ups/event-details/eventDetails.component';
 
 @Component({
     selector: 'event',
@@ -58,6 +59,14 @@ export class EventComponent {
         }
       }
     }
+    public showDetails(event){
+      console.log('you are going to previ ', event);
+      let dialogRef = this.dialog.open(EventDetailsDialog, {
+        width: 'auto',
+        minWidth: '300px',
+        data: event
+      });
+    }
     public deleteEvent(event) {
       let dialogRef = this.dialog.open(DeleteDialog, {
         width: 'auto',
@@ -74,7 +83,7 @@ export class EventComponent {
           this.userBookingService.getAll().subscribe(bookings => {
             this.userBookings = bookings;
             this.events = res;
-            console.log(res);
+            console.log(res, '<--- akk evebt');
             this.events.forEach(obj => {
               if(this.userBookings[obj.id]) {
                 console.log('match', this.userBookings[obj.id].lenght);
